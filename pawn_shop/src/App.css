@@ -1,0 +1,68 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+.card-image {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-title{
+  font-weight: 800;
+  top:1px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  max-height: 20em;
+
+}
+
+.price {
+  position: absolute;
+  background-color: #FF5F1F;
+  transform: rotate(-30deg);
+  width: 5em;
+  height: 3em;
+  right: -5%;
+  bottom: -5%;
+}
+
+.ant-card {
+  padding: .5em;
+  margin-bottom: 10%;
+}
+
+.sample {
+  background-color: #ff4775;
+}
+
+body {
+  background: #c0ffbe;
+}
+
+.wrapper {
+    margin: 1%;
+}
+
+.ant-layout-header{
+  top:.5%;
+  position: sticky;
+  z-index: 10;
+  color :#ff517d !important;
+  text-shadow:
+  .5px .5px rgb(184, 85, 109),
+  1px 1px rgb(184, 85, 109),
+  1.5px 1.5px rgb(184, 85, 109),
+  2px 2px rgb(184, 85, 109),
+  2.5px 2.5px rgb(184, 85, 109),
+  3px 3px rgb(184, 85, 109) !important ;
+
+  background :rgb(255 241 133) !important;
+}
