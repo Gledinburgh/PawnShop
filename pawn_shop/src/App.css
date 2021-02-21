@@ -2,13 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 
 .card-image {
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
-  max-width: 100%;
-  text-align: center;
+  width:100%;
+  height:9em ;
 }
 
+span {
+  font-family: 'Suez One';
+  text-shadow:.5px .5px #b8556d;
+  color :#ff517d !important;
+}
+
+.ad {
+  z-index: 1;
+
+  background-image:url('Sell_Your_Soul.png')  !important;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  max-height:110px !important;
+  height: 30px;
+}
+
+.ad.bottom{
+  z-index: 1;
+
+  width: 6000px;
+
+
+}
 .card-title{
+  color: #1c6447;
+  font-family: 'Suez One';
+  font-size: 85% ;
   font-weight: 800;
   top:1px;
 }
@@ -25,8 +52,13 @@
 }
 
 .price {
+  overflow: hidden;
+  word-wrap: break-word;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
-  background-color: #FF5F1F;
+  background-color: #ff517d;
   transform: rotate(-30deg);
   width: 5em;
   height: 3em;
@@ -40,11 +72,11 @@
 }
 
 .sample {
-  background-color: #ff4775;
+  background-color: #fffc51;
 }
 
 body {
-  background: #c0ffbe;
+  background: #d3ffd2;
 }
 
 .wrapper {
@@ -52,17 +84,93 @@ body {
 }
 
 .ant-layout-header{
+  flex-direction: row;
+  flex-wrap: nowrap;
   top:.5%;
-  position: sticky;
+  position: relative;
   z-index: 10;
   color :#ff517d !important;
   text-shadow:
-  .5px .5px rgb(184, 85, 109),
+  .5px .5px #b8556d,
   1px 1px rgb(184, 85, 109),
   1.5px 1.5px rgb(184, 85, 109),
   2px 2px rgb(184, 85, 109),
   2.5px 2.5px rgb(184, 85, 109),
   3px 3px rgb(184, 85, 109) !important ;
 
-  background :rgb(255 241 133) !important;
+  background :#ffff62 !important;
+}
+
+.advert {
+  z-index: 1;
+
+  outline: 0;
+  border: none !important;
+  background: #c2939f78;
+  color: #c0ffbe7a;
+  position: absolute;
+  top: 0%;
+
+ }
+
+ .right {
+   position: absolute !important;
+   border: 4px;
+   top: -15px !important;
+   right: 1;
+ }
+ .ant-notification-notice {
+   z-index: 1;
+   padding-top: 0;
+   height:90px;
+ }
+ .ant-notification-notice-closable {
+   z-index: 1;
+  max-height:110px !important;
+   padding-left: 0;
+   padding-top: 1%;
+ }
+
+ .ant-notification-notice .ad .ant-notification-notice-closable {
+   z-index: 1;
+   height: 105px;
+ }
+
+ .ant-card-body {
+   margin: 20px, 20px,20px, 20px;
+   padding-left: .5em;
+   padding-top: .5em;
+ }
+ .ant-card .ant-card-bordered {
+   position: static;
+   height: 300%;
+   padding: 8px, 8px, 8px, 8px;
+ }
+
+ .scroll {
+   flex-direction: row;
+   flex-wrap: nowrap;
+   overflow-x: scroll;
+ }
+
+ .ant-layout-footer {
+   flex-direction: row;
+   word-wrap: nowrap;
+   width: 100%;
+   position: static;
+   bottom: 0;
+ }
+
+ .ant-modal-wrap {
+   z-index: 10000000;
+ }
+
+ .ant-modal-body {
+   background-color: #9ff09e;
+   background-color: #d3ffd2;
+ }
+
+ .ant-btn-primary, .ant-btn-default {
+  background-color: #9ff09e !important;
+  border-color: #9ff09e  !important;
 }
