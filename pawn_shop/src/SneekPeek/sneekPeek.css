@@ -1,6 +1,7 @@
 #wrapper {
   max-width :100%;
   margin: 1%;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 196, 0, 0.678),rgb(255, 196, 0));
 }
 
 .sneek {
@@ -50,20 +51,13 @@ width: auto;
 #holy-relapse {
   position: static;
   box-shadow: 10px, 10px, 10px rgb(241, 24, 0);
-
 }
+#title {
+  padding-top: 3vh;
+}
+
 
 .discription {
   margin: 10%;
   line-height: 20px;
-}
-
-.ant-modal, .ant-modal-body {
-
-  height: 80vh;
-  top: 5vh;
-}
-
-.ant-modal-confirm-body, .ant-modal-confirm-body-wrapper {
-  height: 95%;
 }
