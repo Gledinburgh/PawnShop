@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { notification} from 'antd';
 import showPromiseConfirm from './ModalAdvert'
 
-const FooterAdvert = ({destroyAdverts}) => {
-
+const FooterAdvert = ({destroyAdverts, history}) => {
+console.log(history)
 var  [timer, setTimer] = useState(true);
 
   const openFooterNotification = () => {
@@ -13,7 +13,7 @@ var  [timer, setTimer] = useState(true);
       const placement = 'bottomLeft';
 
       notification.open({
-        onClick: showPromiseConfirm,
+        onClick: () => {showPromiseConfirm(history, destroyAdverts)},
         bottom: -10,
         left: -20,
         duration: null,

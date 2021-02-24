@@ -12,7 +12,7 @@ function ItemGrid () {
     <Row className="scroll" gutter={4}>
       {newProducts.map((product) => {
         return (
-          <Col span={10}>
+          <Col  className="item" span={10}>
         <Card style={style} cover={
           <div className="container">
             <img className="card-image" alt="example" src={`/products/${product.file}` }/>
@@ -43,12 +43,46 @@ function ItemGrid () {
             <div>{product.discription}</div>
         </Card>
       </Col>
+      )
+      })}
+    </Row>
+    <Divider style={borderstyle} orientation="left">Still Breathing >></Divider>
+    <Row className="scroll" gutter={4}>
+      {saleProducts.map((product) => {
+        return (
+          <Col span={10}>
+        <Card style={style} cover={
+          <div className="container">
+            <img className="card-image" alt="example" src={`/products/${product.file}` }/>
+            <div className="price">${product.price}</div>
+          </div>
+           } >
+            <div className="card-title">{product.name}</div>
+            <div>{product.discription}</div>
+        </Card>
+      </Col>
+      )
+      })}
+    </Row>
+    <Divider style={borderstyle} orientation="left">Tool</Divider>
+      <Row className="scroll" gutter={4}>
+      {saleProducts.map((product) => {
+        return (
+          <Col span={10}>
+        <Card style={style} cover={
+          <div className="container">
+            <img className="card-image" alt="example" src={`/products/${product.file}` }/>
+            <div className="price">${product.price}</div>
+          </div>
+           } >
+            <div className="card-title">{product.name}</div>
+            <div>{product.discription}</div>
+        </Card>
+      </Col>
 
       )
       })}
-
     </Row>
-
     </div>
   );
 }
