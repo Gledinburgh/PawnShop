@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { notification} from 'antd';
 import showPromiseConfirm from './ModalAdvert'
 
-const FooterAdvert = () => {
+const FooterAdvert = ({destroyAdverts}) => {
 
 var  [timer, setTimer] = useState(true);
 
