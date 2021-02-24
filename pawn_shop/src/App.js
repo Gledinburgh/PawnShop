@@ -12,8 +12,12 @@ import {useHistory} from 'react-router-dom';
 
 
 const { Header, Footer, Content} = Layout;
-const headstyle = {background: "#ff517d", 'font-family': 'Suez One', 'font-size': '200%', position: 'sticky'}
+const headstyle = {background: "#ff517d", 'font-family': 'Suez One', position: 'sticky'}
 const footstyle = {background: "#ffff62", 'font-family': 'Suez One', color: '#ff4775', 'font-size': '16px', 'text-align': 'center'}
+
+;
+
+
 function App() {
 
   var [shouldDestroyAdverts, setShouldDestroyAdverts] = useState(false);
@@ -27,29 +31,31 @@ function App() {
   const openNotification = () => {
     notification.open({
       duration: null,
-      onClick: showPromiseConfirm(history, destroyAdverts),
+      onClick:() => {showPromiseConfirm(history, destroyAdverts)} ,
       className:'ad',
       closeIcon: <button className="advert right"> X </button>,
       icon: <button className="advert left"> AD</button>,
     });
   };
 
-
+  document.body.style.backgroundColor = "#d5ff9de1"
 
   return (
     <>
-    <FooterAdvert destroyAdverts={destroyAdverts} />
-    <div className="wrapper" onClick={openNotification}>
-
-      <Header style={headstyle} >
-
-        <div>PAWN SHOP</div>
+      <Header style={headstyle}>
+        <div className="pawn-shop">PAWN SHOP</div>
       </Header>
-      <Content>
-        <ItemGrid/>
-      </Content>
-    </div>
-      <Footer style={footstyle}> Careers / About Us / Returns </Footer>
+        <div id="trapezoid" className="center"></div>
+        <div id="lobby" className="center"></div>
+      <FooterAdvert destroyAdverts={destroyAdverts} history={history} />
+      <div className="wrapper" onClick={openNotification}>
+        <Content>
+          <ItemGrid/>
+        </Content>
+      </div>
+      <div id="lobby2" className="center"></div>
+      <div id="trapezoid2"></div>
+        <Footer style={footstyle}> Careers / About Us / Returns </Footer>
       </>
   );
 }
