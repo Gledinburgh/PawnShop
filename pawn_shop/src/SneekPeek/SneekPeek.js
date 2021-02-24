@@ -7,7 +7,10 @@ const { Header, Footer, Content} = Layout;
 const headstyle = {background: "#ff517d", 'font-family': 'arial', 'font-size': '200%', position: 'sticky'}
 const footstyle = {background: "#ffff62", 'font-family': 'mono', color: '#ff4775', 'font-size': '14px', 'text-align': 'center'};
 
+document.body.style.backgroundColor = "#ff7eba";
+
 const SneekPeek = () => {
+  document.body.style.backgroundColor = "#ff7eba"
   return (
   <div id="wrapper">
     <div id="title">
@@ -32,6 +35,11 @@ const SneekPeek = () => {
       <Col span={14}> <div className="discription">some words about the character</div> </Col>
       <Col span={10}><Image className="figure" alt="hamburgler character with evil smile" src="hambugler.png"></Image></Col>
     </Row>
+    <Row className="broker one">
+      <Col span={10}><Image className="figure" alt="pawn shop broker character with reading magazine" src="broker.png"></Image></Col>
+      <Col span={14} > <div className="discription">some words about the character</div> </Col>
+    </Row>
+
   </div>
   )
 }
