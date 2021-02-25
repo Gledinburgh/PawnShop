@@ -38,7 +38,7 @@ function App() {
     });
   };
 
-  document.body.style.backgroundColor = "#d5ff9de1"
+  document.body.style.backgroundColor = "#e5ffe3"
 
   return (
     <>
