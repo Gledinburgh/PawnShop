@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 
 .card-image {
-  margin-left: 5%;
+  background-color: #e5ffe3;
   margin-right: 5%;
   margin-top: 1.5%;
   object-fit: cover;
   width:100%;
-  height:17vh;
+  height: auto;
 }
 
 span {
@@ -173,7 +173,7 @@ body {
 }
 
 .ant-card.ant-card-bordered {
-
+  background-color: #d3ffd2 !important;
   overflow-y: hidden;
   margin-bottom: 0vh;
   z-index: 1;
