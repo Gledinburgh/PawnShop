@@ -18,20 +18,15 @@ span {
 
 .ad {
   z-index: 1;
-
-  background-image:url('Sell_Your_Soul.png')  !important;
+  background-position: center;
+  background-image:url('Sell_Your_Soul.gif')  !important;
   background-size:cover ;
   background-repeat: no-repeat;
-  max-height:110px !important;
-  height: 30px;
-}
+  min-height: 13vh;
 
+}
 .ad.bottom{
   z-index: 1;
-
-  width: 6000px;
-
-
 }
 .card-title{
   color: #1c6447;
