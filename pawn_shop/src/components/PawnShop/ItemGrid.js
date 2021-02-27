@@ -1,18 +1,20 @@
 import { Row, Col, Divider, div, Card} from 'antd';
 import './itemGrid.css';
 
-import newProducts from '../newProducts.js';
-import saleProducts from '../saleProducts.js'
+import newProducts from '../../data/newProducts.js';
+import saleProducts from '../../data/saleProducts.js'
 function ItemGrid () {
-  const style = { background: '#b4f8d8', padding: '8px 0', 'max-width': '%33', 'min-width': '30', 'min-height': '100%'};
-  const borderstyle= {'border-top': '#b4f8d8'}
+  const style = { background: '#b4f8d8', padding: '8px 0', 'maxWidth': '%33', 'minWidth': '30', 'minHeight': '100%'};
+  const borderstyle= {'borderTop': '#b4f8d8'}
+  let key = 0;
   return (
-    <div>
+    <div >
     <Divider style={borderstyle} orientation="left">New Arrivals</Divider>
     <Row className="scroll" gutter={4}>
       {newProducts.map((product) => {
+        key++;
         return (
-          <Col  className="item" span={10}>
+          <Col key={key} className="item" span={10}>
         <Card style={style} cover={
           <div className="container">
             <img className="card-image" alt="example" src={`/products/${product.file}` }/>
@@ -31,8 +33,9 @@ function ItemGrid () {
       <Divider style={borderstyle} orientation="left">On Sale</Divider>
       <Row className="scroll" gutter={4}>
       {saleProducts.map((product) => {
+        key++;
         return (
-          <Col span={10}>
+          <Col key={key} className="item" span={10}>
         <Card style={style} cover={
           <div className="container">
             <img className="card-image" alt="example" src={`/products/${product.file}` }/>
@@ -49,8 +52,9 @@ function ItemGrid () {
     <Divider style={borderstyle} orientation="left">Still Breathing >></Divider>
     <Row className="scroll" gutter={4}>
       {saleProducts.map((product) => {
-        return (
-          <Col span={10}>
+         key++;
+         return (
+           <Col key={key} className="item" span={10}>
         <Card style={style} cover={
           <div className="container">
             <img className="card-image" alt="example" src={`/products/${product.file}` }/>
@@ -67,8 +71,9 @@ function ItemGrid () {
     <Divider style={borderstyle} orientation="left">Tool</Divider>
       <Row className="scroll" gutter={4}>
       {saleProducts.map((product) => {
-        return (
-          <Col span={10}>
+         key++;
+         return (
+           <Col key={key} className="item" span={10}>
         <Card style={style} cover={
           <div className="container">
             <img className="card-image" alt="example" src={`/products/${product.file}` }/>

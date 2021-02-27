@@ -1,19 +1,16 @@
 import {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import { notification} from 'antd';
-import showPromiseConfirm from './ModalAdvert'
 
-const FooterAdvert = ({destroyAdverts, history}) => {
-console.log(history)
-var  [timer, setTimer] = useState(true);
+const FooterAdvert = ({history, handleAdvertClick, advertType}) => {
+const  [timer, setTimer] = useState(true);
 
   const openFooterNotification = () => {
-
     if (timer) {
       const placement = 'bottomLeft';
 
       notification.open({
-        onClick: () => {showPromiseConfirm(history, destroyAdverts)},
+        onClick: () => {handleAdvertClick(true)},
         bottom: -10,
         left: -20,
         duration: null,
