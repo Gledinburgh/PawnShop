@@ -1,18 +1,31 @@
 import './sneekPeek.css'
 import ReactDOM from 'react-dom';
-import {React, useState, useEffect} from 'react'
-import {Layout, Image,  Row, Col, Divider, div, Card,} from 'antd';
+import {React, useState, useEffect, useContext} from 'react';
+import PageNameContext from '../PageNameContext';
+
+import {Layout, Image,  Row, Col, notification, div, Card,} from 'antd';
 
 const { Header, Footer, Content} = Layout;
-const headstyle = {background: "#ff517d", 'font-family': 'arial', 'font-size': '200%', position: 'sticky'}
-const footstyle = {background: "#ffff62", 'font-family': 'mono', color: '#ff4775', 'font-size': '14px', 'text-align': 'center'};
+
+
 
 document.body.style.backgroundColor = "#ff7eba";
 
-const SneekPeek = () => {
-  document.body.style.backgroundColor = "#ff7eba"
+
+  const SneekPeek = () => {
+  const { pageName, handlePageNameChange} = useContext(PageNameContext)
+
+  document.body.style.backgroundColor = "#ff7eba";
+
+  useEffect(() => {
+    console.log('useEffect: SneekPeek')
+
+    notification.destroy();
+    handlePageNameChange('SneekPeek');
+  },[])
+
   return (
-  <div id="wrapper">
+    <div id="wrapper">
     <div id="title">
       <Image id="holy-relapse" src="Holy_Relapse.png" alt="Holy Relapse Title" />
     </div>
