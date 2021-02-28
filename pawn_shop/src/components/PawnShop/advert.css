@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
   min-height: 14vh;
   min-width: 39vh;
-  background-color: rgb(121, 255, 121)
+  background-color: rgb(121, 255, 121);
+  margin-top: 1vh;
 
 }
 
@@ -23,14 +24,3 @@
 
  }
 
- .close {
-
- }
-
- .ant-notification-notice-closable {
-   position: relative;
-   margin: 0;
-   padding: 0;
-   padding-top: 1%;
-   overflow: visible;
- }
