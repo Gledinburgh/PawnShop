@@ -1,7 +1,25 @@
-.gutter-box {
-  padding: 8px 0;
-  background: #00a0e9;
+
+.scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  width: 100%;
+  overflow-y: hidden;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll !important;
 }
-[data-theme="dark"] .gutter-box {
-  background: #028ac8;
+
+::-webkit-scrollbar {
+  max-height: 1vh;
+  width: 1vh;
 }
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background:#ff517d !important;
+  border-radius: 10%;
+}
+
+::-webkit-scrollbar-button {
+  display: visible;
+}
+
