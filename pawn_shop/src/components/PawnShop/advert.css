@@ -1,0 +1,36 @@
+.ad {
+   background-position: center;
+  background-image:url('../../media/Sell_Your_Soul.gif')  !important;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  min-height: 14vh;
+  min-width: 39vh;
+  background-color: rgb(121, 255, 121)
+
+}
+
+.advert {
+  height: 5vh;
+  width: 130%;
+  vertical-align: center;
+  text-align: center;
+  font-size: 3vh;
+  outline: 0;
+  border: none !important;
+  background: #c2939f78;
+  color: #c0ffbe7a;
+  top: 0%;
+
+ }
+
+ .close {
+
+ }
+
+ .ant-notification-notice-closable {
+   position: relative;
+   margin: 0;
+   padding: 0;
+   padding-top: 1%;
+   overflow: visible;
+ }
