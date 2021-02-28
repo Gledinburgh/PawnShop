@@ -8,9 +8,9 @@ const openAdvert = (placement, handleAdvertClick) => {
   left: -20,
   duration: null,
   width: 600,
-  className:'ad bottom',
-  closeIcon: <button className="advert right"> X </button>,
-  icon: <button className="advert left"> AD</button>,
+  className:'ad',
+  closeIcon: <button className="advert close"> X </button>,
+  icon: <button className="advert"> AD</button>,
   placement
   });
 

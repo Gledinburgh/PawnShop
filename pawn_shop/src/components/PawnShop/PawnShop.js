@@ -1,4 +1,7 @@
 import './PawnShop.css';
+import './advert.css';
+import './items.css';
+import './itemGrid.css';
 
 import ReactDOM from 'react-dom';
 import {React, useState, useEffect, useContext} from 'react';
@@ -17,7 +20,7 @@ import pageAnimation from '../../pageAnimation';
 
 const { Header, Footer, Content} = Layout;
 const headstyle = {background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky'}
-const footstyle = {background: "#ffff62", 'fontFamily': 'Suez One', color: '#ff4775', 'fontSize': '16px', 'textAlign': 'center'}
+const footstyle = {background: "#ffff62", 'fontFamily': 'Suez One', color: '#ff4775', 'textAlign': 'center'}
 
 ;
 
@@ -53,9 +56,7 @@ function PawnShop() {
 
   return (
     <>
-      <Header style={headstyle}>
-        <div className="pawn-shop">PAWN SHOP</div>
-      </Header>
+      <Header className="pawn-shop" style={headstyle}>PAWN SHOP</Header>
         <div id="trapezoid" className="center"></div>
         <div id="lobby" className="center"></div>
       <FooterAdvert history={history} handleFooterClick={handleModalVisibility} />

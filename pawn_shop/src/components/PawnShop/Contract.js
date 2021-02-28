@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import {useHistory} from 'react-router-dom';
-import { Modal, Button, notification} from 'antd';
+import { Modal, Image, notification, Checkbox} from 'antd';
 import pageAnimation from '../../pageAnimation';
 import PageNameContext from '../../PageNameContext';
 
@@ -32,10 +32,21 @@ const Contract = ({isVisible, handleModalVisibility, shouldDestroyAdverts}) => {
 
   return (
     <>
-      <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+      <Modal
+        className="contract"
+        title={<div className="center">** Exclusive offer **</div>}
+        visible={isModalVisible}
+        onOk={handleOk}
+         onCancel={handleCancel}
+         closable={false}>
+
+        <div>
+          <p>Get a sneek peek at Mauro de la Tierra's</p>
+          <img className="holy" src="Holy_Relapse.png" alt="The Holy Relapse Title"></img>
+          <div id="terms"> <p className="opening"><b>Terms Of Service</b></p> {terms}</div>
+          <p>You must read and agree to the above Terms</p>
+          <Checkbox className="checkbox">I agree to the terms above</Checkbox>
+        </div>
       </Modal>
     </>
   );

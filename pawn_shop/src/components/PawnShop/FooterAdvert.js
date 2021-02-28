@@ -16,8 +16,8 @@ const  [timer, setTimer] = useState(true);
         duration: null,
         width: 600,
         className:'ad bottom',
-        closeIcon: <button className="advert right"> X </button>,
-        icon: <button className="advert left"> AD</button>,
+        // closeIcon: <button className="advert right"> X </button>,
+        // icon: <button className="advert left"> AD</button>,
         placement
       });
       setTimer(true);
