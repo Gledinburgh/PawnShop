@@ -11,8 +11,9 @@ import ItemGrid from './ItemGrid';
 import FooterAdvert from './Advert';
 import PageOver from '../PageOver';
 import Contract from './Contract';
-import openAdvert from './openAdvert'
 
+import openAdvert from './openAdvert';
+import pageAnimation from '../../pageAnimation';
 
 const { Header, Footer, Content} = Layout;
 const headstyle = {background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky'}
@@ -25,12 +26,11 @@ function PawnShop() {
 
 
   const history = useHistory();
-  const { pageName, handlePageNameChange} = useContext(PageNameContext)
+  const { pageName, handlePageNameChange} = useContext(PageNameContext);
 
-  const [shouldPageOver, setShouldPageOver] = useState(false);
+  const [shouldPageOver, setShouldPageOver] = useState(true);
   const [pageOverType, setPageOverType] = useState('remove');
   const [shouldShowContract, setShouldShowContract] = useState(false);
-  const [shouldDestroyAdverts, setShouldDestroyAdverts] = useState(false)
 
   const handleModalVisibility = (boolean) => {
     setShouldShowContract(boolean);
@@ -38,13 +38,12 @@ function PawnShop() {
 
 
    const handlePageChange = () => {
-    if (pageOverType === 'remove')  setPageOverType('add')
-    if (pageOverType === 'add')  setPageOverType('remove')
+    if (pageOverType === 'remove') setPageOverType('add');
+    if (pageOverType === 'add')  setPageOverType('remove');
     setShouldPageOver(!shouldPageOver)
   }
 
   useEffect(() => {
-    console.log('useEffect: PawnShop')
     handlePageChange()
     handlePageNameChange('PawnShop');
   },[])
@@ -62,8 +61,10 @@ function PawnShop() {
       <FooterAdvert history={history} handleFooterClick={handleModalVisibility} />
       <div className="wrapper" onClick={()=> openAdvert('topLeft',handleModalVisibility)}>
         <Content>
-          <Contract isVisible={shouldShowContract }handleModalVisibility={handleModalVisibility} shouldDestroyAdverts={shouldDestroyAdverts}/>
-          {/* <PageOver className="missing" pageOverType={pageOverType} shouldPageOver={shouldPageOver} handlePageChange={handlePageChange}/> */}
+          <Contract isVisible={shouldShowContract }handleModalVisibility={handleModalVisibility} />
+
+          <PageOver className="missing" pageOverType={pageOverType} shouldPageOver={shouldPageOver} handlePageChange={handlePageChange}/>
+
           <ItemGrid/>
         </Content>
       </div>

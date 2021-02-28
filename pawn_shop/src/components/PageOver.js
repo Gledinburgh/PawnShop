@@ -1,26 +1,28 @@
-import {useEffect, useState} from 'react';
-import removePages from '../removePages'
-import addPages from '../addPages'
+import {useEffect, useState, useContext} from 'react';
+import pageAnimation from '../pageAnimation';
+import addPages from '../addPages';
+import PageNameContext from '../PageNameContext';
 
 
 const PageOver = ({pageOverType, shouldPageOver, handlePageChange}) => {
+
+  const { pageName, handlePageNameChange} = useContext(PageNameContext);
 
 
   const getRandomInt = (min, max)  => {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
   }
-  const postions = Array.from({length: 40}, () => getRandomInt(8, 12));
+  const positions = Array.from({length: 40}, () => getRandomInt(8, 12));
 
   useEffect(() =>{
+    if (shouldPageOver)  pageAnimation(pageOverType, shouldPageOver);
 
-    handlePageChange()
-    console.log('Page over fired')
-  },[]);
+  },[shouldPageOver]);
 
   return (
     <>
     {
-    postions.map(position => {
+    positions.map(position => {
       return (
         <img
         className="missing"

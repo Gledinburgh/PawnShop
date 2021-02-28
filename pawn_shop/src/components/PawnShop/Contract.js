@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {useHistory} from 'react-router-dom';
 import { Modal, Button, notification} from 'antd';
+import pageAnimation from '../../pageAnimation';
+import PageNameContext from '../../PageNameContext';
 
 const Contract = ({isVisible, handleModalVisibility, shouldDestroyAdverts}) => {
 
   const history = useHistory()
+  const { pageName, handlePageNameChange} = useContext(PageNameContext);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const showModal = () => {
-    // setIsModalVisible(true);
-  };
-
-  const handleOk = () => {
+  async function handleOk() {
     setIsModalVisible(false);
+
+    await pageAnimation('add');
+
     history.push('/holyrelapse');
     Modal.destroyAll();
     notification.destroy();
