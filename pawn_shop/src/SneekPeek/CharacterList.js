@@ -8,16 +8,16 @@ const CharacterList = () => {
     characterInfo.map(character => {
       if (character.Row === "one") {
         return(
-          <Row className="one" id={character.id}>
-            <Col span={14}> <div className="discription">{character.Discription}</div> </Col>
-            <Col span={10}><Image className="figure" alt={character.Alt} src={character.File}></Image></Col>
+          <Row className="one" >
+            <Col span={14} className="character-content"> <div className="center name">{character.Name}</div><div className=" discription">{character.Discription}</div> </Col>
+            <Col  span={10}><Image preview={false} className={`figure ${character.Id}`} alt={character.Alt} src={character.File}></Image></Col>
           </Row>
         )
       } else {
         return(
-          <Row className="two" id={character.id}>
-            <Col span={10}><Image className="figure" alt={character.Alt} src={character.File}></Image></Col>
-            <Col span={14}> <div className="discription">{character.Discription}</div> </Col>
+          <Row className="two" >
+            <Col span={10}><Image preview={false} className={`figure ${character.Id}`} alt={character.Alt} src={character.File}></Image></Col>
+            <Col span={14} className="character-content"> <div className="center name">{character.Name}</div><div className=" discription">{character.Discription}</div> </Col>
           </Row>
         )
 
