@@ -38,7 +38,7 @@ const characterInfo = [
     Row: 'one',
     File: 'Crime_Wave.png',
     Alt: 'Crime Wave character holding bag of drugs',
-    Id: 'crime-wave'
+    Id: 'Crime-Wave'
   },
 
 ]
