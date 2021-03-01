@@ -1,9 +1,9 @@
-import {React, useState, useEffect, useContext} from 'react';
+import {React, useEffect, useContext} from 'react';
 import PageNameContext from '../PageNameContext';
 import './sneekPeek.css'
 import CharacterList from './CharacterList';
-import {Image, Layout, Input, notification,} from 'antd';
-const { Header, Footer, Content} = Layout;
+import {Image, Layout, notification,} from 'antd';
+const { Footer} = Layout;
 
 
 document.body.style.backgroundColor = "#ff7eba";
