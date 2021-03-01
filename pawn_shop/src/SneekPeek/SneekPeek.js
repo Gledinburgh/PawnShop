@@ -20,7 +20,7 @@ document.body.style.backgroundColor = "#ff7eba";
   return(
     <>
       <div id="wrapper">
-        <div id="title"><Image id="holy-relapse" src="Holy_Relapse.png" alt="Holy Relapse Title" /></div>
+        <div id="title"><Image preview={false} id="holy-relapse" src="Holy_Relapse.png" alt="Holy Relapse Title" /></div>
         <div className="intro">some words about the comic</div>
         <CharacterList />
         <Footer> </Footer>

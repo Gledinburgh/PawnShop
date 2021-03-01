@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import PawnShop from './components/PawnShop/PawnShop';
 import SneekPeek from './SneekPeek/SneekPeek';
 import PageNameContext from './PageNameContext';
+import ScrollToTop from './ScrollToTop';
 
 import {useState} from 'react';
 
@@ -17,10 +18,13 @@ const AppRouter = () => {
       value={{pageName, handlePageNameChange}}
     >
     <Router>
+      <>
+      <ScrollToTop />
       <Switch>
         <Route path="/HolyRelapse"><SneekPeek/></Route>
         <Route path="/PawnShop"><PawnShop/></Route>
       </Switch>
+      </>
     </Router>
     </PageNameContext.Provider>
   )
