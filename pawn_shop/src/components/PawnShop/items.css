@@ -1,5 +1,6 @@
 .ant-card-body {
-  min-height: 20vh;
+  max-height: 30vw;
+  min-height: 20vw;
   padding: 2vw;
   font-size: 1.5vh;
 }
@@ -16,7 +17,7 @@
    overflow-y: hidden;
    overflow-x: hidden;
    margin-right: 3vw;
-  width: 15vh;
+  width: 30vw;
   margin-right: 10%;
  }
 
@@ -47,9 +48,9 @@
 
 .card-image {
   background-color: #e5ffe3;
-  max-height: 15vh;
+  max-height: 30vw;
   /* min-height: 10vw; */
-  height: 15vh;
+  height: 30vw;
   width: 100%;
   text-align: center;
 }
@@ -61,7 +62,7 @@
   /* min-height: 20vw; */
   /* max-height: 20vw; */
   width: 100%;
-  height: 15vh;
+  height: 30vw;
   margin-right: 0 !important;
 }
 
@@ -69,13 +70,13 @@
 .item {
   margin-right: 1vw;
   max-width: 30vw !important;
-  min-width: 20vw;
+  min-width: 30vw;
   min-height: 30vh;
   flex-shrink: 0;
 }
 
 .ant-card-cover {
-  height: 15vh;
-  width: 15vh;
+  height: 30vw;
+  width: 30vw;
 }
 
