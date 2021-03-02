@@ -89,3 +89,13 @@
   min-height: 15vh;
   min-width: 16vh;
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+tbody {
+  font-size: 2vw;
+}
