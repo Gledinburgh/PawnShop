@@ -1,46 +1,43 @@
 var products = [
   {
-    file:'product_BMO.png',
-    name: 'BMO',
-    discription: 'Great Personality',
-    price: '300'
+    File: 'product_BMO.png',
+    Name: 'BM0 B-BOY',
+    Description: 'real life break dancing game boy!',
+    Price: '3338.2',
+  },
+
+{
+  File: 'product_LADY.png',
+  Name: 'monalisa',
+  Description: 'signed by mona lisa',
+  Price: '842.00',
 },
 {
-  file:'product_LADY.png',
-  name:'Mona Lisa',
-  discription:'Signed by Mona Lisa',
-  price: '200,000,000,000'
+  File: 'product_Cyborg_03.png',
+  Name: 'cyborg skull',
+  Description: 'teeth are in good condition',
+  Price: '2919.97',
+},
+
+{
+  File: 'A-Maneki-Neko.jpg',
+  Name: 'goodluck cat',
+  Description: 'Side effects include midnight Catnip cravings ',
+  Price: 'Words',
 },
 {
-  file:'product_NUK.png',
-  name:'Live Nuke',
-  discription:'cerca 1940\'s',
-  price: '300'
+  File: 'synth.jpg',
+  Name: 'casiotone for the miserable alone',
+  Description: 'perfect for people with broken hearts or old guys with big mustaches',
+  Price: '149.47',
 },
 {
-  file:'product_STRO_087.png',
-  name:'Older Persons Stereo',
-  discription:'Has casset player',
-  price: '300'
+  File: 'product_guitar.png',
+  Name: 'Robert Johnston',
+  Description: 'Words',
+  Price: 'Words',
 },
-{
-  file:'product_UGLY.png',
-  name:'Necronomicon',
-  discription:'Genuine Leather',
-  price: '300'
-},
-{
-  file:'product_Cyborg_03.png',
-  name:'Cyborg head',
-  discription:'Teeth are in excelent condition',
-  price: '300'
-},
-{
-  file:'product_guitar.png',
-  name:'Gretch Resonator',
-  discription:'Previously owned by ...',
-  price: '300'
-},
+
  ];
 
 
