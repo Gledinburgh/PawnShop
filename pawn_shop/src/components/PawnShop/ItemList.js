@@ -7,15 +7,15 @@ const ItemList = ({productInfo}) => {
     <Row className="scroll" gutter={4}>
     {productInfo.map((product) => {
       return (
-        <div key={product.name} className="item" >
+        <div key={product.Name} className="item" >
       <Card cover={
         <div className="container">
-          <img className="card-image" alt="example" src={`/products/${product.file}` }/>
-          <div className="price">${product.price}</div>
+          <img className="card-image" alt={product.Alt} src={`/products/${product.File}` }/>
+          <div className="price">${product.Price}</div>
         </div>
          } >
-          <div className="card-title">{product.name}</div>
-          <div>{product.discription}</div>
+          <div className="card-title">{product.Name}</div>
+          <div>{product.Description}</div>
       </Card>
     </div>
 
