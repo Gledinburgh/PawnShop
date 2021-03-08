@@ -3,8 +3,8 @@ import {Table , Input} from 'antd';
 import {useEffect, useState} from 'react';
 
 const columns = [
-  {title: null, dataIndex:'date', key: 'date', render: date => <Moment format="YYYY/MM/DD">{date}</Moment> , width: '15vw'},
-  {title: null, dataIndex: 'name', key: null,  width: '20vw', render: name => <div style={{'text-align': 'center'}}><b>{name}</b></div>},
+  {title: 'ENTRY DATE', dataIndex:'date', key: 'date', render: date => <Moment style ={{ color : '#fa7193'}}format="YYYY/MM/DD">{date}</Moment> , width: '15vw'},
+  {title: 'ASSUMED NAME', dataIndex: 'name', key: 'guest-name',  width: '20vw', render: name => <div className="guest-name" style={{'text-align': 'center'}}><b>{name}</b></div>},
 ]
 
 const GuestBook = ({guestEntries}) => {
