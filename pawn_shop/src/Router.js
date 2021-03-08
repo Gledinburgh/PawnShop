@@ -25,6 +25,7 @@ const AppRouter = () => {
         <Route path="/Souls"><Souls/></Route>
         <Route path="/HolyRelapse"><SneekPeek/></Route>
         <Route path="/PawnShop"><PawnShop/></Route>
+        <Route path="/"><PawnShop /></Route>
       </Switch>
       </>
     </Router>
