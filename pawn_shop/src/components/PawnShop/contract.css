@@ -5,21 +5,7 @@
 
 }
 
-tbody {
-  font-size: 1.5vh;
-}
 
-.ant-table-wrapper{
-
-  font-size: inherit;
-  /* min-height: 40vh; */
-}
-
-.ant-table-cell {
-  background-color: #edffec;
-  text-align:center !important;
-  background: inherit;
-}
 .terms {
   margin: 0 5% 0 5%;
   background-color: #f5fff5;
@@ -44,11 +30,6 @@ tbody {
 
 }
 
-.ant-table-thead > tr > th {
-  background: #c9fcc6;
-  text-align:center !important;
-  padding: 0 0 0 0 !important;
-  }
   .contract {
     margin-bottom: 0px;
   }

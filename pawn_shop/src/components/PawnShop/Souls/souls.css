@@ -1,6 +1,45 @@
 .levy {
-  width: 30vw;
+  /* width: 20vw; */
 }
+
+.guest-name {
+  white-space: nowrap;
+  font-weight: bold;
+  width: 100%;
+}
+
+tbody {
+  font-size: 1.7vh;
+  font-family: "courier new",monospace;
+  font-weight: bold;
+}
+
+.ant-table-wrapper{
+  background: #fcffe3;
+  font-size: inherit;
+  border: .1vh solid #fa7193;
+  padding: .5vh;
+  /* min-height: 40vh; */
+}
+
+.ant-table-cell {
+  white-space: nowrap;
+  background: #fffec2 !important;
+  text-align:center !important;
+  background: inherit;
+  border-top: #fa7193 .1vh solid ;
+}
+.ant-table-thead > tr > th {
+  font-size: min(2.7vw, 2.2vh);
+
+  margin: auto;
+  font-family: "suze one";
+  color: #fffec2;
+  background: #fa7193 !important;
+  text-align:center !important;
+  padding: 1.5vh!important;
+  font-weight: 1000;
+  }
 
 #cushion {
   min-height: 15vh !important;
@@ -13,3 +52,6 @@
   overflow-y: scroll;
 }
 
+.guest-book.center {
+  margin: auto;
+}
