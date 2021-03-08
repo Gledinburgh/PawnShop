@@ -10,7 +10,7 @@ import antiqueProducts from '../../data/antiqueProducts.js'
 function ItemGrid () {
   const borderstyle= {'borderTop': '#b4f8d8'}
   return (
-    <div >
+    <div className="item-list">
       <Divider style={borderstyle} orientation="left">New Arrivals</Divider>
         <ItemList productInfo={newProducts} />
       <Divider style={borderstyle} orientation="left">Featured</Divider>

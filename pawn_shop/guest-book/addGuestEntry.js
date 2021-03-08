@@ -1,13 +1,14 @@
 const fs = require('fs-extra');
 
-const addGuestEntry =  async (req, res, next)  => {
+const addGuestEntry =  async (newGuestEntry)  => {
+  console.log('add guest entries fired')
+  const json = JSON.stringify(newGuestEntry, null, 2)
+  console.log('entry:', json)
 
-  const json = JSON.stringify( req.body, null, 2)
-
-  const logStream = fs.createWriteStream('guestEntries.JSON', {flags: 'a'});
+  const logStream = fs.createWriteStream(__dirname +'/guestEntries.JSON', {flags: 'a'});
 
   try {
-    await logStream.write(json + ',')
+    await logStream.write(',' + json);
     console.log('wrote to guestEntries');
   } catch (error) {
     console.error(error)

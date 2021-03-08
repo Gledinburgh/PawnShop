@@ -1,6 +1,6 @@
 const products = [
   {
-    File: 'Chachapoyan.jpg',
+    File: 'Chachapoyan.png',
     Name: 'Chachapoyan',
     Description: ' Real gold!! Would make a great wedding ring',
     Price: '7854.98 ',

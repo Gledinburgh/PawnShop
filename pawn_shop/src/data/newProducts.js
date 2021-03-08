@@ -25,19 +25,19 @@ var products = [
   Price: '407.90'
 },
 {
-  File: 'Holy_grail.jpeg',
+  File: 'Holy_grail.png',
   Name: 'the holy grail',
   Description: 'straight from malt liquor heaven',
   Price: '2222.67',
 },
 {
-  File: 'product_RED_Guitar.jpg',
+  File: 'product_RED_Guitar.png',
   Name: 'roxy',
   Description: 'REAL GUITAR BY LEGENDARY MUSICIAN THE WIZARD SIGNED IN BINK',
   price: '856.67',
 },
 {
-  File: 'Bullpup_870.jpeg',
+  File: 'Bullpup_870.png',
   Name: 'Watergun',
   Description: 'good for spraying netbangers',
   price: '567.89',
