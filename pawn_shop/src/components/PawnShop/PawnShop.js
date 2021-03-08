@@ -2,6 +2,7 @@ import './PawnShop.css';
 import './advert.css';
 import './items.css';
 import './itemGrid.css';
+import './contract.css'
 
 import ReactDOM from 'react-dom';
 import {React, useState, useEffect, useContext} from 'react';
@@ -38,8 +39,9 @@ function PawnShop() {
   const handleModalVisibility = (boolean) => {
     setShouldShowContract(boolean);
   }
-
-
+  const goToEndpoint = (endpoint) => {
+    history.push(endpoint);
+  }
    const handlePageChange = () => {
     if (pageOverType === 'remove') setPageOverType('add');
     if (pageOverType === 'add')  setPageOverType('remove');
@@ -49,6 +51,7 @@ function PawnShop() {
   useEffect(() => {
     handlePageChange()
     handlePageNameChange('PawnShop');
+    console.log('useEffect: PawnShop');
   },[])
 
   document.body.style.backgroundColor = "#e5ffe3"
@@ -71,7 +74,7 @@ function PawnShop() {
       </div>
       <div id="lobby2" className="center"></div>
       <div id="trapezoid2"></div>
-        <Footer style={footstyle}> Careers / About Us / Returns </Footer>
+        <Footer style={footstyle}> <span onClick={() => goToEndpoint('/souls')}>Souls</span>/ About Us / Returns </Footer>
       </>
   );
 }

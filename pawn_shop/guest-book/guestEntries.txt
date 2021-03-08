@@ -1,9 +1,0 @@
-{
-  "name": "guest1",
-  "comment": "hello there",
-  "date": "2021-03-01T22:35:44.050Z"
-},{
-  "name": "guest1",
-  "comment": "hello there",
-  "date": "2021-03-01T22:35:54.389Z"
-},

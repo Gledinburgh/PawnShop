@@ -1,7 +1,7 @@
 const products = [
 
   {
-    File: 'JFK_brain.jpg',
+    File: 'JFK_brain.png',
     Name: 'JFK brain',
     Description: 'Scrapped off the street from Dallas',
     price: '789.56',

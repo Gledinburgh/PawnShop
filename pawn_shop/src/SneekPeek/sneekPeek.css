@@ -32,13 +32,13 @@
   height: 55px;
 }
 .intro {
-  font-size: min(3vh, 100px);
+  font-size: min(2vh, 100px);
   height: 27vh;
   color: rgb(77, 77, 1);
   text-align: center;
   vertical-align: middle;
   padding: 5vw;
-  text-shadow: .5px .5px .5px mistyrose;
+  text-shadow: .5px .5px .5px rgb(214, 191, 188);
 }
 .ant-image {
  position:absolute;
@@ -91,16 +91,3 @@
   min-width: 16vh;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-tbody {
-  font-size: 2vw;
-}
-
-.ant-table-thead {
-  visibility: hidden;
-}

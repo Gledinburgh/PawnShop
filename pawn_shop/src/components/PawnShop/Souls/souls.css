@@ -1,0 +1,15 @@
+.levy {
+  width: 30vw;
+}
+
+#cushion {
+  min-height: 15vh !important;
+}
+
+.flex-col {
+  height: 100vh;
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: column;
+  overflow-y: scroll;
+}
+

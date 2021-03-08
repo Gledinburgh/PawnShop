@@ -1,12 +1,12 @@
 const products = [
   {
-    File: 'cerimonial_life.jpg',
+    File: 'cerimonial_knife.png',
     Name: 'cerimonial knife',
     Description: 'perfect for human sacrifices!',
     Price: '47.00',
   },
   {
-    File: 'CRT_TV.jpg',
+    File: 'CRT_TV.png',
     Name: 'CRT TV',
     Description: 'can channel the spirit worlD',
     Price: '5.00',
@@ -18,7 +18,7 @@ const products = [
     Price: 'Words',
   },
   {
-    File: 'red-phone.jpg',
+    File: 'red-phone.png',
     Name: 'Words',
     Description: 'Words',
     Price: 'Words',

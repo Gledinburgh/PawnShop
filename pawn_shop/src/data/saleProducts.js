@@ -20,13 +20,13 @@ var products = [
 },
 
 {
-  File: 'A-Maneki-Neko.jpg',
+  File: 'A-Maneki-Neko.png',
   Name: 'goodluck cat',
   Description: 'Side effects include midnight Catnip cravings ',
   Price: 'Words',
 },
 {
-  File: 'synth.jpg',
+  File: 'synth.png',
   Name: 'casiotone for the miserable alone',
   Description: 'perfect for people with broken hearts or old guys with big mustaches',
   Price: '149.47',
