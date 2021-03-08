@@ -46,9 +46,7 @@ const Souls = () => {
       <Divider style={{color: '#ff4775', borderTop : '#b4f8d8'}}>SOULS </Divider>
 
     <div style={{'overflowY' :"visible"}} className="flex-row">
-    <div className="levy"/>
       <GuestBook className="guest-book" guestEntries={parsedEntries}></GuestBook>
-    <div className="levy"/>
 
     </div>
       <Divider style={{color: '#ff4775', borderTop : '#b4f8d8'}}> </Divider>

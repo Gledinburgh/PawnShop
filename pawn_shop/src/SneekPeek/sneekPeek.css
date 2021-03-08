@@ -1,4 +1,5 @@
 #wrapper {
+  min-width: 40vh;
   max-width :100%;
   margin: 1%;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 196, 0, 0.678),rgb(255, 196, 0));
@@ -17,6 +18,10 @@
   min-height: 25vh;
   line-height: 0;
   max-height: 35vh;
+}
+
+.one  > .ant-col-14{
+  /* margin-left: 2vw; */
 }
 
 
@@ -72,7 +77,12 @@
   margin-left: 5%;
   line-height: 2vh;
   font-size: 1.5vh;
+  padding-bottom: max(3vh, 2vw);
 }
+/*
+.two > .description {
+  margin-left: 20vw;
+} */
 
 
 .name {
@@ -87,6 +97,8 @@
 }
 
 .figure {
+  max-height: min(35vh, 35vw);
+  width: auto;
   min-height: 15vh;
   min-width: 16vh;
 }
