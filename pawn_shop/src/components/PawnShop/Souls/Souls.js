@@ -22,7 +22,7 @@ const Souls = () => {
       axios.get('/guestbook').then(entries => {
         if (entries.data !== guestEntries) {
         setGuestEntries(entries.data)
-        setparsedEntries (JSON.parse(entries.data));
+        setparsedEntries (JSON.parse(entries.data).reverse());
         }
       });
     }
