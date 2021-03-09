@@ -3,22 +3,6 @@
 
 
 
-@media (min-width: 3000px) {
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-  .row {
-    margin-left: 20vw;
-    margin-right: 20vw;
-    border-left: .2vh solid grey;
-    border-right: .2vh solid grey;
-    padding-left: 1vh;
-    padding-right: 1vh;
-  }
-
-  #lobby, #lobby2 {
-    width: 82% !important
-  }
-
-}
 
 
 
@@ -163,3 +147,19 @@ p {
   height: 95vw;
 }
 
+@media screen and (min-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .row {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-left: .2vh solid grey;
+    border-right: .2vh solid grey;
+    padding-left: 1vh;
+    padding-right: 1vh;
+  }
+
+  #lobby, #lobby2 {
+    width: 82% !important
+  }
+
+}
