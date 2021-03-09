@@ -10,7 +10,7 @@ import {useHistory} from 'react-router-dom';
 
 import PageNameContext from '../../PageNameContext';
 
-import {Layout, notification, Image} from 'antd';
+import {Layout, notification, Row, Col} from 'antd';
 import ItemGrid from './ItemGrid';
 import FooterAdvert from './Advert';
 import PageOver from '../PageOver';
@@ -60,6 +60,8 @@ function PawnShop() {
   return (
     <>
       <Header className="pawn-shop" style={headstyle}>PAWN SHOP</Header>
+      <Row className="row">
+      <Col >
         <div id="trapezoid" className="center"></div>
         <div id="lobby" className="center"></div>
       <FooterAdvert history={history} handleFooterClick={handleModalVisibility} />
@@ -74,6 +76,9 @@ function PawnShop() {
       </div>
       <div id="lobby2" className="center"></div>
       <div id="trapezoid2"></div>
+      </Col>
+
+      </Row>
         <Footer style={footstyle}> <span onClick={() => goToEndpoint('/souls')}>Souls</span>/ About Us / Returns </Footer>
       </>
   );
