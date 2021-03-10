@@ -1,5 +1,5 @@
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   #wrapper {
     margin-left: 20vw !important;
@@ -9,21 +9,22 @@
     padding-left: 1vh;
     padding-right: 1vh;
   }
-
-
-  }
-
-
-
+}
+#holy-relapse {
+  width: max(100%, 350px);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  position: static;
+  box-shadow: 10px, 10px, 10px rgb(241, 24, 0);
+}
 #wrapper {
   min-width: 40vh;
   max-width :100%;
   margin: 1%;
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 196, 0, 0.678),rgb(255, 196, 0));
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 196, 0, 0.26),rgba(255, 196, 0, 0.363));
   font-size: min(1.5vh, 100px);
-  color: #422541;
+  color: #422541ec;
 }
-
 .sneek {
   position: relative;
   padding: 0;
@@ -31,25 +32,6 @@
   top:10px;
 }
 
-.one , .two {
-  min-height: 25vh;
-  line-height: 0;
-  max-height: 35vh;
-}
-
-.one  > .ant-col-14{
-  /* margin-left: 2vw; */
-}
-
-
-
-.one {
-  background-color: rgb(231, 205, 231);
-}
-.two  {
-  background-color: rgb(170, 137, 170);
-  color: #221e1e;
-}
 .space{
   height: 55px;
 }
@@ -60,48 +42,36 @@
   text-align: center;
   vertical-align: middle;
   padding: 5vw;
-  text-shadow: .5px .5px .5px rgb(214, 191, 188);
+  margin-bottom: 15vh;
+  text-shadow: .1vh .1vh .1vh rgb(214, 191, 188);
+}
+.one {
+  background-color: rgb(231, 205, 231);
+}
+.two  {
+  background-color: rgb(170, 137, 170);
+  color: #221e1e;
 }
 .ant-image {
  position:absolute;
  bottom: 0;
+ z-index: 5;
 }
-.one >.ant-col-10 > .ant-image{
-  right: 0;
-}
-
-
 .ant-image-img {
   width: 100%;
   height:100%;
 }
-#holy-relapse {
-  width: max(100%, 350px);
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-
-  position: static;
-  box-shadow: 10px, 10px, 10px rgb(241, 24, 0);
+.one > .ant-image {
+  right: .5vh;
+}
+.two > .ant-image {
+  left: .5vh;
 }
 #title {
   padding-top: 3vh;
   vertical-align: middle;
   text-align: center;
 }
-
-
-.description {
-  margin-right: 5%;
-  margin-left: 5%;
-  line-height: 2vh;
-  font-size: 1.5vh;
-  padding-bottom: max(3vh, 2vw);
-}
-/*
-.two > .description {
-  margin-left: 20vw;
-} */
-
 
 .name {
   margin-top: 2vh;
@@ -110,14 +80,93 @@
 
 }
 
-.character-content {
-  line-height: 4vh;
-}
-
 .figure {
-  max-height: min(35vh, 35vw);
+  max-height: max(13em, 15vw);
+  bottom: 0;
   width: auto;
   min-height: 15vh;
   min-width: 16vh;
+}
+
+.two >.crop-half , .two > .figure{
+  left: 0;
+}
+.one >.crop-half, .one > .figure {
+  right: 0;
+}
+
+.circle {
+  position: relative;
+  top: 0vh;
+  z-index: 2;
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  -webkit-box-shadow: inset 1vh 1vh 1vh rgba(0, 0, 0, 0.596);
+-moz-box-shadow:inset 1vh 1vh 1vh #000;
+box-shadow: inset 1vh 1vh 1vh rgba(255, 150, 211, 0.459);
+}
+
+.crop-half {
+  position: absolute;
+  bottom: 0;
+  height:15vh;
+  overflow: hidden;
+  background: none;
+}
+
+
+
+
+.rectangle {
+
+   background: rgb(143, 157, 161);
+   width: 100%;
+   height: 5vh;
+   z-index: 1
+ }
+
+ .character-block {
+   flex-direction: row;
+   flex-wrap: nowrap;
+   position: relative;
+   z-index: 1;
+
+
+ }
+
+ .top-color {
+  background-color: rgb(168, 145, 168);
+  color: #422541ec;
+
+ }
+
+ .bottom-color {
+    padding: 5vw;
+    font-size: 1.5vh;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(231, 205, 231);
+    padding-bottom: 15vh;
+    border:.5vh solid rgb(173, 137, 173);
+    border-top: .5vh solid rgb(202, 171, 202);
+    border-right: none;
+    z-index: 100;
+  }
+
+
+  .two > .rectangle.top-color  {
+    padding-left: 20vh;
+  }
+  .one > .rectangle.top-color  {
+padding-right: 20vh;
+}
+  .rectangle.top-color  {
+    text-shadow: .1vh .1vh .1vh rgb(239, 241, 200);
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 5vh;
+  text-align:center;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 150, 211, 0.459), rgba(255, 150, 211, 0.459));
+
 }
 

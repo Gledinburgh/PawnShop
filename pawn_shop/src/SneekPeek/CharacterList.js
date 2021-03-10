@@ -8,17 +8,30 @@ const CharacterList = () => {
     characterInfo.map(character => {
       if (character.Row === "one") {
         return(
-          <Row className="one" >
-            <Col span={14} className="character-content"> <div className="center name">{character.Name}</div><div className=" description">{character.Description}</div> </Col>
-            <Col  span={10}><Image preview={false} className={`figure ${character.Id}`} alt={character.Alt} src={character.File}></Image></Col>
-          </Row>
+          <>
+
+          <Row className="character-block one">
+
+            <div className="crop-half"> <div className="circle top-color"></div></div>
+            <Image preview={false} className={`figure ${character.Id}`} alt={character.Alt} src={character.File}></Image>
+            <div className="rectangle top-color">{character.Name}</div>
+         </Row>
+
+
+            <div className=" bottom-color">{character.Description}</div>
+            </>
         )
       } else {
         return(
-          <Row className="two" >
-            <Col span={10}><Image preview={false} className={`figure ${character.Id}`} alt={character.Alt} src={character.File}></Image></Col>
-            <Col span={14} className="character-content"> <div className="center name">{character.Name}</div><div className=" description">{character.Description}</div> </Col>
-          </Row>
+         <>
+          <Row className="character-block two">
+            <div className="rectangle top-color">{character.Name}</div>
+            <div className="crop-half"><div className="circle top-color"></div></div>
+
+            <Image preview={false} className={`figure ${character.Id}`} alt={character.Alt} src={character.File}></Image>
+         </Row>
+            <div className=" bottom-color">{character.Description}</div>
+            </>
         )
 
       }
