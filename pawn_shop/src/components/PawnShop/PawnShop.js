@@ -32,7 +32,7 @@ function PawnShop() {
   const history = useHistory();
   const { pageName, handlePageNameChange} = useContext(PageNameContext);
 
-  const [shouldPageOver, setShouldPageOver] = useState(true);
+  const [shouldPageOver, setShouldPageOver] = useState(false);
   const [pageOverType, setPageOverType] = useState('remove');
   const [shouldShowContract, setShouldShowContract] = useState(false);
 
@@ -49,8 +49,8 @@ function PawnShop() {
   }
 
   useEffect(() => {
-    handlePageChange()
     handlePageNameChange('PawnShop');
+    console.log('PawnShop shouldPageOver:', shouldPageOver)
     console.log('useEffect: PawnShop');
   },[])
 

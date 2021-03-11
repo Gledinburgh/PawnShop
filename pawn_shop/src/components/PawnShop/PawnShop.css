@@ -136,9 +136,11 @@ p {
   position: fixed;
   margin-left: 25%;
   box-shadow: 2px 2px 5px #212220b0;
+  display: none;
 }
 
 #top-page {
+  display: none;
   left: 50%;
   transform-origin: center;
   box-shadow: 1vh 1vh 5vw 5px #212220a8;

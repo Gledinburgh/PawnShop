@@ -1,13 +1,8 @@
 import {useEffect, useState, useContext} from 'react';
 import pageAnimation from '../pageAnimation';
 import addPages from '../addPages';
-import PageNameContext from '../PageNameContext';
-
 
 const PageOver = ({pageOverType, shouldPageOver, handlePageChange}) => {
-
-  const { pageName, handlePageNameChange} = useContext(PageNameContext);
-
 
   const getRandomInt = (min, max)  => {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
