@@ -21,7 +21,7 @@ const PageOver = ({pageOverType, shouldPageOver, handlePageChange}) => {
       return (
         <img
         className="missing"
-        src="missing.png"
+        src={`missing${getRandomInt(1,3)}.png`}
         alt='missing jesus poster'
         style={{
           transform: `rotate(${position * getRandomInt(-50, 10)}deg)`,
@@ -31,7 +31,7 @@ const PageOver = ({pageOverType, shouldPageOver, handlePageChange}) => {
         ></img>
       )
     })}
-    <img  style={{transform :`rotate(${getRandomInt(-10, 10)}deg) translateX(-50%)` }} id="top-page" src="missing.png" alt='missing jesus poster'></img>
+    <img  style={{transform :`rotate(${getRandomInt(-10, 10)}deg) translateX(-50%)` }} id="top-page" src={`missing${getRandomInt(1,3)}.png`} alt='missing poster'></img>
     </>
 
   )

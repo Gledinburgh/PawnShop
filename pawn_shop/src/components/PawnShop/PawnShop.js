@@ -51,9 +51,7 @@ function PawnShop() {
 
   }
    const handleAdvertClosed = () => {
-     console.log('handleAdvertCLosed fired');
      setAdvertClosed(!advertClosed)
-     console.log('closeed?:',advertClosed)
    }
 
   const footerTimer =  () => {
@@ -61,7 +59,7 @@ function PawnShop() {
     const notToManyAdverts = advertCount < 6;
     if (advertTimer && notToManyAdverts) {
       setAdvertTimer(false);
-      openFooterAdvert(null, null, handleAdvertClosed)
+      openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed)
       setTimeout(() => {setAdvertTimer(true)}, 10000)
     }
   }
@@ -84,7 +82,7 @@ function PawnShop() {
       <Col >
         <div id="trapezoid" className="center"></div>
         <div id="lobby" className="center"></div>
-      <div className="wrapper" onClick={()=> openAdvert('topLeft',handleModalVisibility)}>
+      <div className="wrapper" onClick={()=> openAdvert('topLeft',handleModalVisibility, handleAdvertClosed)}>
         <Content>
           <Contract isVisible={shouldShowContract }handleModalVisibility={handleModalVisibility} />
 

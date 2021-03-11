@@ -1,6 +1,5 @@
 .ad {
    background-position: center;
-  background-image:url('../../media/Sell_Your_Soul.gif')  !important;
   background-size:contain ;
   background-repeat: no-repeat;
   width: 80vw;
@@ -9,13 +8,44 @@
   margin-top: 1vh;
 }
 
-.ad1 {
+.topLeft {
+  width: 65vw !important;
+  height: 23.5vw !important;
 
 }
 
+.ad1 {
+  background-image:url('../../media/Sell_Your_Soul1.gif')  !important;
+}
+
 .ad2 {
+  background-image:url('../../media/Sell_Your_Soul2.gif')  !important;
+}
+.ad3 {
+  background-image:url('../../media/Sell_Your_Soul3.gif')  !important;
 
+}
 
+.ant-notification-notice-icon , .ant-notification-notice-close{
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  margin: 0;
+  top: 0;
+  line-height: 0;
+  color: rgb(0, 255, 170);
+  font-family: "suze one";
+  font-size: 2vh;
+  font-weight: 1000;
+}
+.ant-notification-notice-icon {
+  left: 0;
+
+}
+.ant-notification-notice-close{
+  right: 0;
+  width: 3.5vh;
+  text-align: center;
 }
 
 .ant-notification-bottomLeft {
@@ -26,16 +56,11 @@
 }
 
 .advert {
-  height: 5vh;
-  width: 130%;
-  vertical-align: center;
-  text-align: center;
-  font-size: 3vh;
-  outline: 0;
-  border: none !important;
-  background: #c2939f78;
-  color: #c0ffbe7a;
-  top: 0%;
+ background-color: rgba(128, 128, 128, 0.541);
+ width: 100%;
+ height: 100%;
+ white-space: nowrap;
+ border: none;
 
  }
  @media screen and (min-width: 800px) {

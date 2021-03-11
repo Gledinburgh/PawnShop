@@ -36,7 +36,7 @@ const characterInfo = [
     Name:'Crime Wave',
     Description: 'An inhuman entity from Tartarus known to inhabit the darkest corners of impoverished communities and neighborhoods of the land. Seemingly immortal and timeless, it has been known by many names in the past, such as the “cucuy” and “la llorona”. If you are looking for trouble, Crime Wave will find you.',
     Row: 'one',
-    File: 'Crime_Wave.png',
+    File: 'Crime_Wave.webp',
     Alt: 'Crime Wave character holding bag of drugs',
     Id: 'Crime-Wave'
   },
