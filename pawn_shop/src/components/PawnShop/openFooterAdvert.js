@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { notification} from 'antd';
 
   const openFooterAdvert = (none, handleAdvertClick, handleAdvertClosed) => {
-  console.log('fun', handleAdvertClosed)
       const placement = 'bottomLeft';
 
       notification.open({
@@ -13,7 +12,7 @@ import { notification} from 'antd';
         left: -20,
         duration: null,
         width: 600,
-        className:'ad bottom',
+        className:'ad ad2',
         // closeIcon: <button className="advert right"> X </button>,
         // icon: <button className="advert left"> AD</button>,
         placement

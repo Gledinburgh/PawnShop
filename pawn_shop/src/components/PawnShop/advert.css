@@ -1,10 +1,10 @@
 .ad {
    background-position: center;
   background-image:url('../../media/Sell_Your_Soul.gif')  !important;
-  background-size:cover ;
+  background-size:contain ;
   background-repeat: no-repeat;
-  min-height: 14vh;
-  min-width: 39vh;
+  width: 80vw;
+  height: 29vw;
   background-color: rgb(121, 255, 121);
   margin-top: 1vh;
 }
@@ -14,6 +14,14 @@
 }
 
 .ad2 {
+
+
+}
+
+.ant-notification-bottomLeft {
+  position: fixed;
+  margin-left: 50%;
+  transform: translateX(-50%);
 
 }
 
@@ -30,4 +38,14 @@
   top: 0%;
 
  }
+ @media screen and (min-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+ .ad {
+  width: 55vw;
+  height: 20vw;
+ }
+}
+
+
+
 
