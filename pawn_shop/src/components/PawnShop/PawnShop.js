@@ -10,14 +10,14 @@ import {useHistory} from 'react-router-dom';
 
 import PageNameContext from '../../PageNameContext';
 
-import {Layout, notification, Row, Col} from 'antd';
+import {Layout, Row, Col} from 'antd';
 import ItemGrid from './ItemGrid';
-import FooterAdvert from './Advert';
 import PageOver from '../PageOver';
 import Contract from './Contract';
 
 import openAdvert from './openAdvert';
-import pageAnimation from '../../pageAnimation';
+import openFooterAdvert from './openFooterAdvert';
+
 
 const { Header, Footer, Content} = Layout;
 const headstyle = {background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky'}
@@ -35,6 +35,8 @@ function PawnShop() {
   const [shouldPageOver, setShouldPageOver] = useState(false);
   const [pageOverType, setPageOverType] = useState('remove');
   const [shouldShowContract, setShouldShowContract] = useState(false);
+  const [advertTimer, setAdvertTimer]= useState(true);
+  const [advertClosed, setAdvertClosed] = useState(true);
 
   const handleModalVisibility = (boolean) => {
     setShouldShowContract(boolean);
@@ -46,13 +48,31 @@ function PawnShop() {
     if (pageOverType === 'remove') setPageOverType('add');
     if (pageOverType === 'add')  setPageOverType('remove');
     setShouldPageOver(!shouldPageOver)
+
+  }
+   const handleAdvertClosed = () => {
+     console.log('handleAdvertCLosed fired');
+     setAdvertClosed(!advertClosed)
+     console.log('closeed?:',advertClosed)
+   }
+
+  const footerTimer =  () => {
+    const advertCount = document.getElementsByClassName('ant-notification-notice').length;
+    const notToManyAdverts = advertCount < 6;
+    if (advertTimer && notToManyAdverts) {
+      setAdvertTimer(false);
+      openFooterAdvert(null, null, handleAdvertClosed)
+      setTimeout(() => {setAdvertTimer(true)}, 10000)
+    }
   }
 
+
   useEffect(() => {
+    footerTimer();
     handlePageNameChange('PawnShop');
     console.log('PawnShop shouldPageOver:', shouldPageOver)
     console.log('useEffect: PawnShop');
-  },[])
+  },[advertTimer, advertClosed])
 
   document.body.style.backgroundColor = "#e5ffe3"
   handlePageNameChange('PawnShop');
@@ -64,7 +84,6 @@ function PawnShop() {
       <Col >
         <div id="trapezoid" className="center"></div>
         <div id="lobby" className="center"></div>
-      <FooterAdvert history={history} handleFooterClick={handleModalVisibility} />
       <div className="wrapper" onClick={()=> openAdvert('topLeft',handleModalVisibility)}>
         <Content>
           <Contract isVisible={shouldShowContract }handleModalVisibility={handleModalVisibility} />
