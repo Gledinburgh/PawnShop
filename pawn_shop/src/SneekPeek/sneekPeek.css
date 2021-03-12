@@ -33,12 +33,11 @@
 
   vertical-align: middle;
   text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+
 }
 
 #holy-relapse {
-  position: absolute;
+  position: static;
   left: 0;
   width: 100%;
 
@@ -63,13 +62,17 @@
   top:10px;
 }
 
+.arriving {
+  margin-bottom: 20vh;
+}
+
 .space{
   height: 55px;
 }
 .intro {
-  font-size: min(2vh, 100px);
-  height: 27vh;
-  color: rgb(77, 77, 1);
+  font-size: max(2vh, 2vw);
+  /* height: 50vh; */
+  color: rgb(4, 22, 4) !important;
   text-align: center;
   vertical-align: middle;
   padding: 5vw;
@@ -121,34 +124,33 @@
 
 .circle {
   animation: float 9s ease-in-out infinite;
-
   position: relative;
   top: 3vh;
   z-index: 2;
   border-radius:50% 50% 0% 50%;
-  width: 20vh;
-  height: 20vh;
+  width: max(20vh,20vw);
+  height: max(20vh,20vw);
   -webkit-box-shadow: inset 1vh 1vh 1vh rgba(0, 0, 0, 0.596);
 -moz-box-shadow:inset 1vh 1vh 1vh #000;
 box-shadow: inset 1vh 1vh 1vh rgba(255, 150, 211, 0.459);
 }
 
+.two > .circle.top-color {
+
+}
+
 .crop-half {
   position: absolute;
   bottom: 0;
-  height:15vh;
+  height:max(15vh, 15vw);
   overflow: hidden;
   background: none;
 }
 
-
-
-
 .rectangle {
-
    background: rgb(143, 157, 161);
    width: 100%;
-   height: 5vh;
+   height: max(5vh, 5vw);
    z-index: 1
  }
 
@@ -157,18 +159,14 @@ box-shadow: inset 1vh 1vh 1vh rgba(255, 150, 211, 0.459);
    flex-wrap: nowrap;
    position: relative;
    z-index: 1;
-
-
  }
 
  .top-color {
   background-color: rgb(168, 145, 168);
   color: #422541ec;
-
  }
 
  .bottom-color {
-
     padding: 4vw;
     font-size: max(1.5vh, 1.5vw);
     height: 100%;
@@ -184,16 +182,19 @@ box-shadow: inset 1vh 1vh 1vh rgba(255, 150, 211, 0.459);
 
   .two > .rectangle.top-color  {
     padding-left: 20vh;
+    background-image: linear-gradient(to right, rgba(255, 150, 211, 0.459), rgba(255, 150, 211, 0.459),  rgba(255,0,0,0));
   }
   .one > .rectangle.top-color  {
-padding-right: 20vh;
+    padding-right: 20vh;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 150, 211, 0.459), rgba(255, 150, 211, 0.459));
+
 }
   .rectangle.top-color  {
     text-shadow: .1vh .1vh .1vh rgb(239, 241, 200);
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    font-size: 3vh;
   text-align:center;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 150, 211, 0.459), rgba(255, 150, 211, 0.459));
+
 
 }
 

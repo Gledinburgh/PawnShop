@@ -59,8 +59,11 @@ function PawnShop() {
     const notToManyAdverts = advertCount < 6;
     if (advertTimer && notToManyAdverts) {
       setAdvertTimer(false);
-      openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed)
-      setTimeout(() => {setAdvertTimer(true)}, 10000)
+
+      setTimeout(() => {
+        setAdvertTimer(true);
+        openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
+      }, 10000)
     }
   }
 
