@@ -100,13 +100,16 @@
   left: .5vh;
 }
 
-
 .figure {
   max-height: max(13em, 15vw);
   bottom: 0;
   width: auto;
   min-height: 15vh;
   min-width: 16vh;
+}
+.Crime-Wave {
+  max-height: max(14em, 11vw);
+  min-height: max(18vh, 16vw);
 }
 
 .two >.crop-half , .two > .figure{

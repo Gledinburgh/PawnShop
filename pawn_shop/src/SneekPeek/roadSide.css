@@ -1,0 +1,63 @@
+#sidewalk-top {
+ position: relative;
+  height: max(5vw,5vh);
+  width: 100%;
+  background: rgb(211, 174, 208);
+}
+.cone {
+  position: absolute;
+  right: 10%;
+  height: max(10vh, 10vw);
+  bottom: 15%;
+
+}
+
+#speach {
+  position: absolute;
+  height: max(10vh, 8vw);
+  bottom: 0;
+  left: max(10vh, 10vw);
+}
+
+.news {
+  position: absolute;
+  right: 5%;
+  height: max(15vw, 20vh);
+  bottom: 50%;
+}
+
+#road-side {
+  line-height: 0;
+  height: 10vh;
+  width: 100%;
+}
+
+.concrete {
+  background: rgb(143, 131, 150);
+}
+
+#sidewalk-1 {
+  height: 1vh;
+  position: relative;
+}
+
+
+
+#sidewalk-2 {
+  position: relative;
+  height: max(3.2vw,3.2vh);
+  box-shadow: inset 0 -1vh 1.5vh -1vh #000000;
+border-bottom: .1vh solid rgba(0, 0, 0, 0.63);
+}
+#sewer {
+  z-index: 3;
+  left: 2vw;
+vertical-align: bottom;
+top: 0;
+  position: absolute;
+  height: max(5vw,5vh);
+}
+#asfault {
+  height: max(4vw,4vh);
+  background: rgba(44, 65, 49, 0.897);
+}

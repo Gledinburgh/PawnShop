@@ -4,6 +4,7 @@ import axios from 'axios';
 import PageNameContext from '../PageNameContext';
 import './sneekPeek.css'
 import CharacterList from './CharacterList';
+import RoadSide from './RoadSide'
 import {Image, Layout, notification,} from 'antd';
 const { Footer} = Layout;
 
@@ -37,12 +38,13 @@ document.body.style.backgroundColor = "#ff7eba";
           <p className="no-shaddow">Told through the eyes of Jesus Christ himself.</p>
           </div>
       <div id="wrapper">
-        <div id="title"><Image preview={false} id="holy-relapse" src="Holy_Relapse.png" alt="Holy Relapse Title" /></div>
+        <div id="title">< Image preview={false} id="holy-relapse" src="Holy_Relapse.png" alt="Holy Relapse Title" /></div>
         <div className="intro"> {`\nArriving summer 2021`}</div>
         <CharacterList />
-        <Footer> </Footer>
+        {/* <Footer> </Footer> */}
 
       </div>
+        <RoadSide/>
     </>
   )
 
