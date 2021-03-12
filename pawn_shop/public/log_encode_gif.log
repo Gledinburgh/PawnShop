@@ -1,0 +1,310 @@
+ffmpeg version 4.3.1-2020-11-19-essentials_build-www.gyan.dev Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 10.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Gledi/AppData/Local/Temp/KritaFFmpegProgress.tJQQeC'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '21'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave%04d.png'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument 'scale=w=532:h=548[0:v];[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/speach.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Gledi/AppData/Local/Temp/KritaFFmpegProgress.tJQQeC.
+[file @ 00000278c2ece540] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument scale=w=532:h=548[0:v];[0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 21.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave%04d.png.
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0000.png' for reading
+[file @ 00000278c2f13040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1b200] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0001.png' for reading
+[file @ 00000278c2f13100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f13280] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0002.png' for reading
+[file @ 00000278c2f13180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1a400] Statistics: 91762 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0003.png' for reading
+[file @ 00000278c2f13180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1a5c0] Statistics: 91762 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0004.png' for reading
+[file @ 00000278c2f13180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1a780] Statistics: 91962 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0005.png' for reading
+[file @ 00000278c2f13180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1a940] Statistics: 91962 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0006.png' for reading
+[file @ 00000278c2f13180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ab00] Statistics: 91262 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0007.png' for reading
+[file @ 00000278c2f13180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1acc0] Statistics: 91262 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0008.png' for reading
+[file @ 00000278c2f13180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f14cc0] Statistics: 91091 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0009.png' for reading
+[file @ 00000278c2f14cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f14dc0] Statistics: 91091 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0010.png' for reading
+[file @ 00000278c2f14cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f14dc0] Statistics: 90341 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0011.png' for reading
+[file @ 00000278c2f14d80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f14e80] Statistics: 90341 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0012.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 88003 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0013.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 88003 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0014.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 89138 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0015.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 89138 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0016.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 90000 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0017.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 90000 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0018.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 90709 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0019.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 90709 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0020.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 90678 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0021.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 90678 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0022.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0023.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f1ae80] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0024.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91762 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0025.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91762 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0026.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91962 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0027.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91962 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0028.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91262 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0029.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91262 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0030.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91091 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0031.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91091 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0032.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90341 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0033.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90341 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0034.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 88003 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0035.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 88003 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0036.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 87485 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0037.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 87485 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0038.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 89138 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0039.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 89138 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0040.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90000 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0041.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90000 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0042.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90709 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0043.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90709 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0044.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90678 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0045.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 90678 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0046.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0047.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0048.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0049.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0050.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0051.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0052.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0053.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0054.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0055.png' for reading
+[file @ 00000278c2f14e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c2f84ec0] Statistics: 91450 bytes read, 0 seeks
+[image2 @ 00000278c2f0e9c0] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave%04d.png':
+  Duration: 00:00:02.44, start: 0.000000, bitrate: N/A
+    Stream #0:0, 56, 1/25: Video: png, 1 reference frame, rgba(pc), 531x547 [SAR 3937:3937 DAR 531:547], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/palette.png.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/palette.png.
+[NULL @ 00000278c2f12300] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/palette.png' for reading
+[file @ 00000278c2f12a00] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 00000278c2f12300] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 00000278c2f12300] Before avformat_find_stream_info() pos: 0 bytes read:994 seeks:0 nb_streams:1
+[png_pipe @ 00000278c2f12300] After avformat_find_stream_info() pos: 994 bytes read:994 seeks:0 frames:1
+Input #1, png_pipe, from 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+[Parsed_scale_0 @ 00000278c2f19840] Setting 'w' to value '532'
+[Parsed_scale_0 @ 00000278c2f19840] Setting 'h' to value '548'
+[Parsed_scale_0 @ 00000278c2f19840] w:532 h:548 flags:'bilinear' interl:0
+Parsing a group of options: output url C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/speach.gif.
+Successfully parsed a group of options.
+Opening an output file: C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/speach.gif.
+[file @ 00000278c2f17840] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> scale
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000278c2f0e9c0] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 9 times
+[Parsed_scale_0 @ 00000278c39e4480] Setting 'w' to value '532'
+[Parsed_scale_0 @ 00000278c39e4480] Setting 'h' to value '548'
+[Parsed_scale_0 @ 00000278c39e4480] w:532 h:548 flags:'bilinear' interl:0
+[graph 0 input from stream 0:0 @ 00000278c2f83240] Setting 'video_size' to value '531x547'
+[graph 0 input from stream 0:0 @ 00000278c2f83240] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 00000278c2f83240] Setting 'time_base' to value '1/21'
+[graph 0 input from stream 0:0 @ 00000278c2f83240] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 00000278c2f83240] Setting 'frame_rate' to value '21/1'
+[graph 0 input from stream 0:0 @ 00000278c2f83240] w:531 h:547 pixfmt:rgba tb:1/21 fr:21/1 sar:3937/3937
+[graph 0 input from stream 1:0 @ 00000278c39eb380] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 00000278c39eb380] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 00000278c39eb380] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 00000278c39eb380] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 00000278c39eb380] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 00000278c39eb380] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 00000278c2f1aa80] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 00000278c3a34140] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_1 @ 00000278c2f83e00] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_1'
+[AVFilterGraph @ 00000278c2f33140] query_formats: 6 queried, 4 merged, 1 already done, 0 delayed
+[swscaler @ 00000278c3acbc80] Forcing full internal H chroma due to input having non subsampled chroma
+[Parsed_scale_0 @ 00000278c39e4480] w:531 h:547 fmt:rgba sar:3937/3937 -> w:532 h:548 fmt:bgra sar:72747/72751 flags:0x2
+[swscaler @ 00000278c3ad8c00] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 00000278c3a34140] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_1 @ 00000278c2f83e00] [framesync @ 00000278c3a49bc8] Selected 1/525 time base
+[Parsed_paletteuse_1 @ 00000278c2f83e00] [framesync @ 00000278c3a49bc8] Sync level 2
+Output #0, gif, to 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/speach.gif':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 532x548 [SAR 72747:72751 DAR 531:547], 0/1, q=2-31, 200 kb/s, 21 fps, 100 tbn, 21 tbc (default)
+    Metadata:
+      encoder         : Lavc58.91.100 gif
+Clipping frame in rate conversion by 0.000008
+[gif @ 00000278c2f16e80] 443x459 image at pos (21;58) [area:532x548]
+    Last message repeated 37 times
+frame=   39 fps=0.0 q=-0.0 size=    1024kB time=00:00:01.82 bitrate=4609.1kbits/s speed=3.62x    [image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0056.png' for reading
+[file @ 00000278c3a34240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c47ad380] Statistics: 91450 bytes read, 0 seeks
+[gif @ 00000278c2f16e80] 443x459 image at pos (21;58) [area:532x548]
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0057.png' for reading
+[file @ 00000278c3a33640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c47ad380] Statistics: 91450 bytes read, 0 seeks
+[gif @ 00000278c2f16e80] 443x459 image at pos (21;58) [area:532x548]
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0058.png' for reading
+[file @ 00000278c3a33140] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c47ad380] Statistics: 91450 bytes read, 0 seeks
+[gif @ 00000278c2f16e80] 443x459 image at pos (21;58) [area:532x548]
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0059.png' for reading
+[file @ 00000278c3a33340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c47ad380] Statistics: 91450 bytes read, 0 seeks
+[gif @ 00000278c2f16e80] 443x459 image at pos (21;58) [area:532x548]
+[image2 @ 00000278c2f0e9c0] Opening 'C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave0060.png' for reading
+[file @ 00000278c3a34740] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000278c47ad380] Statistics: 91450 bytes read, 0 seeks
+[gif @ 00000278c2f16e80] 443x459 image at pos (21;58) [area:532x548]
+    Last message repeated 17 times
+[Parsed_paletteuse_1 @ 00000278c2f83e00] [framesync @ 00000278c3a49bc8] Sync level 0
+[out_0_0 @ 00000278c2f1ac40] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=   61 fps=0.0 q=-0.0 Lsize=    1848kB time=00:00:02.87 bitrate=5275.3kbits/s speed=3.78x    
+[AVIOContext @ 00000278c2f0e700] Statistics: 0 seeks, 2 writeouts
+video:1848kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.001057%
+Input file #0 (C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/Crime_Wave%04d.png):
+  Input stream #0:0 (video): 61 packets read (5532304 bytes); 61 frames decoded; 
+  Total: 61 packets (5532304 bytes) demuxed
+Input file #1 (C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/palette.png):
+  Input stream #1:0 (video): 1 packets read (994 bytes); 1 frames decoded; 
+  Total: 1 packets (994 bytes) demuxed
+Output file #0 (C:/Users/Gledi/code/hr/PawnShop/pawn_shop/public/speach.gif):
+  Output stream #0:0 (video): 61 frames encoded; 61 packets muxed (1892480 bytes); 
+  Total: 61 packets (1892480 bytes) muxed
+62 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 00000278c2f17940] Statistics: 0 seeks, 8 writeouts
+[AVIOContext @ 00000278c2f84ec0] Statistics: 994 bytes read, 0 seeks
