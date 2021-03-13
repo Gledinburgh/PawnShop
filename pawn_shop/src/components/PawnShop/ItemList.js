@@ -1,4 +1,7 @@
-import { Row, Image, Card} from 'antd';
+import { Row, Card} from 'antd';
+import {useState} from 'react';
+import ProductImage from './ProductImage';
+import Item from './Item'
 
 const ItemList = ({productInfo}) => {
 
@@ -7,17 +10,7 @@ const ItemList = ({productInfo}) => {
     <Row className="scroll" gutter={4}>
     {productInfo.map((product) => {
       return (
-        <div key={product.Name} className="item" >
-      <Card cover={
-        <div className="container">
-          <img className="card-image" alt={product.Alt} src={`/products/${product.File}` }/>
-          <div className="price">${product.Price}</div>
-        </div>
-         } >
-          <div className="card-title">{product.Name}</div>
-          <div>{product.Description}</div>
-      </Card>
-    </div>
+      <Item product={product} />
 
     )
     })}
@@ -27,3 +20,4 @@ const ItemList = ({productInfo}) => {
 }
 
 export default ItemList;
+
