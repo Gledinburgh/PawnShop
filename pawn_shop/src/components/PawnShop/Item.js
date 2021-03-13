@@ -11,7 +11,6 @@ const Item = ({product}) => {
     if (flag === 0) {
       setExpandDescription(1);
     } else if (event.target.className === 'card-drop' || event.target.className === 'down') {
-
       setExpandDescription(0);
     }
   }

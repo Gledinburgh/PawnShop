@@ -2,15 +2,15 @@
    background-position: center;
   background-size:contain ;
   background-repeat: no-repeat;
-  width: 80vw;
+  width:  80vw;
   height: 29vw;
   background-color: rgb(121, 255, 121);
   margin-top: 1vh;
 }
 
 .topLeft {
-  width: 65vw !important;
-  height: 23.5vw !important;
+  width:min(65vh, 65vw) !important;
+  height: min(23.5vw, 23.5vh) !important;
 
 }
 

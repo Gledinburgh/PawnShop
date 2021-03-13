@@ -54,16 +54,28 @@ function PawnShop() {
      setAdvertClosed(!advertClosed)
    }
 
+  const advertLaunch = () => {
+    const advertCount = document.getElementsByClassName('ant-notification-notice').length;
+    const notToManyAdverts = advertCount < 3;
+    if (notToManyAdverts) {
+      setTimeout(()=> openAdvert('topLeft',handleModalVisibility, handleAdvertClosed),500)
+    }
+
+
+  }
+
   const footerTimer =  () => {
     const advertCount = document.getElementsByClassName('ant-notification-notice').length;
-    const notToManyAdverts = advertCount < 6;
+    const notToManyAdverts = advertCount < 3;
     if (advertTimer && notToManyAdverts) {
       setAdvertTimer(false);
 
       setTimeout(() => {
         setAdvertTimer(true);
-        // openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
+        openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
       }, 10000)
+    } else {
+    setTimeout(() => footerTimer(), 10000);
     }
   }
 
@@ -85,7 +97,7 @@ function PawnShop() {
       <Col >
         <div id="trapezoid" className="center"></div>
         <div id="lobby" className="center"></div>
-      <div className="wrapper" onClick={()=> openAdvert('topLeft',handleModalVisibility, handleAdvertClosed)}>
+      <div className="wrapper" onClick={() => advertLaunch()}>
         <Content>
           <Contract isVisible={shouldShowContract }handleModalVisibility={handleModalVisibility} />
 
