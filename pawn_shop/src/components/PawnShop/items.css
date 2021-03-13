@@ -1,8 +1,51 @@
 .ant-card-body {
-  min-height: min(622px ,45vw, 20vh);
-  padding: min(1.5vh,1vw);
   font-size: 1.5vh ;
+  padding: min(1vh, 1vw)
+
 }
+
+.ant-card-body {
+}
+
+.product-description {
+  height: 0;
+  visibility: hidden;
+  /* padding: min(1.5vh,1vw); */
+
+}
+
+
+.card-drop {
+  border: .2vw solid #e5ffe32a;
+  border-bottom: .2vw solid #afc2ae1f;
+  border-right: .2vw solid #a5bba41e;
+   color: #27694f;
+  background: rgba(161, 235, 201, 0.13);
+  position: relative;
+  height: 3vh;
+  width: 100%;
+
+  transition: .3s;
+}
+
+button.card-drop:focus {
+  outline:.1vh solid #59b691c0;
+  border:.1vh solid #1c6447c0;
+}
+button.card-drop:hover {
+  background-color: #1c644746 ;
+  color: #ff517dc7;
+  outline:.1vh solid #59b6918c;
+  border:.1vh solid #1c64474d;
+}
+.down {
+  max-height: 3vh;
+  width: 100%;
+  /* transform: scalex(3.5); */
+  /* color: #27694f; */
+
+}
+
 
 
 .ant-btn-primary, .ant-btn-default {
@@ -18,6 +61,11 @@
    margin-right: 3vw;
   /* width: 30vw; */
   margin-right: 10%;
+  transition: ease-in-out .3s;
+ }
+
+ .ant-card.ant-card-bordered:hover{
+  box-shadow:  #1c644760 .5vh .5vh 1vh;
  }
 
  .price {
@@ -41,21 +89,44 @@
   font-family: 'Suez One';
   font-size: 85% ;
   font-weight: 800;
-  top:1px;
+  text-align: center;
+  height: 2em;
+  margin-top: 1vh;
 
 }
 
 
+
+.card-image[wobble='1'] {
+  animation: wobble 1s 1;
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+
+}
+
 .card-image {
-  background-color: #e5ffe3;
   max-height: 30vw;
-  /* min-height: 10vw; */
-  /* height: 30vw; */
+  display: block;
+  margin: 0;
   width: 100%;
   text-align: center;
 }
 
 .container {
+  background-color: #e5ffe3;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -65,9 +136,21 @@
 
 
 .item {
-
+  position: relative;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
   max-width: min(700px, 30vw) !important;
   flex-shrink: 0;
+  /* transform: scale(1); */
+  transition: all .2s ease-in-out
 }
+
+.item:hover {
+  max-height: min(700px, 30vw) !important;
+  transform: scale(1.05);
+
+}
+
+
 
 

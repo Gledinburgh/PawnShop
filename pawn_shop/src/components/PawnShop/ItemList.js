@@ -1,7 +1,9 @@
-import { Row, Image, Card} from 'antd';
+import { Row, Card} from 'antd';
+import {useState} from 'react';
+import ProductImage from './ProductImage';
 
 const ItemList = ({productInfo}) => {
-
+  const [wobble, setwobble] = useState(0);
 
   return (
     <Row className="scroll" gutter={4}>
@@ -10,12 +12,15 @@ const ItemList = ({productInfo}) => {
         <div key={product.Name} className="item" >
       <Card cover={
         <div className="container">
-          <img className="card-image" alt={product.Alt} src={`/products/${product.File}` }/>
+          <ProductImage productInfo={product}/>
           <div className="price">${product.Price}</div>
         </div>
          } >
           <div className="card-title">{product.Name}</div>
-          <div>{product.Description}</div>
+          <div className="product-description">{product.Description}</div>
+      <button className="card-drop"><span className="down">▼</span>
+
+        </button>
       </Card>
     </div>
 

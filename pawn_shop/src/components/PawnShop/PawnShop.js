@@ -62,7 +62,7 @@ function PawnShop() {
 
       setTimeout(() => {
         setAdvertTimer(true);
-        openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
+        // openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
       }, 10000)
     }
   }
