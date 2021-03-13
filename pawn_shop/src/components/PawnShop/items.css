@@ -7,14 +7,6 @@
 .ant-card-body {
 }
 
-.product-description {
-  height: 0;
-  visibility: hidden;
-  /* padding: min(1.5vh,1vw); */
-
-}
-
-
 .card-drop {
   border: .2vw solid #e5ffe32a;
   border-bottom: .2vw solid #afc2ae1f;
@@ -38,15 +30,6 @@ button.card-drop:hover {
   outline:.1vh solid #59b6918c;
   border:.1vh solid #1c64474d;
 }
-.down {
-  max-height: 3vh;
-  width: 100%;
-  /* transform: scalex(3.5); */
-  /* color: #27694f; */
-
-}
-
-
 
 .ant-btn-primary, .ant-btn-default {
   background-color: #9ff09e !important;
@@ -115,6 +98,28 @@ button.card-drop:hover {
     transform: rotate(0deg);
   }
 
+}
+
+.product-description {
+  height: 0;
+  visibility: hidden;
+  /* padding: min(1.5vh,1vw); */
+
+}
+
+.product-description[expandDescription='1'] {
+  visibility: visible;
+  transition: all .2s ease-in-out;
+  height: 15vh;
+}
+.down {
+  max-height: 3vh;
+  width: 100%;
+  transform: .3s ease-in-out;
+}
+
+.down[expandDescription='1'] {
+  transform: rotate(180deg)
 }
 
 .card-image {
