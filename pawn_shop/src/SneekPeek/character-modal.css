@@ -1,0 +1,84 @@
+.close-modal {
+  color: palevioletred;
+  font-weight: bold;
+  font-size: 2vh;
+  position: absolute;
+  height: 5vh;
+  text-align: center;
+  top: o;
+  right: 0;
+  width: 5vh;
+  z-index: 100;
+}
+
+.char-row-1 {
+  position: relative;
+  height: 50%;
+  border:.5vh solid rgb(173, 137, 173);
+  border-top:.5vh solid rgb(255, 120, 255);
+
+}
+
+.char-portrait {
+  padding: 1vh;
+  width: 50%;
+  height: 100%;
+  border-right:.5vh solid rgb(173, 137, 173);
+}
+
+/* .Jesus {
+  transform: scaleX(-1);
+} */
+
+.char-description > p {
+  text-align: center;
+  padding: 5%;
+}
+
+.char-info {
+  padding: 1vh;
+}
+
+.char-info > p {
+  text-align: left;
+  margin: 0;
+  padding: .5vh;
+  width: 100%;
+}
+.char-info {
+  width: 50%;
+
+}
+
+.bottom-color {
+  overflow-y: scroll;
+  font-size: max(1.5vh, 1.5vw);
+  height: 50%;
+  text-align: left;
+  border:.5vh solid rgb(173, 137, 173);
+  border-right:.5vh solid rgb(161, 66, 161);
+  border-top: none;
+
+}
+
+
+
+#char-wrap{
+  /* font-family: 'Courier New', Courier, monospace; */
+
+  display: none;
+  z-index: 1;
+  height: max(40vw,40vh) !important;
+  width: max(40vw, 40vh);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.904);
+
+
+
+
+  /* background-color: none; */
+  box-shadow: none !important;
+}

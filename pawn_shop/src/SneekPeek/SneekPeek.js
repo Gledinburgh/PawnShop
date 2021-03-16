@@ -1,11 +1,14 @@
 import {React,useState, useEffect, useContext} from 'react';
 import axios from 'axios';
 
+
+import characterInfo from '../data/characterInfo';
 import PageNameContext from '../PageNameContext';
 import './sneekPeek.css'
 import CharacterList from './CharacterList';
+import CharacterModal from './CharacterModal';
 import RoadSide from './RoadSide'
-import {Image, Layout, notification,} from 'antd';
+import {Image, Layout, notification} from 'antd';
 const { Footer} = Layout;
 
 const comicDescription = 'By the warped minds of Mauro de la Tierra & J.A. Rodriguez comes the rambunctious tale of greed, violence, drugs, money, and the pursuit of all-American post-apocalyptic pleasure told through the eyes of Jesus Christ himself.';
@@ -13,7 +16,14 @@ const comicDescription = 'By the warped minds of Mauro de la Tierra & J.A. Rodri
 document.body.style.backgroundColor = "#ff7eba";
 
   const SneekPeek = () => {
-  const { pageName, handlePageNameChange} = useContext(PageNameContext)
+  const { pageName, handlePageNameChange} = useContext(PageNameContext);
+  const [charSelected, setCharSelected] = useState(characterInfo[0]);
+
+  const handleCharSelect = (charInfo) => {
+    const modal = document.getElementById('char-wrap');
+    setCharSelected(charInfo);
+    modal.style.display = 'block';
+  }
 
 
   document.body.style.backgroundColor = "#ff7eba";
@@ -26,7 +36,10 @@ document.body.style.backgroundColor = "#ff7eba";
   },[])
 
   return(
+
     <>
+        <CharacterModal characterInfo={charSelected} />
+
       <div id="wrapper">
         <div id="sneek-top" className="intro">
           <p className="no-shaddow">By the warped minds of</p>
@@ -40,7 +53,7 @@ document.body.style.backgroundColor = "#ff7eba";
           </div>
         <div id="title">< Image preview={false} id="holy-relapse" src="Holy_Relapse.png" alt="Holy Relapse Title" /></div>
         <div className="intro arriving"> {`\nArriving summer 2021`}</div>
-        <CharacterList />
+        <CharacterList handleCharSelect={handleCharSelect} />
         {/* <Footer> </Footer> */}
 
       </div>
