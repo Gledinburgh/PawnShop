@@ -55,27 +55,27 @@
 }
 #sneek-top {
   margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 #title {
   position: relative;
   padding-top: 3vh;
-  height: auto;
-
+  /* height: auto; */
+  margin-top: 5vh;
   margin-bottom: 5vh;
-  vertical-align: middle;
-  text-align: center;
+
 }
 
 #holy-relapse > .ant-image-img {
   position: static;
+  padding: 4vh 0 4vh 0;
 }
 
 #holy-relapse {
   position: static;
   left: 0;
   width: 100%;
-
   box-shadow: 10px, 10px, 10px rgb(241, 24, 0);
   animation: float 6s ease-in-out infinite;
 }
