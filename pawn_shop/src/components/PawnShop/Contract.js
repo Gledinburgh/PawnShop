@@ -74,7 +74,7 @@ const Contract = ({isVisible, handleModalVisibility, shouldDestroyAdverts}) => {
           <Divider> </Divider>
           <Divider style={{color: '#1c6447'}}>sneek Peek</Divider>
           <Divider> </Divider>
-          <img className="holy" src="Holy_Relapse.png" alt="The Holy Relapse Title"></img>
+          <img className="holy" src="Holy_Relapse.webp" alt="The Holy Relapse Title"></img>
           {/* <Divider>the comic</Divider> */}
           <Divider> </Divider>
           <Divider  style={{color: '#1c6447'}}>Just sign below</Divider>

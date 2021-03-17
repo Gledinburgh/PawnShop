@@ -5,9 +5,9 @@ const characterInfo = [
     Age: '2056 yrs.',
     Weight: '150 lbs',
     Row: 'one',
-    File: 'Jesus.png',
+    File: 'Jesus.webp',
     Portrait: 'Jesus_portrait.jpg',
-    Alt: 'Holy Relapse Title',
+    Alt: 'Jesus Character inhaling deeply',
     Id: 'Jesus',
 
 
@@ -18,7 +18,7 @@ const characterInfo = [
     Age: '65 yrs.',
     Weight: '220 lbs',
     Row: 'two',
-    File: 'Plomo.png',
+    File: 'Plomo.webp',
     Portrait: 'Plomo_portrait.jpg',
     Alt: 'Plomo character with evil smile',
     Id: 'Plomo'
@@ -29,7 +29,7 @@ const characterInfo = [
     Age: '65 yrs.',
     Weight: '98 lbs',
     Row: 'one',
-    File: 'Plata.png',
+    File: 'Plata.webp',
     Portrait:'Plata_portrait.jpg',
     Alt: 'Plata character with evil smile',
     Id: 'Plata'
@@ -40,7 +40,7 @@ const characterInfo = [
     Age: 'unknown',
     Weight: 'unknown',
     Row: 'two',
-    File: 'Broker.png',
+    File: 'Davey_Jones.webp',
     Portrait: 'Davey_Jones_portrait.jpg',
     Alt: 'Pawn shop broker character with reading newsPaper',
     Id: 'Broker'
