@@ -23,6 +23,7 @@ const CharacterList = ({charSelected, handleCharSelect}) => {
               <div className="circle top-color"></div>
               <div onClick={()=> handleCharSelect(character)}  className="circle bottom-half">
                 <Image preview={false} className="figure" alt={character.Alt} src={character.File}></Image>
+
               </div>
             </Row>
           </>

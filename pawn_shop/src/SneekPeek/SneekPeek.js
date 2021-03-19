@@ -21,8 +21,10 @@ document.body.style.backgroundColor = "#ff7eba";
 
   const handleCharSelect = (charInfo) => {
     const modal = document.getElementById('char-wrap');
-    setCharSelected(charInfo);
+    const mask = document.getElementById('mask');
     modal.style.display = 'block';
+    setCharSelected(charInfo);
+    mask.style.display = 'block';
   }
 
 
@@ -38,6 +40,13 @@ document.body.style.backgroundColor = "#ff7eba";
   return(
 
     <>
+
+
+      {/* <img alt="opium bud" src="opi.webp"/>
+      <img alt="smiling mushroom" src="shroomie.webp"/>
+      <img alt="frowning mushroom" src="shroomie2.webp"/>
+      <img alt="syringe" src="syringe.webp"/>
+      <img alt="xanax" src="xan.webp"/> */}
         <CharacterModal characterInfo={charSelected} />
 
       <div id="wrapper">

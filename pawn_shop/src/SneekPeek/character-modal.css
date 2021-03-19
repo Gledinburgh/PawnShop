@@ -1,28 +1,40 @@
 .close-modal {
-  color: palevioletred;
-  font-weight: bold;
+  color: rgb(255, 27, 103);
   font-size: 2vh;
   position: absolute;
-  height: 5vh;
-  text-align: center;
-  top: o;
   right: 0;
-  width: 5vh;
+  padding: .5vh;
+  padding-right: 1.5vh;
   z-index: 100;
 }
 
+.close-modal:hover {
+  cursor: pointer;
+}
+
 .char-row-1 {
-  position: relative;
+
   height: 50%;
   border:.5vh solid rgb(173, 137, 173);
   border-top:.5vh solid rgb(255, 120, 255);
 
 }
 
+.portrait {
+  top: -5%;
+  height: 125%;
+  left: -25%;
+  position: absolute;
+  padding: 5%;
+
+
+}
+
 .char-portrait {
-  padding: 1vh;
+  position: relative;
   width: 50%;
   height: 100%;
+  overflow: hidden;
   border-right:.5vh solid rgb(173, 137, 173);
 }
 
@@ -31,54 +43,144 @@
 } */
 
 .char-description > p {
-  text-align: center;
-  padding: 5%;
+  margin: 5%;
+  padding: 2%;
+  text-align: left;
+  background-color: rgba(141, 181, 218, 0.493);
 }
 
 .char-info {
-  padding: 1vh;
+  position: static;
+  padding: 2%;
+  background-color: rgba(141, 181, 218, 0.493);
+  margin: 5%;
+  width: 40%;
+  animation: float 10s ease-in-out infinite;
+
 }
 
 .char-info > p {
   text-align: left;
-  margin: 0;
-  padding: .5vh;
   width: 100%;
 }
 .char-info {
-  width: 50%;
 
 }
 
 .bottom-color {
-  overflow-y: scroll;
-  font-size: max(1.5vh, 1.5vw);
+  animation: float 10s ease-in-out infinite;
+
+  overflow-y: hidden;
   height: 50%;
   text-align: left;
   border:.5vh solid rgb(173, 137, 173);
-  border-right:.5vh solid rgb(161, 66, 161);
   border-top: none;
 
+}
+
+@keyframes colorize {
+  0% {
+
+    background-color:   rgb(127, 255, 155);
+  }
+  25% {
+    background-color: rgba(200, 255, 0, 0.781);
+  }
+  75% {
+    background-color: rgb(51, 163, 255);
+  }
+  100% {
+    background-color:   rgb(127, 255, 155);
+  }
 }
 
 
 
 #char-wrap{
   /* font-family: 'Courier New', Courier, monospace; */
-
+  font-weight: 600;
+  font-size: max(100%, 1.5vw);
   display: none;
-  z-index: 1;
-  height: max(40vw,40vh) !important;
-  width: max(40vw, 40vh);
+  z-index: 10;
+  height: max(55vw,55vh) !important;
+  width: max(50vw, 50vh);
   position: fixed;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.904);
+  background-color: aquamarine;
+  animation: colorize 10s infinite;
 
 
 
 
   /* background-color: none; */
   box-shadow: none !important;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(359deg); }
+}
+
+
+@keyframes fall{
+
+  0% {
+    opacity: 1;
+    /* transform: translateY(-10vh); */
+  }
+
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.fall {
+  position: relative;
+  width: 25%;
+  height: 25% !important;
+
+  /* padding:3vh */
+  /* animation: fall 30s infinite linear; */
+
+}
+
+.spin {
+  height: 100%;
+  width: 100%;
+  padding: 1vh;
+  /* padding: 2vh; */
+  animation: rotate 60s infinite linear;
+}
+
+.veil {
+  background-color: rgba(211, 255, 222, 0.787);
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.drugs {
+  top: -1vh;
+  margin: none;
+  padding: 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+#mask {
+  z-index: 10;
+  display: none;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(25, 0, 29, 0.486);
 }
