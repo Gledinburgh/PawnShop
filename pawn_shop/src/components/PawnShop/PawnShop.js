@@ -74,8 +74,6 @@ function PawnShop() {
         setAdvertTimer(true);
         openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
       }, 10000)
-    } else {
-    setTimeout(() => footerTimer(), 10000);
     }
   }
 

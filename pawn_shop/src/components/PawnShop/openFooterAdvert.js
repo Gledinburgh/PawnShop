@@ -5,14 +5,13 @@ const getRandomInt = (min, max)  => {
 }
 
   const openAdvert = (position, handleAdvertClick, handleAdvertClosed) => {
-
+      //adVarient used to alternate through differant advert images
       const adVarient = getRandomInt(1,3)
       const placement = position;
 
       notification.open({
         onClick: () => {handleAdvertClick(true)},
         onClose: () => {handleAdvertClosed()},
-
         duration: null,
         className:`ad ad${adVarient} ${position}`,
         closeIcon: <button className="advert close"> X </button>,

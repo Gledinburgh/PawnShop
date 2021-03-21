@@ -1,22 +1,17 @@
 .ant-card-body {
   font-size: 1.5vh ;
-  padding: min(1vh, 1vw)
-
-}
-
-.ant-card-body {
+  padding: min(1vh, 1vw);
 }
 
 .card-drop {
   border: .2vw solid #e5ffe32a;
   border-bottom: .2vw solid #afc2ae1f;
   border-right: .2vw solid #a5bba41e;
-   color: #27694f;
+  color: #27694f;
   background: rgba(161, 235, 201, 0.13);
   position: relative;
   height: 3vh;
   width: 100%;
-
   transition: .3s;
 }
 
@@ -31,18 +26,12 @@ button.card-drop:hover {
   border:.1vh solid #1c64474d;
 }
 
-.ant-btn-primary, .ant-btn-default {
-  background-color: #9ff09e !important;
-  border-color: #9ff09e  !important;
-}
-
 .ant-card.ant-card-bordered {
   background-color: #d3ffd2 !important;
   border-color: rgb(180, 248, 216);
-   overflow-y: hidden;
-   overflow-x: hidden;
-   margin-right: 3vw;
-  /* width: 30vw; */
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-right: 3vw;
   margin-right: 10%;
   transition: ease-in-out .3s;
  }
@@ -53,7 +42,6 @@ button.card-drop:hover {
 
  .price {
   word-wrap: break-word;
-  flex-direction: row;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5vh;
   position: absolute;
@@ -64,7 +52,6 @@ button.card-drop:hover {
   height: 3em;
   right: 0;
   overflow: hidden;
-  /* bottom: -5%; */
 }
 
 .card-title{
@@ -78,9 +65,7 @@ button.card-drop:hover {
   margin-bottom: 1vh;
 
 }
-
-
-
+/*clicking item image makes it wobble*/
 .card-image[wobble='1'] {
   animation: wobble 1s 1;
 }
@@ -106,9 +91,6 @@ button.card-drop:hover {
   visibility: hidden;
   background: #e5ffe3;
   padding: 0vh  1vh 1vh 1vh;
-
-  /* padding: min(1.5vh,1vw); */
-
 }
 
 .product-description[expandDescription='1'] {
@@ -132,11 +114,7 @@ button.card-drop:hover {
 }
 
 .card-image {
-  max-height: 30vw;
-  display: block;
-  margin: 0;
   width: 100%;
-  text-align: center;
 }
 
 .container {
@@ -144,8 +122,6 @@ button.card-drop:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-height: min(700px, 30vw) !important;
-  margin-right: 0 !important;
 }
 
 
@@ -153,16 +129,13 @@ button.card-drop:hover {
   position: relative;
   margin-top: 1vh;
   margin-bottom: 2vh;
-  max-width: min(700px, 30vw) !important;
+  width: min(30%, 450px) !important;
   flex-shrink: 0;
-  /* transform: scale(1); */
   transition: all .2s ease-in-out
 }
 
 .item:hover {
-  /* max-height: min(700px, 30vw) !important; */
   transform: scale(1.05);
-
 }
 
 
