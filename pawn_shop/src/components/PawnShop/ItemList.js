@@ -8,13 +8,9 @@ const ItemList = ({productInfo}) => {
 
   return (
     <Row className="scroll" gutter={4}>
-    {productInfo.map((product) => {
-      return (
-      <Item product={product} />
-
-    )
-    })}
-
+      {productInfo.map((product) => {
+        return ( <Item product={product} /> )
+      })}
     </Row>
   )
 }

@@ -7,24 +7,19 @@ const Item = ({product}) => {
   const [expandDescription, setExpandDescription] = useState(0)
 
   const toggleDescriptionExpansion = (event, flag) => {
-    console.log(event.target.className)
     if (flag === 0) {
       setExpandDescription(1);
     } else if (event.target.className === 'card-drop' || event.target.className === 'down') {
       setExpandDescription(0);
     }
   }
-
-
   return (
 
-    <div
-    key={product.Name}
-    className="item"
-    >
+    <div key={product.Name}  className="item">
       <Card
       onClick={(event) => toggleDescriptionExpansion(event, expandDescription)}
       ontransitionend ={() => toggleDescriptionExpansion(0)}
+      //  "cover" contains the product image.
       cover={<div className="container">
                 <ProductImage productInfo={product}/>
                 <div className="price">${product.Price}</div>
