@@ -64,8 +64,6 @@ const Contract = ({isVisible, handleModalVisibility, shouldDestroyAdverts}) => {
         className="contract"
         title="** Exclusive Offer **"
         visible={isModalVisible}
-        footer="** Exclusive Offer **"
-        // onOk={handleOk}
         onCancel={handleCancel}
         closable={true}>
 

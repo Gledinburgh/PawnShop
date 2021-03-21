@@ -22,7 +22,6 @@
   font-size: max(1.5vw, 2vh);
   margin-top:Max(3vh, 5vw);
   width: 100%;
-  padding-bottom: 5% !important;
   left: 50%;
   right: 50%;
   border-bottom: .1vh solid #8ebea834;
@@ -41,9 +40,6 @@
   line-height:7vw;
 }
 
-.ant-modal-content {
-  height: 90vh;
-}
 .ant-modal-wrap {
   z-index: 10000000;
 }
@@ -51,7 +47,6 @@
 .ant-modal-body{
   margin: auto;
   padding: 0;
-  height: auto;
   width: 90%;
 }
 
@@ -61,20 +56,12 @@
   letter-spacing: .7vw;
   min-height: 7vw;
   font-size: 3vh;
-  vertical-align: middle !important;
-  line-height:7vw;
   background-color: #e5ffe3;
   min-height: 5vh;
   vertical-align: 0;
   text-align: center;
   vertical-align: middle !important;
-}
-
-.ant-modal-footer {
   width: 100%;
-  left: 0;
-  position: absolute;
-  bottom: 0;
 }
 
 .ant-modal-footer > .ant-btn {
@@ -93,12 +80,10 @@
     width: auto;
     max-width: calc(100vw - 32px);
     min-width: calc(50vw - 32px);
-    margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-    /* padding: 0 0 24px; */
 }
 
 .sign {
@@ -126,7 +111,6 @@
 
 
 .flex-row {
-
   overflow-y: hidden;
   padding: 5%;
   display: flex;
@@ -138,3 +122,10 @@
   margin-top: 2vh !important;
   margin-bottom: 3vh !important;
 }
+
+@media screen and (min-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .ant-modal.content {
+    min-width: 400px;
+  }
+  }
