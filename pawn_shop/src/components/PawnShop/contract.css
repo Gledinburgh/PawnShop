@@ -34,10 +34,8 @@
 .ant-modal-title{
   color:  #ff557f !important;
   letter-spacing: .7vw;
-  min-height: 7vw;
-  font-size: 3vh;
+  font-size: min(2vh, 4vw );
   vertical-align: middle !important;
-  line-height:7vw;
 }
 
 .ant-modal-wrap {
@@ -54,10 +52,10 @@
   font-family: 'Suez One';
   color:  #ff557f !important;
   letter-spacing: .7vw;
-  min-height: 7vw;
+  /* height: 5vh; */
+  min-height: min(3vh, 4vw );
   font-size: 3vh;
   background-color: #e5ffe3;
-  min-height: 5vh;
   vertical-align: 0;
   text-align: center;
   vertical-align: middle !important;
@@ -69,21 +67,9 @@
 }
 
 .ant-modal {
-  -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    color: rgba(0,0,0,.85);
-    font-size: 14px;
-    line-height: 1.5715;
-    pointer-events: none;
-    position: relative;
     top: 5vh;
     width: auto;
     max-width: calc(100vw - 32px);
-    min-width: calc(50vw - 32px);
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
 }
 
 .sign {
