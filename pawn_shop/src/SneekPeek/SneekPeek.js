@@ -40,7 +40,7 @@ document.body.style.backgroundColor = "#ff7eba";
   return(
 
     <>
-
+      <div id="whole">
 
       {/* <img alt="opium bud" src="opi.webp"/>
       <img alt="smiling mushroom" src="shroomie.webp"/>
@@ -50,9 +50,8 @@ document.body.style.backgroundColor = "#ff7eba";
         <CharacterModal characterInfo={charSelected} />
 
       <div id="wrapper">
+        <div className="space"></div>
         <div id="title">< Image preview={false} id="holy-relapse" src="Holy_Relapse.webp" alt="Holy Relapse Title" /></div>
-        <div className="intro arriving"> {`\nArriving summer 2021`}</div>
-        <CharacterList handleCharSelect={handleCharSelect} />
         <div id="sneek-top" className="intro">
           <p className="no-shaddow">By the warped minds of</p>
           <p className="no-margin ">Mauro de la Tierra</p>
@@ -64,9 +63,12 @@ document.body.style.backgroundColor = "#ff7eba";
           <p className="no-shaddow">Told through the eyes of Jesus Christ himself.</p>
           </div>
         {/* <Footer> </Footer> */}
+        <div className="intro arriving"> {`\nArriving summer 2021`}</div>
+        <CharacterList handleCharSelect={handleCharSelect} />
 
       </div>
         <RoadSide/>
+        </div>
     </>
   )
 

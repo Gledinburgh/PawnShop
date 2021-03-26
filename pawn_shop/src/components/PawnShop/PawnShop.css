@@ -108,7 +108,7 @@ p {
 
 }
 .missing {
-  max-height: 35vh;
+  max-height: max(35vw,35vh);
   z-index: 100000;
   position: fixed;
   margin-left: 25%;
@@ -123,14 +123,14 @@ p {
   box-shadow: 1vh 1vh 5vw 5px #212220a8;
   position: fixed;
   z-index: 100001;
-  height: 95vw;
+  height: min(95vw,95vh);
 }
 
 @media screen and (min-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   .row {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
     border-left: .2vh solid grey;
     border-right: .2vh solid grey;
     padding-left: 1vh;
@@ -138,7 +138,11 @@ p {
   }
 
   #lobby, #lobby2 {
-    width: 82% !important
+    width: 72% !important
+  }
+
+  #top-page {
+    top: 0;
   }
 
 }

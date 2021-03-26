@@ -63,9 +63,7 @@
   text-align: left;
   width: 100%;
 }
-.char-info {
 
-}
 
 .bottom-color {
   animation: float 10s ease-in-out infinite;
@@ -102,7 +100,7 @@
   font-size: max(100%, 1.5vw);
   display: none;
   z-index: 10;
-  height: max(55vw,55vh) !important;
+  height: max(50vw,50vh) ;
   width: max(50vw, 50vh);
   position: fixed;
   overflow: hidden;
@@ -184,3 +182,13 @@
   position: fixed;
   background-color: rgba(25, 0, 29, 0.486);
 }
+
+@media screen and (min-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  #char-wrap{
+    height: max(30vw,40vh) ;
+  width: max(30vw, 40vh);
+  font-size: max(80%, 1vw);
+
+  }
+  }

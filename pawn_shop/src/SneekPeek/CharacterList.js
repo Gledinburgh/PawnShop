@@ -14,6 +14,7 @@ const CharacterList = ({charSelected, handleCharSelect}) => {
 
   return (
     <>
+      <div className="box">
     {
     characterInfo.map(character => {
      let row = character.Row;
@@ -29,6 +30,7 @@ const CharacterList = ({charSelected, handleCharSelect}) => {
           </>
         )}
       )}
+      </div>
     </>
   )
 
