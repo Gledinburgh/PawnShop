@@ -1,15 +1,5 @@
 
-@media (min-width: 1000px) {
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-  #wrapper {
-    margin-left: 20vw !important;
-    margin-right: 20vw !important;
-    border-left: .2vh solid grey;
-    border-right: .2vh solid grey;
-    padding-left: 1vh;
-    padding-right: 1vh;
-  }
-}
+
 
 @keyframes pulse {
 	0% {
@@ -79,21 +69,20 @@
 
 #sneek-top {
   margin-top: 10vh;
-  margin-bottom: 10vh;
 }
 
 #title {
   position: relative;
   /* padding-top: 3vh; */
-
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  background-color: rgba(3, 51, 185, 0.13);
   height: min(15vh, 15vw);
-  border-top: .5vh solid  rgba(3, 51, 185, 0.322);
-  border-bottom: .5vh solid  rgba(3, 51, 185, 0.322);
 
+  padding-top: 10vh;
 }
+
+.space {
+  height: 10vh;
+}
+
 
 
 
@@ -106,12 +95,10 @@
 
 #holy-relapse {
   position: absolute;
-  /* top:-150%; */
   left: 50%;
   z-index: 5;
   transform: translate(-50%, 0);
   width: 80%;
-  box-shadow: 10px, 10px, 10px rgb(241, 24, 0);
 }
 #wrapper {
   position: relative;
@@ -122,38 +109,21 @@
   min-width: min(40vh, 700px);
   margin: 2% 2% 0 2%;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 196, 0, 0.26),rgba(255,0,0,0),rgba(128, 12, 195, 0.363),rgba(52, 40, 105, 0.651), rgba(52, 40, 105, 0.651), rgba(52, 40, 105, 0.651));
-  font-size: min(1.5vh, 100px);
   color: #422541ec;
 }
-.sneek {
-  position: relative;
-  padding: 0;
-  background-color:none;
-  top:10px;
-}
 
-.arriving {
-  margin-bottom: 20vh;
-}
 
-.space{
-  height: 55px;
-}
 .intro {
-  font-size: max(2vh, 2vw);
-  /* height: 50vh; */
+  font-size: 110%;
   color: rgb(4, 22, 4) !important;
   text-align: center;
   vertical-align: middle;
-  padding: 5vw;
-  /* margin-bottom: 15vh; */
+  padding-bottom: 5vw;
   text-shadow: .1vh .1vh .1vh rgb(214, 191, 188);
 }
 
 .ant-image {
-  /* min-height: 15vh; */
-  /* min-width: 16vh; */
-  /* overflow: hidden; */
+
 height: 100%;
 width: 100%;
  position:absolute;
@@ -244,3 +214,45 @@ width: 100%;
 .circle:hover {
   animation: grab 1s infinite;
 }
+@keyframes colorize2 {
+  0% {
+
+    background-color:   rgba(127, 255, 155, 0.226);
+
+  }
+  50% {
+    background-color:   rgba(127, 255, 155, 0.452);
+  }
+  100% {
+    background-color:   rgba(127, 255, 155, 0.226);
+  }
+}
+
+  @media (min-width: 1000px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    #wrapper {
+      margin-top: 0;
+      margin-left: 20vw !important;
+      margin-right: 20vw !important;
+      border-left: .2vh solid grey;
+      border-right: .2vh solid grey;
+      padding-left: 1vh;
+      padding-right: 1vh;
+    }
+    #whole {
+      z-index: 0;
+      animation: colorize2 10s infinite;
+
+    }
+    .box, #title {
+      margin-bottom: 5vh;
+      /* background-color: rgba(3, 51, 185, 0.13); */
+      /* border-top: .5vh solid  rgba(3, 51, 185, 0.322); */
+      /* border-bottom: .5vh solid  rgba(3, 51, 185, 0.322); */
+
+    }
+    .arriving {
+      /* margin-top: min(30vh, 20vw); */
+    }
+  }
+
