@@ -2,7 +2,7 @@ const characterInfo = [
   {
     Name: 'Jesus',
     Description: 'The fabled son of God who has chosen a... erm.... different path in life. We first meet him while he is on the lam from some shady individuals. Will he be able to squirm and con his way out of his own self-imposed destruction this time?',
-    Age: '2022 yrs.',
+    Age: '2022 yrs',
     Weight: '110 lbs',
     Row: 'one',
     File: 'Jesus.webp',
@@ -15,7 +15,7 @@ const characterInfo = [
   {
     Name: 'Plomo',
     Description: 'Aka “Lead”. One half of the team “Plomo y Plata”, hired muscle for a mysterious entity chasing down Jesus. As dumb as a box of rocks and quick to anger, Plomo strikes fear into anyone who crosses his ice cream-tattooed face and cold, dead lazy eyes.',
-    Age: '65 yrs.',
+    Age: '65 yrs',
     Weight: '420 lbs',
     Row: 'two',
     File: 'Plomo.webp',
@@ -26,7 +26,7 @@ const characterInfo = [
   {
     Name: 'Plata',
     Description: 'Aka “Money“. The other, more cunning half and de facto leader of Plomo y Plata. Obsessed with all material things and making that sweet, sweet green, there are no lows too low for him to stoop to, and he is willing to sacrifice even his closest associates for the sake of a quick pay day. This guy’s a real piece of shit.',
-    Age: '65 yrs.',
+    Age: '65 yrs',
     Weight: '150 lbs',
     Row: 'one',
     File: 'Plata.webp',
