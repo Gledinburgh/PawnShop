@@ -7,8 +7,8 @@ const products = [
   },
   {
     File: 'Grill_cdhr.webp',
-    Name: 'grill',
-    Description: ' good for fulfilling the superficial status quo',
+    Name: 'Grill',
+    Description: ' Good for fulfilling the superficial status quo',
     Price: '468.88',
   },
   {
@@ -19,20 +19,20 @@ const products = [
   },
   {
     File: 'tutankhamun.webp',
-    Name: 'Words',
-    Description: 'Words',
+    Name: 'Tutankhamun',
+    Description: 'Real gold, smells like mummy though!',
     price: 'Words',
   },
   {
     File: 'grill_126.webp',
     Name: 'Grillz',
-    Description: 'made with blood diamonds',
+    Description: 'Made with blood diamonds',
     Price: '1499.00',
   },
   {
     File: 'grill_053.webp',
-    Name: 'grill',
-    Description: 'real human teeth with gold spraypaint',
+    Name: 'Grill',
+    Description: 'Real human teeth with gold spraypaint',
     Price: '4.64',
   },
 
