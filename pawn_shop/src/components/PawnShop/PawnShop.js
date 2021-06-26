@@ -5,37 +5,39 @@ import './itemGrid.css';
 import './contract.css'
 
 import ReactDOM from 'react-dom';
-import {React, useState, useEffect, useContext} from 'react';
-import {useHistory} from 'react-router-dom';
+import { React, useState, useEffect, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import PageNameContext from '../../PageNameContext';
 
-import {Layout, Row, Col} from 'antd';
+import { Layout, Row, Col } from 'antd';
 import ItemGrid from './ItemGrid';
 import PageOver from '../PageOver';
 import Contract from './Contract';
+import MainFooter from './MainFooter';
+import MainHeader from './MainHeader';
 
 import openAdvert from './openAdvert';
 import openFooterAdvert from './openFooterAdvert';
 
 
-const { Header, Footer, Content} = Layout;
-const headstyle = {background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky'}
-const footstyle = {background: "#ffff62", 'fontFamily': 'Suez One', color: '#ff4775', 'textAlign': 'center'}
+const { Header, Footer, Content } = Layout;
+const headstyle = { background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky' }
+const footstyle = { background: "#ffff62", 'fontFamily': 'Suez One', color: '#ff4775', 'textAlign': 'center' }
 
-;
+  ;
 
 
 function PawnShop() {
 
 
   const history = useHistory();
-  const { pageName, handlePageNameChange} = useContext(PageNameContext);
+  const { pageName, handlePageNameChange } = useContext(PageNameContext);
 
   const [shouldPageOver, setShouldPageOver] = useState(false);
   const [pageOverType, setPageOverType] = useState('remove');
   const [shouldShowContract, setShouldShowContract] = useState(false);
-  const [advertTimer, setAdvertTimer]= useState(true);
+  const [advertTimer, setAdvertTimer] = useState(true);
   const [advertClosed, setAdvertClosed] = useState(true);
 
   const handleModalVisibility = (boolean) => {
@@ -44,27 +46,27 @@ function PawnShop() {
   const goToEndpoint = (endpoint) => {
     history.push(endpoint);
   }
-   const handlePageChange = () => {
+  const handlePageChange = () => {
     if (pageOverType === 'remove') setPageOverType('add');
-    if (pageOverType === 'add')  setPageOverType('remove');
+    if (pageOverType === 'add') setPageOverType('remove');
     setShouldPageOver(!shouldPageOver)
 
   }
-   const handleAdvertClosed = () => {
-     setAdvertClosed(!advertClosed)
-   }
+  const handleAdvertClosed = () => {
+    setAdvertClosed(!advertClosed)
+  }
 
   const advertLaunch = () => {
     const advertCount = document.getElementsByClassName('ant-notification-notice').length;
     const notToManyAdverts = advertCount < 3;
     if (notToManyAdverts) {
-      setTimeout(()=> openAdvert('topLeft',handleModalVisibility, handleAdvertClosed),500)
+      setTimeout(() => openAdvert('topLeft', handleModalVisibility, handleAdvertClosed), 500)
     }
 
 
   }
 
-  const footerTimer =  () => {
+  const footerTimer = () => {
     const advertCount = document.getElementsByClassName('ant-notification-notice').length;
     const notToManyAdverts = advertCount < 3;
     if (advertTimer && notToManyAdverts) {
@@ -83,34 +85,36 @@ function PawnShop() {
     handlePageNameChange('PawnShop');
     console.log('PawnShop shouldPageOver:', shouldPageOver)
     console.log('useEffect: PawnShop');
-  },[advertTimer, advertClosed])
+  }, [advertTimer, advertClosed])
 
   document.body.style.backgroundColor = "#e5ffe3"
   handlePageNameChange('PawnShop');
 
   return (
     <>
-      <Header className="pawn-shop" style={headstyle}>PAWN SHOP</Header>
+      {/* <Header className="pawn-shop" style={headstyle}>PAWN SHOP</Header> */}
+      <MainHeader />
       <Row className="row">
-      <Col >
-        <div id="trapezoid" className="center"></div>
-        <div id="lobby" className="center"></div>
-      <div className="wrapper" onClick={() => advertLaunch()}>
-        <Content>
-          <Contract isVisible={shouldShowContract }handleModalVisibility={handleModalVisibility} />
+        <Col >
+          <div id="trapezoid" className="center"></div>
+          <div id="lobby" className="center"></div>
+          <div className="wrapper" onClick={() => advertLaunch()}>
+            <Content>
+              <Contract isVisible={shouldShowContract} handleModalVisibility={handleModalVisibility} />
 
-          <PageOver className="missing" pageOverType={pageOverType} shouldPageOver={shouldPageOver} handlePageChange={handlePageChange}/>
+              <PageOver className="missing" pageOverType={pageOverType} shouldPageOver={shouldPageOver} handlePageChange={handlePageChange} />
 
-          <ItemGrid/>
-        </Content>
-      </div>
-      <div id="lobby2" className="center"></div>
-      <div id="trapezoid2"></div>
-      </Col>
+              <ItemGrid />
+            </Content>
+          </div>
+          <div id="lobby2" className="center"></div>
+          <div id="trapezoid2"></div>
+        </Col>
 
       </Row>
-        <Footer style={footstyle}> <span onClick={() => goToEndpoint('/souls')}>Souls</span>/ About Us / Returns </Footer>
-      </>
+      <MainFooter></MainFooter>
+      {/* <Footer style={footstyle}> <span onClick={() => goToEndpoint('/souls')}>Souls</span>/ About Us / Returns </Footer> */}
+    </>
   );
 }
 

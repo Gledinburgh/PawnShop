@@ -145,4 +145,9 @@ p {
     top: 0;
   }
 
+  .nav:hover {
+    cursor: pointer;
+    color:rgb(241, 117, 148)
+  }
+
 }
