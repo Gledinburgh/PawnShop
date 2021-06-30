@@ -49,6 +49,7 @@ body {
 }
 
 .center {
+  text-align: center;
   left: 50%;
   right: 50%;
   margin: auto;
@@ -144,10 +145,37 @@ p {
   #top-page {
     top: 0;
   }
-
+.info-page {
+  font-size: 2vh;
+}
   .nav:hover {
     cursor: pointer;
     color:rgb(241, 117, 148)
   }
+  .map {
 
+    height: 50vh;
+  }
+
+  .self-align  {
+    padding-left: 50%;
+  }
+
+  .times{
+    font-size: large;
+    font-weight: 420;
+  }
+
+  .col {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    width: 50% !important;
+    flex-shrink: 0;
+    transition: al
+  }
+  .table {
+    white-space:nowrap !important;
+    font-size: 1vh!important;
+
+  }
 }

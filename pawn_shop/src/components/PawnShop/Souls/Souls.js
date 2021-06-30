@@ -1,18 +1,11 @@
 import GuestBook from './GuestBook';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Layout, Divider } from 'antd';
+import { Divider } from 'antd';
 import MainFooter from '../MainFooter';
 import MainHeader from '../MainHeader';
 import { useHistory } from 'react-router-dom';
 import './souls.css';
-
-
-
-const { Header, Footer, Content } = Layout;
-const headstyle = { background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky' }
-const footstyle = { position: 'fixed', Bottom: 0, background: "#ffff62", 'fontFamily': 'Suez One', color: '#ff4775', 'textAlign': 'center' }
-
 
 const Souls = () => {
   const history = useHistory();

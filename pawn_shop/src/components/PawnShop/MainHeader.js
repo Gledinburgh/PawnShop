@@ -31,7 +31,7 @@ function MainHeader() {
 
   return (
 
-    <Header className="pawn-shop nav" style={headstyle}>PAWN SHOP</Header>
+    <Header className="pawn-shop nav" style={headstyle} onClick={() => goToEndpoint('/PawnShop')}>PAWN SHOP</Header>
 
   )
 }

@@ -1,11 +1,13 @@
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import PawnShop from './components/PawnShop/PawnShop';
 import SneekPeek from './SneekPeek/SneekPeek';
 import Souls from './components/PawnShop/Souls/Souls';
+import AboutUs from './components/PawnShop/AboutUs';
+import Returns from './components/PawnShop/Returns';
 import PageNameContext from './PageNameContext';
 import ScrollToTop from './ScrollToTop';
 
-import {useState} from 'react';
+import { useState } from 'react';
 
 const AppRouter = () => {
 
@@ -14,21 +16,23 @@ const AppRouter = () => {
     setPageName(name);
   }
 
-  return(
+  return (
     <PageNameContext.Provider
-      value={{pageName, handlePageNameChange}}
+      value={{ pageName, handlePageNameChange }}
     >
-    <Router>
-      <>
-      <ScrollToTop />
-      <Switch>
-        <Route path="/Souls"><Souls/></Route>
-        <Route path="/HolyRelapse"><SneekPeek/></Route>
-        <Route path="/PawnShop"><PawnShop/></Route>
-        <Route path="/"><PawnShop /></Route>
-      </Switch>
-      </>
-    </Router>
+      <Router>
+        <>
+          <ScrollToTop />
+          <Switch>
+            <Route path="/Souls"><Souls /></Route>
+            <Route path="/AboutUs"><AboutUs /></Route>
+            <Route path="/Returns"><Returns /></Route>
+            <Route path="/HolyRelapse"><SneekPeek /></Route>
+            <Route path="/PawnShop"><PawnShop /></Route>
+            <Route path="/"><PawnShop /></Route>
+          </Switch>
+        </>
+      </Router>
     </PageNameContext.Provider>
   )
 }

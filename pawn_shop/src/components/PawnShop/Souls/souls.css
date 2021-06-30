@@ -12,7 +12,7 @@ tbody {
   font-weight: bold;
 }
 
-.ant-table-wrapper{
+.ant-table-wrapper, .outter-paper{
   background: #fcffe3;
   font-size: inherit;
   border: .1vh solid #fa7193;
@@ -20,16 +20,16 @@ tbody {
   /* min-height: 40vh; */
 }
 
-.ant-table-cell {
+.ant-table-cell, .paper {
   white-space: nowrap;
   background: #fffec2 !important;
   text-align:center !important;
   background: inherit;
   border-top: #fa7193 .1vh solid ;
+  border-bottom: #fa7193 .1vh solid ;
 }
-.ant-table-thead > tr > th {
-  font-size: min(2.7vw, 2.2vh);
-
+.ant-table-thead > tr > th , .title-paper {
+  font-size: min(2.7vw, 2.8vh);
   margin: auto;
   font-family: "suze one";
   color: #fffec2;
@@ -38,7 +38,12 @@ tbody {
   padding: 1.5vh!important;
   font-weight: 1000;
   }
-
+.inner-paper {
+  width: 100%;
+}
+  .title-paper {
+    margin-top: 0 !important;
+  }
 #cushion {
   min-height: 15vh !important;
 }
@@ -52,4 +57,40 @@ tbody {
 
 .guest-book.center {
   margin: auto;
+}
+
+.paper {
+  white-space:normal !important;
+  text-align: left!important;
+}
+.text-paper{
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.content {
+  text-align: left;
+  font-size: 2vh;
+  font-weight: 400;
+
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-left: 2vh;
+  padding-right: 1vh;
+}
+@media screen and (min-width: 950px) {
+  .content {
+      margin-left: 20vw;
+      margin-right: 20vw;
+      padding-left: 2vh;
+      padding-right: 2vh;
+  }
+
+  .table {
+    display: block;
+  }
+
+  #mngmnt {
+    font-family: Georgia, 'Times New Roman', Times, serif!important;
+  }
 }

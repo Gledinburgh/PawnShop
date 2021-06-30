@@ -92,13 +92,12 @@ function PawnShop() {
 
   return (
     <>
-      {/* <Header className="pawn-shop" style={headstyle}>PAWN SHOP</Header> */}
       <MainHeader />
       <Row className="row">
         <Col >
           <div id="trapezoid" className="center"></div>
           <div id="lobby" className="center"></div>
-          <div className="wrapper" onClick={() => advertLaunch()}>
+          <div onClick={() => advertLaunch()}>
             <Content>
               <Contract isVisible={shouldShowContract} handleModalVisibility={handleModalVisibility} />
 
@@ -113,7 +112,7 @@ function PawnShop() {
 
       </Row>
       <MainFooter></MainFooter>
-      {/* <Footer style={footstyle}> <span onClick={() => goToEndpoint('/souls')}>Souls</span>/ About Us / Returns </Footer> */}
+
     </>
   );
 }
