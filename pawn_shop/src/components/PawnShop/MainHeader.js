@@ -30,8 +30,10 @@ function MainHeader() {
   const headstyle = { background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky' }
 
   return (
-
-    <Header className="pawn-shop nav" style={headstyle} onClick={() => goToEndpoint('/PawnShop')}>PAWN SHOP</Header>
+    <>
+      <div className="topbar center"><span className="yellow">Pawn Shop | Houston St. & Newbraunfels SA, TX | holyrelapse@gmail.com</span></div>
+      <Header className="pawn-shop nav" style={headstyle} onClick={() => goToEndpoint('/PawnShop')}>PAWN SHOP</Header>
+    </>
 
   )
 }

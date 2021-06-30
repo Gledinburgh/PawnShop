@@ -26,8 +26,6 @@ const SneekPeek = () => {
     setCharSelected(charInfo);
     mask.style.display = 'block';
   }
-
-
   document.body.style.backgroundColor = "#ff7eba";
 
   useEffect(() => {
@@ -40,6 +38,7 @@ const SneekPeek = () => {
   return (
 
     <>
+
       <div id="whole">
 
         {/* <img alt="opium bud" src="opi.webp"/>

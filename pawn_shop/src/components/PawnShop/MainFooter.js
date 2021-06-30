@@ -28,12 +28,15 @@ function MainFooter() {
   handlePageNameChange('PawnShop');
 
   return (
+    <>
 
-    <Footer style={footstyle}>
-      <span className="nav" onClick={() => goToEndpoint('/souls')}> Souls /</span>
-      <span className="nav" onClick={() => goToEndpoint('/AboutUs')}> About Us / </span>
-      <span className="nav" onClick={() => goToEndpoint('/Returns')}> Returns</span>
-    </Footer>
+      <Footer style={footstyle}>
+        <span className="nav" onClick={() => goToEndpoint('/souls')}> Souls /</span>
+        <span className="nav" onClick={() => goToEndpoint('/AboutUs')}> About Us / </span>
+        <span className="nav" onClick={() => goToEndpoint('/Returns')}> Returns</span>
+      </Footer>
+      <div className="topbar center"><span className="yellow">	Copyright &copy; 2021 Tales From The Abando, All rights reserved. </span></div>
+    </>
   )
 }
 

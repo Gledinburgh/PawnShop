@@ -18,7 +18,16 @@ body {
   vertical-align:middle;
   line-height: 0;
 }
+.yellow {
+  color: #ffff62;
+  font-weight: normal;
+  vertical-align: middle;
+}
 
+.topbar {
+  height: 5vh;
+  background-color: #fc3f78;
+}
 .ant-layout-header{
   line-height: 10vh;
   height: 11vh;
@@ -126,6 +135,8 @@ p {
   z-index: 100001;
   height: min(95vw,95vh);
 }
+
+
 
 @media screen and (min-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
