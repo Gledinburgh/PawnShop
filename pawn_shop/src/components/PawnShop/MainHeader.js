@@ -1,5 +1,6 @@
 import './PawnShop.css';
 import { Layout, Row, Col } from 'antd';
+import { MailFilled, EnvironmentFilled, FireOutlined } from '@ant-design/icons'
 
 import ReactDOM from 'react-dom';
 import { React, useState, useEffect, useContext } from 'react';
@@ -31,8 +32,8 @@ function MainHeader() {
 
   return (
     <>
-      <div className="topbar center"><span className="yellow">Pawn Shop | Houston St. & Newbraunfels SA, TX | holyrelapse@gmail.com</span></div>
-      <Header className="pawn-shop nav" style={headstyle} onClick={() => goToEndpoint('/PawnShop')}>PAWN SHOP</Header>
+      <div className="topbar center"><span className="yellow"><EnvironmentFilled /> Houston St. & Newbraunfels SA, TX | <MailFilled /> holyrelapse@gmail.com</span></div>
+      <Header className="pawn-shop nav" style={headstyle} onClick={() => goToEndpoint('/PawnShop')}><span className="header-space"></span> <FireOutlined />PAWN SHOP</Header>
     </>
 
   )

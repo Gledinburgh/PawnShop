@@ -21,11 +21,17 @@ body {
 .yellow {
   color: #ffff62;
   font-weight: normal;
+  display: inline;
   vertical-align: middle;
 }
 
+.header-space {
+  width: 10vw;
+  display: inline-block;
+}
+
 .topbar {
-  height: 5vh;
+  height: 4vh;
   background-color: #fc3f78;
 }
 .ant-layout-header{
@@ -140,6 +146,9 @@ p {
 
 @media screen and (min-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
+
+
+
   .row {
     margin-left: 30vw;
     margin-right: 30vw;
