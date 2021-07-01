@@ -33,7 +33,7 @@ function MainHeader() {
   return (
     <>
       <div className="topbar center"><span className="yellow"><EnvironmentFilled /> Houston St. & Newbraunfels SA, TX | <MailFilled /> holyrelapse@gmail.com</span></div>
-      <Header className="pawn-shop nav" style={headstyle} onClick={() => goToEndpoint('/PawnShop')}><span className="header-space"></span> <FireOutlined />PAWN SHOP <span className="float-right"><ShoppingCartOutlined /></span></Header>
+      <Header className="pawn-shop" style={headstyle} ><span className="header-space"></span><span className="nav" onClick={() => goToEndpoint('/PawnShop')}><FireOutlined />PAWN SHOP </span> <span className="float-right nav"><ShoppingCartOutlined /></span></Header>
     </>
 
   )
