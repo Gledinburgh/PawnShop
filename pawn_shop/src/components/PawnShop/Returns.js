@@ -25,46 +25,48 @@ const Returns = () => {
 
 
   return (
-    <div className="flex-col info-page" >
+    <>
       <MainHeader />
-      <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}></Divider>
-      <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}>Returns</Divider>
-      <br></br>
-      <Row className="outter-paper content">
-        <Col className="inner-paper">
+      <div className="flex-col info-page" >
+        <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}></Divider>
+        <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}>Returns</Divider>
+        <br></br>
+        <Row className="outter-paper content">
+          <Col className="inner-paper">
 
 
 
 
-          <div className="paper">
+            <div className="paper">
 
-            <Divider className="title-paper" style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#fffec2' }}><span className="title-paper">!! Current Return policy is under Review !!</span></Divider>
-
-            <br></br>
-            <div Id="mngmnt">
-              <div Id="mngmnt">*** NO RETURNS AVAILABLE AT THE MOMENT ***</div>
-              <div className="">*** ALL ITEMS PURCHASED ARE FINAL LIFETIME PURCHASES !!! ***</div>
-              <div className="">*** PLEASE CHECK BACK IN _____ DAYS FOR UPDATED POLICY !! ***</div>
-              <div className="">- MNGMT</div>
+              <Divider className="title-paper" style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#fffec2' }}><span className="title-paper">!! Current Return policy is under Review !!</span></Divider>
 
               <br></br>
+              <div Id="mngmnt">
+                <div Id="mngmnt">*** NO RETURNS AVAILABLE AT THE MOMENT ***</div>
+                <div className="">*** ALL ITEMS PURCHASED ARE FINAL LIFETIME PURCHASES !!! ***</div>
+                <div className="">*** PLEASE CHECK BACK IN _____ DAYS FOR UPDATED POLICY !! ***</div>
+                <div className="">- MNGMT</div>
+
+                <br></br>
+
+              </div>
+
+
+
 
             </div>
 
 
 
+            <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#fa7193' }}> </Divider>
+            <div id="cushion" />
+          </Col>
+        </Row>
 
-          </div>
-
-
-
-          <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#fa7193' }}> </Divider>
-          <div id="cushion" />
-        </Col>
-      </Row>
-
+      </div >
       <MainFooter></MainFooter>
-    </div >
+    </>
   )
 
 }

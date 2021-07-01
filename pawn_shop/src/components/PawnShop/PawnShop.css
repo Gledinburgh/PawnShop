@@ -141,17 +141,27 @@ p {
   z-index: 100001;
   height: min(95vw,95vh);
 }
+.map-container {
+  height: 50vh;
+}
+
+.float-right {
+  float: right;
+  visibility: hidden;
+}
 
 
 
 @media screen and (min-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
-
+ .float-right{
+   visibility: visible;
+ }
 
 
   .row {
-    margin-left: 30vw;
-    margin-right: 30vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
     border-left: .2vh solid grey;
     border-right: .2vh solid grey;
     padding-left: 1vh;
@@ -159,7 +169,7 @@ p {
   }
 
   #lobby, #lobby2 {
-    width: 72% !important
+    width: 81% !important
   }
 
   #top-page {
