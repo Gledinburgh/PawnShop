@@ -9,8 +9,6 @@ const characterInfo = [
     Portrait: 'Jesus_portrait.jpg',
     Alt: 'Jesus Character inhaling deeply',
     Id: 'Jesus',
-
-
   },
   {
     Name: 'Plomo',
@@ -55,6 +53,27 @@ const characterInfo = [
     Portrait: 'Crime_Wave_portrait.jpg',
     Alt: 'Crime Wave character holding bag of drugs',
     Id: 'Crime-Wave'
+  },
+  {
+    Name: 'Mauro de la Tierra',
+    Description: 'Mary marou magosh',
+    Age: 'as old as time',
+    Weight: '1000 suns',
+    Row: 'one',
+    File: 'mauro.jpg',
+    Portrait: 'mauro.jpg',
+    Alt: 'portrait of Mauro de la Tierra',
+    Id: 'mauro'
+  },
+  {
+    Name: 'J. Rodriquez',
+    Description: 'Hosh Josh magosh',
+    Weight: '1000 suns',
+    Row: 'one',
+    File: 'josh.jpg',
+    Portrait: 'josh.jpg',
+    Alt: 'portriat of J Rodriquez',
+    Id: 'josh'
   },
 
 ]

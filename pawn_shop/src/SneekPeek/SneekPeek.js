@@ -9,7 +9,10 @@ import CharacterList from './CharacterList';
 import CharacterModal from './CharacterModal';
 import RoadSide from './RoadSide'
 import { Image, Layout, notification } from 'antd';
+
 const { Footer } = Layout;
+const mauro = characterInfo[5];
+const josh = characterInfo[6];
 
 const comicDescription = 'By the warped minds of Mauro de la Tierra & J Rodriguez comes the rambunctious tale of greed, violence, drugs, money, and the pursuit of all-American post-apocalyptic pleasure told through the eyes of Jesus Christ himself.';
 
@@ -20,6 +23,7 @@ const SneekPeek = () => {
   const [charSelected, setCharSelected] = useState(characterInfo[0]);
 
   const handleCharSelect = (charInfo) => {
+    console.log("handleCharSelect fired")
     const modal = document.getElementById('char-wrap');
     const mask = document.getElementById('mask');
     modal.style.display = 'block';
@@ -53,9 +57,9 @@ const SneekPeek = () => {
           <div id="title">< Image preview={false} id="holy-relapse" src="Holy_Relapse.webp" alt="Holy Relapse Title" /></div>
           <div id="sneek-top" className="intro">
             <p className="no-shaddow">By the warped minds of</p>
-            <p className="no-margin ">Mauro de la Tierra</p>
+            <p className="no-margin" onClick={() => handleCharSelect(mauro)}>Mauro de la Tierra</p>
             <p className="no-margin no-shaddow">&</p>
-            <p >J Rodriguez</p>
+            <p onClick={() => handleCharSelect(josh)}>J Rodriguez</p>
             <p className="no-margin no-shaddow">comes the rambunctious tale of</p>
             <p className="no-margin ">greed, violence, drugs, money,</p>
             <p className="no-margin no-shaddow">and the pursuit of all-American post-apocalyptic pleasure.</p>

@@ -1,10 +1,10 @@
 
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 import characterInfo from '../data/characterInfo';
-import {Row, Col, Image} from 'antd';
+import { Row, Col, Image } from 'antd';
 
-const CharacterList = ({charSelected, handleCharSelect}) => {
+const CharacterList = ({ charSelected, handleCharSelect }) => {
 
 
   useEffect(() => {
@@ -15,21 +15,24 @@ const CharacterList = ({charSelected, handleCharSelect}) => {
   return (
     <>
       <div className="box">
-    {
-    characterInfo.map(character => {
-     let row = character.Row;
-        return(
-          <>
-            <Row  className={`character-block ${row}`}>
-              <div className="circle top-color"></div>
-              <div onClick={()=> handleCharSelect(character)}  className="circle bottom-half">
-                <Image preview={false} className="figure" alt={character.Alt} src={character.File}></Image>
+        {
+          characterInfo.map((character, index) => {
+            let row = character.Row;
+            while (index < 5) {
+              return (
+                <>
+                  <Row className={`character-block ${row}`}>
+                    <div className="circle top-color"></div>
+                    <div onClick={() => handleCharSelect(character)} className="circle bottom-half">
+                      <Image preview={false} className="figure" alt={character.Alt} src={character.File}></Image>
 
-              </div>
-            </Row>
-          </>
-        )}
-      )}
+                    </div>
+                  </Row>
+                </>
+              )
+            }
+          }
+          )}
       </div>
     </>
   )
