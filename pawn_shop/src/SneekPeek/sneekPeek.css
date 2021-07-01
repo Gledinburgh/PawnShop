@@ -168,21 +168,9 @@ width: 100%;
 
 }
 
-@keyframes grab {
-  0% {
-    cursor: grab;
-  }
-  50% {
-    cursor: grabbing;
-  }
-75% {
-  cursor: grab;
+.circle:hover {
+  cursor: pointer;
 }
-100% {
-  cursor: grabbing;
-}
-}
-
 
 .bottom-half {
   padding: 0;
@@ -211,9 +199,7 @@ width: 100%;
   text-shadow: none;
 }
 
-.circle:hover {
-  animation: grab 1s infinite;
-}
+
 @keyframes colorize2 {
   0% {
 

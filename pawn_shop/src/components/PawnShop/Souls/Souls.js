@@ -35,20 +35,22 @@ const Souls = () => {
 
 
   return (
-    <div className="flex-col" >
+    <>
       <MainHeader />
-      <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}> </Divider>
-      <Divider style={{ color: '#ff4775', borderTop: '#b4f8d8' }}>SOULS </Divider>
+      <div className="flex-col" >
+        <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}> </Divider>
+        <Divider style={{ color: '#ff4775', borderTop: '#b4f8d8' }}>SOULS </Divider>
 
-      <div style={{ 'overflowY': "visible" }} className="flex-row">
-        <GuestBook className="guest-book" guestEntries={parsedEntries}></GuestBook>
+        <div style={{ 'overflowY': "visible" }} className="flex-row">
+          <GuestBook className="guest-book" guestEntries={parsedEntries}></GuestBook>
 
+        </div>
+        <Divider style={{ color: '#ff4775', borderTop: '#b4f8d8' }}> </Divider>
+        <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}> </Divider>
+        <div id="cushion" />
       </div>
-      <Divider style={{ color: '#ff4775', borderTop: '#b4f8d8' }}> </Divider>
-      <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}> </Divider>
-      <div id="cushion" />
       <MainFooter></MainFooter>
-    </div>
+    </>
   )
 
 }
