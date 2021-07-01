@@ -12,10 +12,10 @@ function ItemGrid() {
   const borderstyle = { 'borderTop': '#b4f8d8' }
   return (
     <div >
-      <Divider style={borderstyle} orientation="left">New Arrivals</Divider>
-      <ItemList productInfo={newProducts} />
       <Divider style={borderstyle} orientation="left">Featured</Divider>
       <ItemList productInfo={saleProducts} />
+      <Divider style={borderstyle} orientation="left">New Arrivals</Divider>
+      <ItemList productInfo={newProducts} />
       <Divider style={borderstyle} orientation="left">Still Breathing</Divider>
       <ItemList productInfo={stillBreathingProducts} />
       <Divider style={borderstyle} orientation="left">Jewelry</Divider>

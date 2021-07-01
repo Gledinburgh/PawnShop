@@ -66,7 +66,7 @@ const characterInfo = [
     Id: 'mauro'
   },
   {
-    Name: 'J. Rodriquez',
+    Name: 'Joshua Anthony Rodriguez',
     Description: 'Hosh Josh magosh',
     Weight: '1000 suns',
     Row: 'one',

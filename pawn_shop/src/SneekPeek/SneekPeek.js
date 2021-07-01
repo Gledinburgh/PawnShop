@@ -59,7 +59,7 @@ const SneekPeek = () => {
             <p className="no-shaddow">By the warped minds of</p>
             <p className="no-margin" onClick={() => handleCharSelect(mauro)}>Mauro de la Tierra</p>
             <p className="no-margin no-shaddow">&</p>
-            <p onClick={() => handleCharSelect(josh)}>J Rodriguez</p>
+            <p onClick={() => handleCharSelect(josh)}>Joshua Anthony Rodriguez</p>
             <p className="no-margin no-shaddow">comes the rambunctious tale of</p>
             <p className="no-margin ">greed, violence, drugs, money,</p>
             <p className="no-margin no-shaddow">and the pursuit of all-American post-apocalyptic pleasure.</p>
