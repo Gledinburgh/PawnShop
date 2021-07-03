@@ -21,7 +21,7 @@ const products = [
     File: 'tutankhamun.webp',
     Name: 'Tutankhamun',
     Description: 'Real gold, smells like mummy though!',
-    price: 'Words',
+    Price: '896.58',
   },
   {
     File: 'grill_126.webp',

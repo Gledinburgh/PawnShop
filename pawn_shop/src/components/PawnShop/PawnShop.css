@@ -149,13 +149,20 @@ p {
   float: right;
   visibility: hidden;
 }
+.mobile-hide {
+  display: none;
+}
 
+.no-stretch {
+  width: 100%;
+  object-fit: cover;
+}
 
 
 @media screen and (min-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
- .float-right{
-   visibility: visible;
+ .float-right, .mobile-hide{
+   display: inline;
  }
 
 

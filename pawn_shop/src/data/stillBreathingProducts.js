@@ -7,22 +7,22 @@ const products = [
     Price: '789.56',
   },
   {
-    File: 'product_BMO.webp',
-    Name: 'BM0 B-BOY',
-    Description: 'Real life break dancing game boy!',
-    Price: '3338.2',
-  },
-  {
     File: 'product_UGLY.webp',
     Name: 'THE BOOK OF THE DEAD',
     Description: 'Made with real human skin',
-    Price: '666',
+    Price: '666.00',
   },
   {
     File: 'Elora_01.webp',
     Name: 'Rat Person',
     Description: 'We are pretty sure there\'s a person in there',
-    Price: '550',
+    Price: '550.00',
+  },
+  {
+    File: 'product_BMO.webp',
+    Name: 'BM0 B-BOY',
+    Description: 'Real life break dancing game boy!',
+    Price: '3338.2',
   },
   {
     File: 'blkshp.webp',

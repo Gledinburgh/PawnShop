@@ -33,9 +33,9 @@ var products = [
   },
   {
     File: 'product_guitar.webp',
-    Name: 'Robert Johnston',
-    Description: 'Words',
-    Price: 'Words',
+    Name: 'Robert Johnston Guitar',
+    Description: 'used by famous blues musicians Robert Johnson',
+    Price: '666.00',
   },
 
 ];

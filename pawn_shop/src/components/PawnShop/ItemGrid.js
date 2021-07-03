@@ -14,14 +14,14 @@ function ItemGrid() {
     <div >
       <Divider style={borderstyle} orientation="left">Featured</Divider>
       <ItemList productInfo={saleProducts} />
-      <Divider style={borderstyle} orientation="left">New Arrivals</Divider>
-      <ItemList productInfo={newProducts} />
       <Divider style={borderstyle} orientation="left">Still Breathing</Divider>
       <ItemList productInfo={stillBreathingProducts} />
       <Divider style={borderstyle} orientation="left">Jewelry</Divider>
       <ItemList productInfo={jewelryProducts} />
       <Divider style={borderstyle} orientation="left">Antiques</Divider>
       <ItemList productInfo={antiqueProducts} />
+      <Divider style={borderstyle} orientation="left">New Arrivals</Divider>
+      <ItemList productInfo={newProducts} />
     </div>
   );
 }

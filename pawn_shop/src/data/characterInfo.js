@@ -24,7 +24,7 @@ const characterInfo = [
   {
     Name: 'Plata',
     Description: 'Aka “Money“. The other, more cunning half and de facto leader of Plomo y Plata. Obsessed with all material things and making that sweet, sweet green, there are no lows too low for him to stoop to, and he is willing to sacrifice even his closest associates for the sake of a quick pay day. This guy’s a real piece of shit.',
-    Age: '65 yrs',
+    Age: '69 yrs',
     Weight: '150 lbs',
     Row: 'one',
     File: 'Plata.webp',

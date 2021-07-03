@@ -28,17 +28,17 @@ const AboutUs = () => {
     <>
       <MainHeader />
       <div className="flex-col info-page" >
-        <img src="pawn_web.jpg"></img>
+        <img className="no-stretch" src="pawn_web.jpg"></img>
         <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}></Divider>
         <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#b4f8d8' }}>About us</Divider>
         <br></br>
         <Row className="outter-paper content">
-          <Col>
+          <Col className="inner-paper">
             <div className="paper">
               <Divider className="title-paper" style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#fffec2' }}><span className="title-paper">Contact us</span></Divider>
 
 
-              <div className="center"><a href="theholyrelapse@gmail.com">theholyrelapse@gmail.com</a ></div>
+              <div className="center"><a href="mailto:talesfromtheabando@gmail.com">talesfromtheabando@gmail.com</a ></div>
               <br></br>
             </div>
             <Divider style={{ color: '#ff4775', borderTop: '#fa7193' }}> </Divider>
@@ -48,9 +48,14 @@ const AboutUs = () => {
             <div className="paper">
 
               <Divider className="title-paper" style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#fffec2' }}><span className="title-paper">Who we are</span></Divider>
-              <div className="center">Located on the corners of Houston St. and New Braunfels St.</div>
+              <div className="center">Located on the corners of Houston St. and New Braunfels Ave.</div>
               <br></br>
-              <div className="text-paper">Our historic Pawn Shop is home to rare and eclectic items from every corner of the world (except Canada). For comments, concerns, complaints, pest control, billing, or other annoyances please send us an email.
+              <div className="text-paper">
+                <div>
+                  Our historic <i>Pawn Shop</i> is home to rare and eclectic items from every corner of the world (except Canada).
+                </div>
+                <br></br>
+                <div>For comments, concerns, complaints, pest control, billing, or other annoyances please send us an email.</div>
               </div>
               <br></br>
 
