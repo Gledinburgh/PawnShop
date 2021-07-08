@@ -1,21 +1,53 @@
-import React, { Component, createContext } from 'react';
+import React, { Component, createContext, useState, useEffect } from 'react';
 
 export const themes = {
-  lightStyle: {
+  light: {
     background: "#ff517d",
-    'fontFamily': 'Suez One',
+    fontFamily: 'Suez One',
     position: 'sticky'
 
   },
-  darkStyle: {
-    color: '#ddd',
-    ui: '#333',
-    bg: '#555'
+  dark: {
+    background: "#333",
+    fontFamily: 'Courier new',
+    position: 'sticky'
   }
 }
 
-export const ThemeContext = React.createContext(themes);
+const initialState = {
+  dark: false,
+  theme: themes.light,
+  toggleTheme: () => { }
+}
 
-export const toggleTheme = () => {
-  this.setState({ isLightTheme: !this.state.isLightTheme })
-};
+const ThemeContext = createContext(initialState);
+
+const ThemeProvider = ({ children }) => {
+
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    const isDark = localStorage.getItem('dark') === 'true';
+    setDark(isDark);
+  }, [dark])
+
+  const toggleTheme = () => {
+    const isDark = !dark;
+    localStorage.setItem('dark', JSON.stringify(isDark))
+    setDark(isDark)
+    console.log('isDark:', isDark)
+    console.log('dark:', dark)
+    console.log('local storage:', isDark)
+  }
+
+  const theme = dark ? themes.dark : themes.light
+
+  return (
+    <ThemeContext.Provider value={{ theme, dark, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  )
+
+}
+
+export { ThemeProvider, ThemeContext }

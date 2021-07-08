@@ -5,7 +5,7 @@ import './itemGrid.css';
 import './contract.css'
 
 import ReactDOM from 'react-dom';
-import { React, useState, useEffect, useContext } from 'react';
+import { React, useState, useEffect, useContext, useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import PageNameContext from '../../PageNameContext';
@@ -43,18 +43,19 @@ function PawnShop() {
   const handleModalVisibility = (boolean) => {
     setShouldShowContract(boolean);
   }
-  const goToEndpoint = (endpoint) => {
+  const goToEndpoint = useCallback((endpoint) => {
     history.push(endpoint);
-  }
-  const handlePageChange = () => {
+  }, [history])
+
+  const handlePageChange = useCallback(() => {
     if (pageOverType === 'remove') setPageOverType('add');
     if (pageOverType === 'add') setPageOverType('remove');
     setShouldPageOver(!shouldPageOver)
+  }, [shouldPageOver])
 
-  }
-  const handleAdvertClosed = () => {
+  const handleAdvertClosed = useCallback(() => {
     setAdvertClosed(!advertClosed)
-  }
+  }, [advertClosed])
 
   const advertLaunch = () => {
     const advertCount = document.getElementsByClassName('ant-notification-notice').length;

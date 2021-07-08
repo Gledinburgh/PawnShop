@@ -4,37 +4,31 @@ import { MailFilled, EnvironmentFilled, FireOutlined, ShoppingCartOutlined } fro
 
 
 import ReactDOM from 'react-dom';
-import { React, useState, useEffect, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import PageNameContext from '../../PageNameContext';
 import { ThemeContext } from '../../context/ThemeContext';
 
 
-const { Header, Footer, Content } = Layout;
-const footstyle = { background: "#ffff62", 'fontFamily': 'Suez One', color: '#ff4775', 'textAlign': 'center' }
-
+const { Header } = Layout;
 
 const MainHeader = () => {
 
-  const context = useContext(ThemeContext)
-  console.log("contextttt:", context)
   const history = useHistory();
   const { pageName, handlePageNameChange } = useContext(PageNameContext);
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   const goToEndpoint = (endpoint) => {
     history.push(endpoint);
   }
 
   useEffect(() => {
-    handlePageNameChange('PawnShop');
+    console.log("useEffect: MainHeader")
   }, [])
 
   document.body.style.backgroundColor = "#e5ffe3"
   handlePageNameChange('PawnShop');
 
-  const { isLightTheme, lightStyle, darkStyle } = context;
-  const theme = isLightTheme ? lightStyle : darkStyle;
-  const headstyle = { background: "#ff517d", 'fontFamily': 'Suez One', position: 'sticky' }
 
   return (
 
@@ -45,7 +39,12 @@ const MainHeader = () => {
           <span className="mobile-hide"> | <MailFilled /> talesfromtheabando@gmail.com</span>
         </span>
       </div>
-      <Header className="pawn-shop" style={headstyle} ><span className="header-space"></span><span className="nav" onClick={() => goToEndpoint('/PawnShop')}><FireOutlined />PAWN SHOP </span> <span className="float-right nav mobile-hide"><ShoppingCartOutlined /></span></Header>
+
+      <Header className="pawn-shop" style={theme} >
+        <span className="header-space" />
+        <span className="nav" onClick={() => goToEndpoint('/PawnShop')}><FireOutlined />PAWN SHOP </span>
+        <span className="float-right nav mobile-hide"><ShoppingCartOutlined onClick={toggleTheme} /></span>
+      </Header>
     </>
 
   )
