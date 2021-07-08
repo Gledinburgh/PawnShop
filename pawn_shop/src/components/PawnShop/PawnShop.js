@@ -74,8 +74,10 @@ function PawnShop() {
       setAdvertTimer(false);
 
       setTimeout(() => {
-        setAdvertTimer(true);
-        openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
+        if (pageName === "PawnShop") {
+          setAdvertTimer(true);
+          openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
+        }
       }, 10000)
     }
   }
@@ -84,7 +86,6 @@ function PawnShop() {
   useEffect(() => {
     footerTimer();
     handlePageNameChange('PawnShop');
-    console.log('PawnShop shouldPageOver:', shouldPageOver)
     console.log('useEffect: PawnShop');
   }, [advertTimer, advertClosed])
 
