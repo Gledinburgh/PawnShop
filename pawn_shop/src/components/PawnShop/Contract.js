@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { Modal, Input, notification, Divider } from 'antd';
@@ -57,6 +57,7 @@ const Contract = ({ isVisible, handleModalVisibility, shouldDestroyAdverts }) =>
     console.log('useEffect: Contract');
     setIsModalVisible(isVisible)
   }, [isVisible, isLoading, isModalVisible])
+
 
   return (
     <>

@@ -84,8 +84,8 @@ function PawnShop() {
 
 
   useEffect(() => {
-    footerTimer();
     handlePageNameChange('PawnShop');
+    footerTimer();
     console.log('useEffect: PawnShop');
   }, [advertTimer, advertClosed])
 

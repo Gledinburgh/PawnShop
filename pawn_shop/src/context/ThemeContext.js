@@ -8,8 +8,8 @@ export const themes = {
 
   },
   dark: {
-    background: "#333",
-    fontFamily: 'Courier new',
+    background: "#ff517d",
+    fontFamily: 'Suez One',
     position: 'sticky'
   }
 }
@@ -35,9 +35,6 @@ const ThemeProvider = ({ children }) => {
     const isDark = !dark;
     localStorage.setItem('dark', JSON.stringify(isDark))
     setDark(isDark)
-    console.log('isDark:', isDark)
-    console.log('dark:', dark)
-    console.log('local storage:', isDark)
   }
 
   const theme = dark ? themes.dark : themes.light
