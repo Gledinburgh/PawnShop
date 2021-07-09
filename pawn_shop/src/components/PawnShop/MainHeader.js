@@ -16,7 +16,7 @@ const MainHeader = () => {
 
   const history = useHistory();
   const { pageName, handlePageNameChange } = useContext(PageNameContext);
-  const { theme, toggleTheme } = useContext(ThemeContext)
+  const { theme, toggleTheme, playAudio } = useContext(ThemeContext)
 
   const goToEndpoint = (endpoint) => {
     history.push(endpoint);
@@ -40,10 +40,10 @@ const MainHeader = () => {
         </span>
       </div>
 
-      <Header className="pawn-shop" style={theme} >
+      <Header onClick={playAudio} className="pawn-shop" style={theme} >
         <span className="header-space" />
         <span className="nav" onClick={() => goToEndpoint('/PawnShop')}><FireOutlined />PAWN SHOP </span>
-        <span className="float-right nav mobile-hide"><ShoppingCartOutlined onClick={toggleTheme} /></span>
+        <span className="float-right nav mobile-hide"><ShoppingCartOutlined /></span>
       </Header>
     </>
 

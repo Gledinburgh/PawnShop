@@ -33,6 +33,9 @@ const SneekPeek = () => {
   document.body.style.backgroundColor = "#ff7eba";
 
   useEffect(() => {
+    const radio = document.getElementsByClassName("radio")[0];
+    console.log("audio paused");
+    radio.pause();
     notification.destroy();
     handlePageNameChange('SneekPeek');
 

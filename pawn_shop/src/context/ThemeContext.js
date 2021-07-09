@@ -1,4 +1,4 @@
-import React, { Component, createContext, useState, useEffect } from 'react';
+import React, { Component, createContext, useState, useEffect, useCallback } from 'react';
 
 export const themes = {
   light: {
@@ -13,11 +13,12 @@ export const themes = {
     position: 'sticky'
   }
 }
-
 const initialState = {
   dark: false,
   theme: themes.light,
-  toggleTheme: () => { }
+  toggleTheme: () => { },
+  playAudio: () => { },
+
 }
 
 const ThemeContext = createContext(initialState);
@@ -36,11 +37,19 @@ const ThemeProvider = ({ children }) => {
     localStorage.setItem('dark', JSON.stringify(isDark))
     setDark(isDark)
   }
+  const playAudio = useCallback(() => {
+    const radio = document.getElementsByClassName("radio")[0];
+    console.log("audio playing");
+    radio.play();
+  }, []);
 
   const theme = dark ? themes.dark : themes.light
 
   return (
-    <ThemeContext.Provider value={{ theme, dark, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, dark, toggleTheme, playAudio }}>
+      <audio className="radio">
+        <source src="Come_On_Back_Jesus.mp3" type="audio/mpeg"></source>
+      </audio>
       {children}
     </ThemeContext.Provider>
   )

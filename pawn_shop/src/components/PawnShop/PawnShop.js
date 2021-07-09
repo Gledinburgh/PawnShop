@@ -81,11 +81,16 @@ function PawnShop() {
       }, 10000)
     }
   }
+  // const playAudio = () => {
+  //   const radio = document.getElementsByClassName("radio")[0];
+  //   radio.play();
+  // }
 
 
   useEffect(() => {
     handlePageNameChange('PawnShop');
     footerTimer();
+    // playAudio();
     console.log('useEffect: PawnShop');
   }, [advertTimer, advertClosed])
 
@@ -93,7 +98,7 @@ function PawnShop() {
   handlePageNameChange('PawnShop');
 
   return (
-    <>
+    <div >
       <MainHeader />
       <Row className="row">
         <Col >
@@ -115,7 +120,7 @@ function PawnShop() {
       </Row>
       <MainFooter></MainFooter>
 
-    </>
+    </div>
   );
 }
 
