@@ -7,10 +7,11 @@
 
 
 .terms {
+  color: #381529;
   margin: 0 5% 0 5%;
   background-color: #fd7d9f;
   height: 40vh;
-  font-size: 80% !important;
+  font-size: 90% !important;
   padding: 1.7vh;
   overflow-y: scroll;
   -moz-box-shadow: inset 0 -10px 10px -2vh #000000;
@@ -27,19 +28,8 @@
   border-bottom: .1vh solid #8ebea834;
 }
 
-.contract {
-  margin-bottom: 0px;
-}
-
 .ant-modal-content {
   background-color: #ffff62;
-}
-
-.ant-modal-title{
-  color:  #ff557f !important;
-  letter-spacing: .7vw;
-  font-size: min(2vh, 4vw );
-  vertical-align: middle !important;
 }
 
 .ant-modal-wrap {
@@ -47,7 +37,8 @@
 }
 
 .ant-modal-body{
-  padding: 0;
+  padding: .25vw;
+  border: .5vw solid #ff517d;
 }
 
 .ant-modal-header , .ant-modal-footer {
@@ -73,6 +64,12 @@
 
 .ant-input {
   color: #ff517d;
+  height: 100%;
+}
+
+.ant-input-wrapper.ant-input-group {
+
+  height: max(6.5vh, 6.5vw);
 }
 
 #sign-here {
@@ -84,21 +81,15 @@
 }
 
 .ant-input-group-addon > .ant-btn {
-  height: 5vh;
   background-color: #ff3168 !important;
   border-color: #ff3168  !important;
   color:  #c3ffc0   !important;
+  height: 100%;
 }
 .ant-input-wrapper.ant-input-group > .ant-input {
   border-color: #ff3168  !important;
   text-align: center;
 }
-
-.ant-input-wrapper.ant-input-group > .ant-input, .ant-input-group-addon > .ant-btn  {
-  font-size: 1.5vh;
-  height: 4vh;
-}
-
 
 .flex-row {
   overflow-y: hidden;
@@ -132,18 +123,18 @@
 
 .yellow-top {
   background-color: #ffff62 ;
-  height: 6.5vh;
-  border-bottom: .5vh solid #ff517d;
-  border-top: .5vh solid #ff517d;
+  height: max(6.5vh, 6.5vw);
+  border-bottom: max(.5vh,.5vw) solid #ff517d;
+  border-top: max(.5vh,.5vw) solid #ff517d;
 }
 
 .top-mid {
-  height: .5vh;
+  height: max(.5vh, .5vw);
   /* background-color: #ff517d; */
 }
 
 .yellow-bottom {
-  height: .45vh;
+  height: max(.45vh, .45vw);
 
 }
 
@@ -153,8 +144,10 @@
 
 .jesus-dollar {
   position: absolute;
-  height: 15.2vh;
+  height: 113%;
   right: 25%;
+  max-width: 100%;
+
 }
 
 #get {
@@ -164,7 +157,7 @@
 
 .font {
   font-family: 'Suez One';
-  font-size: min(3vh, 4.8vw);
+  font-size: max(3vh, 3vw);
   color: #ff517d;
   text-align: center;
   padding-top: .5vh
