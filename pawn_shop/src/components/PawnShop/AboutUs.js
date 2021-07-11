@@ -70,30 +70,26 @@ const AboutUs = () => {
                     <tr>
                       <td className="text-paper">Monday</td>
                       <td>&nbsp;</td>
-                      <td>9:00AM</td>
-                      <td>-</td>
-                      <td>3:00AM </td>
+                      <td>Closed</td>
                     </tr>
                     <tr>
                       <td className="text-paper">Tuesday</td>
                       <td>&nbsp;</td>
-                      <td>9:00AM</td>
+                      <td>11:30AM</td>
                       <td>-</td>
-                      <td>3:00AM </td>
+                      <td>4:30PM </td>
                     </tr>
                     <tr>
                       <td className="text-paper">Wednesday</td>
                       <td>&nbsp;</td>
-                      <td>9:00AM</td>
-                      <td>-</td>
-                      <td>3:00AM </td>
+                      <td>Closed</td>
                     </tr>
                     <tr>
                       <td className="text-paper">Thursday</td>
                       <td>&nbsp;</td>
-                      <td>9:00AM</td>
+                      <td>3:00AM</td>
                       <td>-</td>
-                      <td>3:00AM </td>
+                      <td>6:00AM</td>
                     </tr>
                   </tbody>
                 </Col>
@@ -102,23 +98,25 @@ const AboutUs = () => {
                     <tr>
                       <td className="text-paper">Friday</td>
                       <td>&nbsp;</td>
-                      <td>9:00AM</td>
+                      <td>&nbsp;2:30AM</td>
                       <td>-</td>
-                      <td>3:00AM </td>
+                      <td>5:30AM </td>
                     </tr>
                     <tr>
                       <td className="text-paper">Saturday</td>
                       <td>&nbsp;</td>
-                      <td>9:00AM</td>
+                      <td>&nbsp;3:00PM</td>
                       <td>-</td>
-                      <td>3:00AM </td>
+                      <td>6:00AM</td>
+
                     </tr>
                     <tr>
                       <td className="text-paper">Sunday</td>
                       <td>&nbsp;</td>
-                      <td>9:00AM</td>
-                      <td>-</td>
-                      <td>3:00AM </td>
+                      <td>&nbsp;Closed</td>
+                      <td></td>
+                      <td> for Worship</td>
+
                     </tr>
                   </tbody>
                 </Col>
@@ -136,7 +134,7 @@ const AboutUs = () => {
             <Divider style={{ marginTop: '3vh', color: '#ff4775', borderTop: '#fa7193' }}> </Divider>
             <div id="cushion" />
           </Col>
-        </Row>
+        </Row >
 
       </div >
       <MainFooter></MainFooter>

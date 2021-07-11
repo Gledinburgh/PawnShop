@@ -154,8 +154,8 @@ p {
 }
 
 .no-stretch {
-  width: 100%;
-  object-fit: cover;
+  object-fit:cover;
+  height: min(40vh, 40vw);
 }
 
 
