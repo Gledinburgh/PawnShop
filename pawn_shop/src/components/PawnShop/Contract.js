@@ -63,31 +63,46 @@ const Contract = ({ isVisible, handleModalVisibility, shouldDestroyAdverts }) =>
     <>
       <Modal
         className="contract"
-        title="** Exclusive Offer **"
         visible={isModalVisible}
         onCancel={handleCancel}
         closable={true}>
 
         <div id="offer">
-          <Divider> </Divider>
-          <Divider style={{ color: '#1c6447' }}>sneek Peek</Divider>
-          <Divider> </Divider>
-          <img className="holy" src="Holy_Relapse.webp" alt="The Holy Relapse Title"></img>
-          {/* <Divider>the comic</Divider> */}
-          <Divider> </Divider>
-          <Divider style={{ color: '#1c6447' }}>Just sign below</Divider>
-          <Divider> </Divider>
-          <div className="terms"> <p className="opening"><b>Terms Of Service</b></p> {terms}<p className="opening"><b>We appreciate your buisness</b></p></div>
-          <div className="sign flex-row">
-            <Search
-              value={textEntry}
-              onChange={handleChange}
-              enterButton="sign"
-              placeholder={placeholder}
-              loading={isLoading}
-              onSearch={handleOk}
-            />
+          <div id="offer-image">
+
+            <div className="jesus-top">
+              <img className="jesus-dollar" src="Jesus_dollar_bill.webp" />
+              <div className="yellow-top again"></div>
+              <div className="top-mid"></div>
+              <div className="yellow-top"></div>
+            </div>
+
+            <img className="holy" src="Holy_Relapse.webp" alt="The Holy Relapse Title"></img>
+            {/* <Divider>the comic</Divider> */}
+            <div className="yellow-top"></div>
           </div>
+          <div className="center font" >|| Get a Sneak Peek | Just sign below ||</div>
+
+          <div className="top-mid"></div>
+          <div className="buisness">
+
+            <div id="sign-here">
+
+              <Search
+                value={textEntry}
+                onChange={handleChange}
+                enterButton="sign"
+                placeholder={placeholder}
+                loading={isLoading}
+                onSearch={handleOk}
+              />
+            </div>
+            <div className="terms">
+              <p className="opening"><b>Terms Of Service</b></p>
+              <p>{terms}</p>
+              <p className="opening"><b>We appreciate your buisness</b></p></div>
+          </div>
+
         </div>
       </Modal>
     </>

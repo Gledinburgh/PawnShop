@@ -20,7 +20,7 @@
 
 #offer {
   font-size: max(1.5vw, 2vh);
-  margin-top:Max(3vh, 5vw);
+  /* margin-top:Max(3vh, 5vw); */
   width: 100%;
   left: 50%;
   right: 50%;
@@ -29,6 +29,10 @@
 
 .contract {
   margin-bottom: 0px;
+}
+
+.ant-modal-content {
+  background-color: #ffff62;
 }
 
 .ant-modal-title{
@@ -43,23 +47,13 @@
 }
 
 .ant-modal-body{
-  margin: auto;
+  /* margin: auto; */
   padding: 0;
-  width: 90%;
+  /* width: 90%; */
 }
 
 .ant-modal-header , .ant-modal-footer {
-  font-family: 'Suez One';
-  color:  #ff557f !important;
-  letter-spacing: .7vw;
-  /* height: 5vh; */
-  min-height: min(3vh, 4vw );
-  font-size: 3vh;
-  background-color: #e5ffe3;
-  vertical-align: 0;
-  text-align: center;
-  vertical-align: middle !important;
-  width: 100%;
+  visibility: hidden;
 }
 
 .ant-modal-footer > .ant-btn {
@@ -72,21 +66,31 @@
     max-width: calc(100vw - 32px);
 }
 
+.buisness {
+  background-color: #ff517d !important;
+}
+
 .sign {
-  margin: 2% 5% 5% 5%;
-  padding-bottom: 5%;
-  background-color: #f5fff5;
+  background-color:  #ffff62;
   font-size:inherit;
-  overflow-y: scroll;
+}
+
+#sign-here {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
 }
 
 .ant-input-group-addon > .ant-btn {
- height: 5vh;
-  background-color: rgb(201, 193, 193) !important;
-  border-color: #9e7580  !important;
-  color:  #241f20  !important;
+  height: 5vh;
+  background-color: #ff3168 !important;
+  border-color: #ff3168  !important;
+  color:  #c3ffc0   !important;
 }
 .ant-input-wrapper.ant-input-group > .ant-input {
+  border-color: #ff3168  !important;
   text-align: center;
 }
 
@@ -104,9 +108,43 @@
   flex-wrap: nowrap;
 }
 
-.ant-divider {
-  margin-top: 2vh !important;
-  margin-bottom: 3vh !important;
+.jesus-top {
+  position: relative;
+}
+
+.yellow-top {
+  background-color: #ffff62 ;
+  height: 6.5vh;
+  border-bottom: .5vh solid #ff517d;
+  border-top: .5vh solid #ff517d;
+}
+
+.top-mid {
+  height: .5vh;
+  /* background-color: #ff517d; */
+}
+
+.again {
+  background-color: #ff517d !important;
+}
+
+.jesus-dollar {
+  position: absolute;
+  height: 15.2vh;
+  right: 25%;
+}
+
+
+.font {
+  font-family: 'Suez One';
+  font-size: 2vh;
+  color: #ff517d;
+}
+
+#offer-image {
+  background-color: #ffff62;
+  /* background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 196, 0, 0.26),rgba(255,0,0,0),rgba(128, 12, 195, 0.363)); */
+  height: 50vw;
 }
 
 @media screen and (min-width: 800px) {
