@@ -8,9 +8,9 @@
 
 .terms {
   margin: 0 5% 0 5%;
-  background-color: #f5fff5;
-  height: 15vh;
-  font-size: 1.5vh;
+  background-color: #fd7d9f;
+  height: 40vh;
+  font-size: 80% !important;
   padding: 1.7vh;
   overflow-y: scroll;
   -moz-box-shadow: inset 0 -10px 10px -2vh #000000;
@@ -47,17 +47,12 @@
 }
 
 .ant-modal-body{
-  /* margin: auto; */
   padding: 0;
-  /* width: 90%; */
 }
 
 .ant-modal-header , .ant-modal-footer {
   visibility: hidden;
-}
-
-.ant-modal-footer > .ant-btn {
-  visibility: hidden;
+  display: none;
 }
 
 .ant-modal {
@@ -73,6 +68,11 @@
 .sign {
   background-color:  #ffff62;
   font-size:inherit;
+
+}
+
+.ant-input {
+  color: #ff517d;
 }
 
 #sign-here {
@@ -112,6 +112,24 @@
   position: relative;
 }
 
+.top-yellow {
+
+  background-color: #ffff62 ;
+  height: 3vh;
+  border-bottom: .5vh solid #ff517d;
+  border-top: .5vh solid #ff517d;
+}
+
+.just-sign {
+  padding-bottom: 1.5vh;
+}
+
+.padding {
+  background-color: #ff517d !important;
+  height: 5vh;
+
+}
+
 .yellow-top {
   background-color: #ffff62 ;
   height: 6.5vh;
@@ -124,6 +142,11 @@
   /* background-color: #ff517d; */
 }
 
+.yellow-bottom {
+  height: .45vh;
+
+}
+
 .again {
   background-color: #ff517d !important;
 }
@@ -134,17 +157,17 @@
   right: 25%;
 }
 
+#get {
+  vertical-align: middle;
+  line-height: 3vh;
+}
 
 .font {
   font-family: 'Suez One';
-  font-size: 2vh;
+  font-size: min(3vh, 4.8vw);
   color: #ff517d;
-}
-
-#offer-image {
-  background-color: #ffff62;
-  /* background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 196, 0, 0.26),rgba(255,0,0,0),rgba(128, 12, 195, 0.363)); */
-  height: 50vw;
+  text-align: center;
+  padding-top: .5vh
 }
 
 @media screen and (min-width: 800px) {
@@ -152,4 +175,6 @@
   .ant-modal.content {
     min-width: 400px;
   }
+
+
   }

@@ -78,12 +78,10 @@ const Contract = ({ isVisible, handleModalVisibility, shouldDestroyAdverts }) =>
             </div>
 
             <img className="holy" src="Holy_Relapse.webp" alt="The Holy Relapse Title"></img>
-            {/* <Divider>the comic</Divider> */}
-            <div className="yellow-top"></div>
+            <div className="font yellow-top" ><span id="get">|| Get a Sneak Peek | Just sign below ||</span></div>
+            <div className="yellow-bottom"></div>
           </div>
-          <div className="center font" >|| Get a Sneak Peek | Just sign below ||</div>
 
-          <div className="top-mid"></div>
           <div className="buisness">
 
             <div id="sign-here">
@@ -103,12 +101,14 @@ const Contract = ({ isVisible, handleModalVisibility, shouldDestroyAdverts }) =>
               <p className="opening"><b>We appreciate your buisness</b></p></div>
           </div>
 
+          <div className="padding"></div>
+
         </div>
       </Modal>
     </>
   );
 };
 
-const terms = 'I hereby forfeit my soul in exchange for access to this exclusive content. I verify to the best of my knowledge that this is indeed my soul and not the soul of another. All soul transactions are eligible to be reclaimed in the standard 90 day time frame and are subject to eternal anguish thereafter. All parties attempting to reclaim the soul in question must present a receipt of the original transaction, 3 forms of identification and a hand-written letter of referral by a trusted unholy entity (human or otherwise). If any parties wishing to forfeit/reclaim a soul are unable to meet any and/or all of these conditions, a trial by fire will be initiated purely for entertainment purposes and to recoup the loss of wasted time. Please sign below... '
+const terms = 'I hereby forfeit my soul in exchange for access to this exclusive content. I verify to the best of my knowledge that this is indeed my soul and not the soul of another. All soul transactions are eligible to be reclaimed in the standard 90 day time frame and are subject to eternal anguish thereafter. All parties attempting to reclaim the soul in question must present a receipt of the original transaction, 3 forms of identification and a hand-written letter of referral by a trusted unholy entity (human or otherwise). If any parties wishing to forfeit/reclaim a soul are unable to meet any and/or all of these conditions, a trial by fire will be initiated purely for entertainment purposes and to recoup the loss of wasted time.'
 
 export default Contract;
