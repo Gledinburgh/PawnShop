@@ -43,11 +43,7 @@ const Returns = () => {
 
               <br></br>
               <div Id="mngmnt">
-                <div Id="mngmnt">*** NO RETURNS AVAILABLE AT THE MOMENT ***</div>
-                <div className="">*** ALL ITEMS PURCHASED ARE FINAL LIFETIME PURCHASES !!! ***</div>
-                <div className="">*** PLEASE CHECK BACK IN _____ DAYS FOR UPDATED POLICY !! ***</div>
-                <div className="">- MNGMT</div>
-
+                <img className="letter" src="letter_from_mgmt.webp" />
                 <br></br>
 
               </div>

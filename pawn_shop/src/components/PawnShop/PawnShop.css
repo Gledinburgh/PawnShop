@@ -158,6 +158,13 @@ p {
   height: min(40vh, 40vw);
 }
 
+.letter {
+  object-fit: cover;
+  width: 70%;
+ transform: rotate(-10deg);
+ margin-left: 10%;
+}
+
 
 @media screen and (min-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
