@@ -13,6 +13,12 @@ const products = [
     Price: '666.00',
   },
   {
+    File: 'blkshp.webp',
+    Name: 'Black Sheep',
+    Description: 'Pawned it for the third time this year',
+    Price: '66.6',
+  },
+  {
     File: 'Elora_01.webp',
     Name: 'Rat Person',
     Description: 'We are pretty sure there\'s a person in there',
@@ -23,12 +29,6 @@ const products = [
     Name: 'BM0 B-BOY',
     Description: 'Real life break dancing game boy!',
     Price: '3338.2',
-  },
-  {
-    File: 'blkshp.webp',
-    Name: 'Black Sheep',
-    Description: 'Pawned it for the third time this year',
-    Price: '66.6',
   },
 
 ]

@@ -26,11 +26,16 @@ const ThemeContext = createContext(initialState);
 const ThemeProvider = ({ children }) => {
 
   const [dark, setDark] = useState(false);
+  const [pageName, setPageName] = useState("PawnShop");
 
   useEffect(() => {
     const isDark = localStorage.getItem('dark') === 'true';
     setDark(isDark);
   }, [dark])
+
+  const handlePageNameChange = (pageName) => {
+    setPageName(pageName);
+  }
 
   const toggleTheme = () => {
     const isDark = !dark;
@@ -46,7 +51,7 @@ const ThemeProvider = ({ children }) => {
   const theme = dark ? themes.dark : themes.light
 
   return (
-    <ThemeContext.Provider value={{ theme, dark, toggleTheme, playAudio }}>
+    <ThemeContext.Provider value={{ theme, dark, toggleTheme, playAudio, pageName, handlePageNameChange }}>
       <audio className="radio">
         <source src="Come_On_Back_Jesus.mp3" type="audio/mpeg"></source>
       </audio>

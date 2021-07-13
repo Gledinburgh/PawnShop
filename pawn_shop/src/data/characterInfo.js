@@ -56,9 +56,8 @@ const characterInfo = [
   },
   {
     Name: 'Mauro de la Tierra',
-    Description: 'Mary marou magosh',
-    Age: 'as old as time',
-    Weight: '1000 suns',
+    Description: 'Mauro de la tierra is an illustrator, painter, director and sculptor from the East side of San Antonio. ',
+
     Row: 'one',
     File: 'mauro.jpg',
     Portrait: 'mauro.jpg',

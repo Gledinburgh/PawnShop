@@ -8,9 +8,8 @@ import ReactDOM from 'react-dom';
 import { React, useState, useEffect, useContext, useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import PageNameContext from '../../PageNameContext';
 
-import { Layout, Row, Col } from 'antd';
+import { Layout, Row, Col, notification } from 'antd';
 import ItemGrid from './ItemGrid';
 import PageOver from '../PageOver';
 import Contract from './Contract';
@@ -19,6 +18,7 @@ import MainHeader from './MainHeader';
 
 import openAdvert from './openAdvert';
 import openFooterAdvert from './openFooterAdvert';
+import { ThemeContext } from '../../context/ThemeContext';
 
 
 const { Header, Footer, Content } = Layout;
@@ -31,8 +31,10 @@ const footstyle = { background: "#ffff62", 'fontFamily': 'Suez One', color: '#ff
 function PawnShop() {
 
 
+  const context = useContext(ThemeContext);
+
+  const { pageName, handlePageNameChange } = context;
   const history = useHistory();
-  const { pageName, handlePageNameChange } = useContext(PageNameContext);
 
   const [shouldPageOver, setShouldPageOver] = useState(false);
   const [pageOverType, setPageOverType] = useState('remove');
@@ -50,6 +52,8 @@ function PawnShop() {
   const handlePageChange = useCallback(() => {
     if (pageOverType === 'remove') setPageOverType('add');
     if (pageOverType === 'add') setPageOverType('remove');
+    notification.destroy();
+
     setShouldPageOver(!shouldPageOver)
   }, [shouldPageOver])
 
@@ -60,8 +64,8 @@ function PawnShop() {
   const advertLaunch = () => {
     const advertCount = document.getElementsByClassName('ant-notification-notice').length;
     const notToManyAdverts = advertCount < 3;
-    if (notToManyAdverts) {
-      setTimeout(() => openAdvert('topLeft', handleModalVisibility, handleAdvertClosed), 500)
+    if (notToManyAdverts && pageName === "PawnShop") {
+      setTimeout(() => openAdvert('topLeft', handleModalVisibility, handleAdvertClosed, pageName), 500)
     }
 
 
@@ -76,23 +80,18 @@ function PawnShop() {
       setTimeout(() => {
         if (pageName === "PawnShop") {
           setAdvertTimer(true);
-          openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed);
+          openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed, pageName);
         }
       }, 10000)
     }
   }
-  // const playAudio = () => {
-  //   const radio = document.getElementsByClassName("radio")[0];
-  //   radio.play();
-  // }
 
 
   useEffect(() => {
     handlePageNameChange('PawnShop');
     footerTimer();
-    // playAudio();
     console.log('useEffect: PawnShop');
-  }, [advertTimer, advertClosed])
+  }, [advertTimer, advertClosed, pageName])
 
   document.body.style.backgroundColor = "#e5ffe3"
   handlePageNameChange('PawnShop');

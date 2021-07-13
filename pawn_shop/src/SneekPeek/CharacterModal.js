@@ -1,10 +1,10 @@
-import {useState, useEffect} from 'react';
-import {Image,Row, Col, Divider} from 'antd';
+import { useState, useEffect } from 'react';
+import { Image, Row, Col, Divider } from 'antd';
 import './character-modal.css';
 import charInfo from '../data/characterInfo';
 
 
-const CharacterModal = ({characterInfo, isVisible}) => {
+const CharacterModal = ({ characterInfo, isVisible }) => {
 
   const [character, setCharacter] = useState(charInfo[0]);
 
@@ -23,28 +23,28 @@ const CharacterModal = ({characterInfo, isVisible}) => {
 
   const drugs = [
 
-    {alt: 'xanax', src: 'xan.webp'},
-    {alt: 'opium bud', src: 'opi.webp', left: "10%" },
-    {alt: 'pill', src: 'pill.webp'},
-    {alt: 'frowning mushroom', src: 'shroomie2.webp', left: "40vw"},
-    {alt: 'syringe', src: 'syringe.webp', left: "50vw" ,top: ''},
-    {alt: 'smiling mushroom', src: 'shroomie.webp', left: "30%", top: ""},
-    {alt: 'xanax', src: 'xan.webp'},
-    {alt: 'syringe', src: 'syringe.webp', left: "50vw" ,top: ''},
-    {alt: 'smiling mushroom', src: 'shroomie.webp', left: "30%", top: ""},
-    {alt: 'pill', src: 'pill.webp'},
-    {alt: 'opium bud', src: 'opi.webp', left: "10%" },
-    {alt: 'frowning mushroom', src: 'shroomie2.webp', left: "40vw"},
-    {alt: 'syringe', src: 'syringe.webp', left: "50vw" ,top: ''},
-    {alt: 'xanax', src: 'xan.webp'},
-    {alt: 'pill', src: 'pill.webp'},
-    {alt: 'xanax', src: 'xan.webp'},
-    {alt: 'opium bud', src: 'opi.webp', left: "10%" },
-    {alt: 'pill', src: 'pill.webp'},
-    {alt: 'xanax', src: 'xan.webp'},
-    {alt: 'opium bud', src: 'opi.webp', left: "10%" },
-    {alt: 'pill', src: 'pill.webp'},
-    {alt: 'syringe', src: 'syringe.webp', left: "50vw" ,top: ''},
+    { alt: 'xanax', src: 'xan.webp' },
+    { alt: 'opium bud', src: 'opi.webp', left: "10%" },
+    { alt: 'pill', src: 'pill.webp' },
+    { alt: 'frowning mushroom', src: 'shroomie2.webp', left: "40vw" },
+    { alt: 'syringe', src: 'syringe.webp', left: "50vw", top: '' },
+    { alt: 'smiling mushroom', src: 'shroomie.webp', left: "30%", top: "" },
+    { alt: 'xanax', src: 'xan.webp' },
+    { alt: 'syringe', src: 'syringe.webp', left: "50vw", top: '' },
+    { alt: 'smiling mushroom', src: 'shroomie.webp', left: "30%", top: "" },
+    { alt: 'pill', src: 'pill.webp' },
+    { alt: 'opium bud', src: 'opi.webp', left: "10%" },
+    { alt: 'frowning mushroom', src: 'shroomie2.webp', left: "40vw" },
+    { alt: 'syringe', src: 'syringe.webp', left: "50vw", top: '' },
+    { alt: 'xanax', src: 'xan.webp' },
+    { alt: 'pill', src: 'pill.webp' },
+    { alt: 'xanax', src: 'xan.webp' },
+    { alt: 'opium bud', src: 'opi.webp', left: "10%" },
+    { alt: 'pill', src: 'pill.webp' },
+    { alt: 'xanax', src: 'xan.webp' },
+    { alt: 'opium bud', src: 'opi.webp', left: "10%" },
+    { alt: 'pill', src: 'pill.webp' },
+    { alt: 'syringe', src: 'syringe.webp', left: "50vw", top: '' },
 
   ];
   // const drugs = [
@@ -56,44 +56,42 @@ const CharacterModal = ({characterInfo, isVisible}) => {
   //   {alt: 'pill', src: 'pill.webp', left: "80vw", top: "-8vh"},
   // ];
 
-  return(
-
-  <>
-    <div id="mask" />
-    <div className={`${character.Row}`} id="char-wrap">
-      <div className="drugs flex-row">
-
-{drugs.map((drug) => {
   return (
-    <div  className="fall"><img className="spin" alt={`${drug.alt}`} src={`${drug.src}`}/></div>
- )
-})}
+    <>
+      <div id="mask" />
+      <div className={`${character.Row}`} id="char-wrap">
+        <div className="drugs flex-row">
+
+          {drugs.map((drug) => {
+            return (
+              <div className="fall"><img className="spin" alt={`${drug.alt}`} src={`${drug.src}`} /></div>
+            )
+          })}
+        </div>
+        <div className="veil">
+
+          <Row className="char-row-1">
+            <div onClick={() => handleModalClose()} className="close-modal">X</div>
+            <Col className="char-portrait">
+              <img className={`${character.Id} portrait`} alt={character.Alt} src={character.File}></img>
+            </Col>
+            <Col className="char-info">
+              <p>{character.Age ? `Name: ${character.Name}` : character.Description}</p>
+              <p>{character.Age ? `Age: ${character.Age}` : null}</p>
+              <p>{character.Age ? `Weight: ${character.Weight}` : null}</p>
+            </Col>
+          </Row>
+          <Row className="bottom-color char-description">
+            {character.Age ? <p>{character.Description}</p> : null}
+
+          </Row>
+        </div>
+
+
+
+
       </div>
-
-
-   <div className="veil">
-
-     <Row className="char-row-1">
-      <div onClick={() => handleModalClose()} className="close-modal">X</div>
-       <Col className="char-portrait">
-       <img className={`${character.Id} portrait`} alt={character.Alt} src={character.File}></img>
-       </Col>
-       <Col className="char-info">
-         <p>Name: {character.Name}</p>
-         <p>Age: {character.Age}</p>
-         <p>Weight: {character.Weight}</p>
-       </Col>
-     </Row>
-     <Row className="bottom-color char-description">
-       <p>{character.Description}</p>
-     </Row>
-   </div>
-
-
-
-
-    </div>
-  </>
+    </>
   )
 }
 

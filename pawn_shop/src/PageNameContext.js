@@ -1,8 +1,11 @@
-import {createContext} from 'react';
+import { createContext, useState } from 'react';
 
 const PageNameContext = createContext({
-  pageName : 'PawnShop',
-  changePageName: () => {}
+  pageName: 'PawnShop',
+  handlePageNameChange: () => { }
 });
+
+
+
 
 export default PageNameContext;

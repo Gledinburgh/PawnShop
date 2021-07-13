@@ -39,8 +39,8 @@ const SneekPeek = () => {
     notification.destroy();
     handlePageNameChange('SneekPeek');
 
-    console.log('useEffect: sneekPeek');
-  }, [])
+    console.log('pageName:', pageName);
+  }, [pageName])
 
   return (
 
