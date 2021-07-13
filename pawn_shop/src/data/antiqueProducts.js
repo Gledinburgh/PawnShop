@@ -1,38 +1,38 @@
 const products = [
   {
     File: 'cerimonial_knife.webp',
-    Name: 'Cerimonial knife',
+    Name: 'Ceremonial knife',
     Description: 'Perfect for human sacrifices!',
     Price: '47.00',
   },
   {
     File: 'CRT_TV.webp',
     Name: 'CRT TV',
-    Description: 'Can channel the spirit world',
+    Description: 'Can channel the spirit realm.',
     Price: '5.00',
   },
   {
     File: 'product_STRO_087.webp',
-    Name: 'Stereo 6789',
-    Description: 'Automatically chops and screws everything',
-    Price: '281.00',
+    Name: 'Stereo 087',
+    Description: 'Can only play cuntry.',
+    Price: '100000.00',
   },
   {
     File: 'red-phone.webp',
     Name: 'Red phone',
-    Description: 'Calls the powerpuff girls',
+    Description: 'Calls the Powerpuff Girls.',
     Price: '30.78',
   },
   {
     File: 'product_NUK.webp',
-    Name: 'FatMan',
-    Description: 'It might wake up the neighbors',
+    Name: 'Fat-Man',
+    Description: 'It might wake up the neighbors...',
     Price: '1945.50',
   },
   {
     File: 'gun_1482610_1920.webp',
     Name: 'Argument winner',
-    Description: 'Cant beat em? eat them.',
+    Description: "Can’t beat ‘em, eat ‘em",
     Price: '58.59',
   },
 

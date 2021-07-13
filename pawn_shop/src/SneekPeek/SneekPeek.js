@@ -69,7 +69,7 @@ const SneekPeek = () => {
             <p className="no-shaddow">Told through the eyes of Jesus Christ himself.</p>
           </div>
           {/* <Footer> </Footer> */}
-          <div className="intro arriving"> {`\nArriving summer 2021`}</div>
+          <div className="intro arriving"> {`\nArriving August 2021`}</div>
           <CharacterList handleCharSelect={handleCharSelect} />
 
         </div>
