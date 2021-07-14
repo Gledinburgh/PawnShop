@@ -153,6 +153,7 @@
 #get {
   vertical-align: middle;
   line-height: 3vh;
+  height: 100%;
 }
 
 .font {
@@ -165,9 +166,26 @@
 
 @media screen and (min-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
-  .ant-modal.content {
-    min-width: 400px;
+  .ant-modal{
+    min-width: 45vw;
+    max-width: 1000px;
+  }
+  .font {
+    font-family: 'Suez One';
+    font-size: max(3vh, 2.7vw);
+    color: #ff517d;
+    text-align: center;
+    padding-top: .5vh
+  }
+  .yellow-top {
+    height: max(6.5vh, 5.5vw);
+
   }
 
+  .ant-input-wrapper.ant-input-group {
+
+    height: max(5.5vh, 3.5vw);
+
+  }
 
   }

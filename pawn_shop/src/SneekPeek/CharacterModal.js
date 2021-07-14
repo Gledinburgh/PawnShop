@@ -76,9 +76,9 @@ const CharacterModal = ({ characterInfo, isVisible }) => {
               <img className={`${character.Id} portrait`} alt={character.Alt} src={character.File}></img>
             </Col>
             <Col className="char-info">
-              <p>{character.Age ? `Name: ${character.Name}` : character.Description}</p>
-              <p>{character.Age ? `Age: ${character.Age}` : null}</p>
-              <p>{character.Age ? `Weight: ${character.Weight}` : null}</p>
+              <p>{character.Age ? <span><b>Name:</b> {character.Name}</span> : character.Description}</p>
+              <p>{character.Age ? <span><b>Age:</b> {character.Age}</span> : null}</p>
+              <p>{character.Age ? <span><b>Weight:</b> {character.Weight}</span> : null}</p>
             </Col>
           </Row>
           <Row className="bottom-color char-description">

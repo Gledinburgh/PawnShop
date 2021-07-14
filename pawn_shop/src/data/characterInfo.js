@@ -66,8 +66,9 @@ const characterInfo = [
   },
   {
     Name: 'Joshua Anthony Rodriguez',
-    Description: 'Hosh Josh magosh',
-    Weight: '1000 suns',
+    Age: "still gets ID'd at liquor stores",
+    Description: 'The form known as "Joshua Anthony Rodriguez" was an amoeba self-birthed in a rogue chronosynclastic infundibulum, manifesting itself as a teenage skeleton until reaching full, ripe maturity as a 5th-dimensional space eel. It also writes comics in its free time. ',
+    Weight: '1000 Keurig pods',
     Row: 'one',
     File: 'josh.jpg',
     Portrait: 'josh.jpg',

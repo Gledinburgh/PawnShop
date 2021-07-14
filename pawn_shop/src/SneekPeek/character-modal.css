@@ -6,10 +6,14 @@
   padding: .5vh;
   padding-right: 1.5vh;
   z-index: 100;
+  font-weight: 700;
+
 }
 
 .close-modal:hover {
   cursor: pointer;
+  font-size: larger;
+
 }
 
 .char-row-1 {
@@ -42,19 +46,23 @@
   transform: scaleX(-1);
 } */
 
+.char-description, .char-info {
+  border: 2px solid rgba(243, 191, 217, 0.596);
+}
+
 .char-description > p {
-  margin: 5%;
-  padding: 2%;
+  margin: 1% 2% 3% 2%;
+    padding: 1%;
   text-align: left;
   background-color: rgba(141, 181, 218, 0.493);
 }
 
 .char-info {
-  position: static;
-  padding: 2%;
+  /* position: static; */
+  padding: 1%;
   background-color: rgba(141, 181, 218, 0.493);
-  margin: 5%;
-  width: 40%;
+  margin: 1% 2% 3% 2%;
+  width: 46%;
   animation: float 10s ease-in-out infinite;
 
 }
