@@ -29,7 +29,6 @@
 
 #road-side {
   line-height: 0;
-  height: 10vh;
   width: 100%;
 }
 
@@ -38,7 +37,7 @@
 }
 
 #sidewalk-1 {
-  height: 1vh;
+  height: 2vh;
   position: relative;
 }
 

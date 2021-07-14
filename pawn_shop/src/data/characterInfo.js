@@ -62,7 +62,7 @@ const characterInfo = [
     Age: '1312',
     File: 'mauro.jpg',
     Portrait: 'mauro.jpg',
-    Weight: '1 emperor penguin ',
+    Weight: '1 emperor penguin',
     Alt: 'portrait of Mauro de la Tierra',
     Id: 'mauro'
   },
