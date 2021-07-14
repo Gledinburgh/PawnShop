@@ -56,11 +56,13 @@ const characterInfo = [
   },
   {
     Name: 'Mauro de la Tierra',
-    Description: 'Mauro de la tierra is an illustrator, painter, director and sculptor from the East side of San Antonio. ',
+    Description: 'Mauro de la tierr is a child prodege raised by space pirates now spending his time as an illustrator, painter, director and sculptor from the East side of San Antonio.',
 
     Row: 'one',
+    Age: '1312',
     File: 'mauro.jpg',
     Portrait: 'mauro.jpg',
+    Weight: '1 emperor penguin ',
     Alt: 'portrait of Mauro de la Tierra',
     Id: 'mauro'
   },
