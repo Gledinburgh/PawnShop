@@ -172,7 +172,7 @@
   }
   .font {
     font-family: 'Suez One';
-    font-size: max(3vh, 2.7vw);
+    font-size: max(3vh, 2.25vw);
     color: #ff517d;
     text-align: center;
     padding-top: .5vh
