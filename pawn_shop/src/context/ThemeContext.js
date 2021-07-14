@@ -16,6 +16,7 @@ export const themes = {
 const initialState = {
   dark: false,
   theme: themes.light,
+  fireAdvert: true,
   toggleTheme: () => { },
   playAudio: () => { },
 
@@ -25,13 +26,24 @@ const ThemeContext = createContext(initialState);
 
 const ThemeProvider = ({ children }) => {
 
+  const [fireAdvert, setFireAdvert] = useState(true);
   const [dark, setDark] = useState(false);
   const [pageName, setPageName] = useState("PawnShop");
 
   useEffect(() => {
     const isDark = localStorage.getItem('dark') === 'true';
     setDark(isDark);
-  }, [dark])
+    console.log("fireAdvert", fireAdvert)
+    if (fireAdvert && pageName === "PawnShop") advertTimer();
+  }, [dark, fireAdvert, pageName]);
+
+  const advertTimer = () => {
+    if (pageName === "PawnShop" && fireAdvert) {
+      console.log("advertTimer fired", pageName)
+      setFireAdvert(false)
+      setTimeout(() => { setFireAdvert(true) }, 10000)
+    }
+  }
 
   const handlePageNameChange = (pageName) => {
     setPageName(pageName);
@@ -51,7 +63,7 @@ const ThemeProvider = ({ children }) => {
   const theme = dark ? themes.dark : themes.light
 
   return (
-    <ThemeContext.Provider value={{ theme, dark, toggleTheme, playAudio, pageName, handlePageNameChange }}>
+    <ThemeContext.Provider value={{ theme, dark, toggleTheme, playAudio, pageName, handlePageNameChange, fireAdvert }}>
       <audio className="radio">
         <source src="Come_On_Back_Jesus.mp3" type="audio/mpeg"></source>
       </audio>

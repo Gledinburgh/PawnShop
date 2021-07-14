@@ -33,7 +33,7 @@ function PawnShop() {
 
   const context = useContext(ThemeContext);
 
-  const { pageName, handlePageNameChange } = context;
+  const { pageName, handlePageNameChange, fireAdvert } = context;
   const history = useHistory();
 
   const [shouldPageOver, setShouldPageOver] = useState(false);
@@ -74,24 +74,19 @@ function PawnShop() {
   const footerTimer = () => {
     const advertCount = document.getElementsByClassName('ant-notification-notice').length;
     const notToManyAdverts = advertCount < 3;
-    if (advertTimer && notToManyAdverts) {
-      setAdvertTimer(false);
-
-      setTimeout(() => {
-        if (pageName === "PawnShop") {
-          setAdvertTimer(true);
-          openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed, pageName);
-        }
-      }, 10000)
+    if (fireAdvert && notToManyAdverts) {
+      openAdvert('bottomLeft', handleModalVisibility, handleAdvertClosed, pageName);
     }
+
   }
+
 
 
   useEffect(() => {
     handlePageNameChange('PawnShop');
     footerTimer();
     console.log('useEffect: PawnShop');
-  }, [advertTimer, advertClosed, pageName])
+  }, [advertTimer, advertClosed, pageName, fireAdvert])
 
   document.body.style.backgroundColor = "#e5ffe3"
   handlePageNameChange('PawnShop');
