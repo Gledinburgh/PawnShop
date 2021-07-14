@@ -46,15 +46,15 @@
   transform: scaleX(-1);
 } */
 
-.char-description, .char-info {
-  border: 2px solid rgba(243, 191, 217, 0.596);
-}
 
 .char-description > p {
+  text-indent: 2em;
   margin: 1% 2% 3% 2%;
-    padding: 1%;
+  padding: 1%;
+  padding-top: 5%;
   text-align: left;
   background-color: rgba(141, 181, 218, 0.493);
+  padding-left: 5%;
 }
 
 .char-info {
@@ -67,6 +67,9 @@
 
 }
 
+.char-description, .char-info {
+  border: 2px solid rgba(243, 191, 217, 0.596);
+}
 .char-info > p {
   text-align: left;
   width: 100%;
